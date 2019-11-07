@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elena Solovyeva](https://up.htmlacademy.ru/adaptive/18/user/966527).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Кузнецов](https://htmlacademy.ru/profile/awakum).
 
 ---
 
