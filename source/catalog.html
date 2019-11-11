@@ -5,101 +5,119 @@
     <title>HTML Academy: каталог "Мишки"</title>
   </head>
   <body>
-    <header> <!-- логотип и кнопка формы. Перенесла из index.html, -->
-      <div class="header">
-        <a href="index.html"><!-- ссылку исправила -->
-          <img class="header__image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
-        </a>
-        <a class="buttonForm" href="#">
-          <img class="buttonForm__image" src="img/menu-button.svg" width="20" height="14" alt="Кнопка размещения заказа">
-        </a>
-      </div>
+    <header  class="page-header  layout"> <!-- логотип и кнопка формы, position: relative; -->
+      <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
+        <img class="header__logo--image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+      <nav class="menu"><!-- position: absolute; -->
+        <button class="page-header__menu">
+          <span area-label="Меню"></span><!--area-атрибут для скринридера, width="20" height="14"-->
+        </button>
+        <!-- Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем. -->
+        <div class="menu__wrapper">
+          <ul class="menu__list  visually-hidden">
+            <li>
+              <a class="menu__link" href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a class="menu__link" href="#">Вязание на заказ</a>
+            </li>
+            <!-- иконки сделаю псевдоэлементами -->
+            <li>
+              <a class="menu__link  menu__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li>
+              <a class="menu__link  menu__link--cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="catalog">
-        <h1 class="catalog__title">Каталог товаров</h1>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img class="catalog__itemFoto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото вязанного зайчика">
-            <h2 class="catalog__itemName">Зайчик-попрыгайчик</h2>
-            <p class="catalog__itemSize">Рост 30 см, вес 200 г</p>
-            <p class="catalog__itemPrice">1 200 руб.</p><!--иконку сделаю псевдоэлементом в css-->
-          </li>
-          <li class="catalog__item">
-            <img class="catalog__itemFoto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото корзинки для белья">
-            <h2 class="catalog__itemName">Корзинка для белья</h2>
-            <p class="catalog__itemSize">Диаметр 15 см, высота 10 см</p>
-            <p class="catalog__itemPrice">690 руб.</p><!--иконку сделаю псевдоэлементом в css-->
-          </li>
-          <li class="catalog__item">
-            <img class="catalog__itemFoto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото большой корзинки для игрушек">
-            <h2 class="catalog__itemName">Большая корзинка для игрушек</h2>
-            <p class="catalog__itemSize">Диаметр 30 см, высота 30 см</p>
-            <p class="catalog__itemPrice">1 500 руб.</p><!--иконку сделаю псевдоэлементом в css-->
-          </li>
-        </ul>
+      <section class="catalog  layout">
+        <h1 class="catalog__title  title-h1">Каталог товаров</h1>
+        <div class="catalog__wrapper">
+          <article class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-foto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото вязанного зайчика">
+            </a>
+            <a href="#">
+              <h2 class="catalog__item-name">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="catalog__item-size">Рост 30 см, вес 200 г</p>
+            <p class="catalog__item-price">1 200 руб.
+              <button class="catalog__cart-button" aria-label="Кнопка открытия формы заказа"></button>
+            </p>
+          </article >
+          <article  class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-foto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото корзинки для белья">
+            </a>
+            <a href="#">
+              <h2 class="catalog__item-name">Корзинка для белья</h2>
+
+            </a><p class="catalog__item-size">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__item-price">690 руб.
+              <button class="catalog__cart-button" aria-label="Кнопка открытия формы заказа"></button>
+            </p>
+          </article >
+          <article class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-foto" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото большой корзинки для игрушек">
+            </a>
+            <a href="#">
+              <h2 class="catalog__item-name">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="catalog__item-size">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__item-price">1 500 руб.
+              <button class="catalog__cart-button" aria-label="Кнопка открытия формы заказа"></button>
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section>
+      <section  layout>
         <!--блок "Процесс производсвта в этом задании верстать не нужно" -->
       </section>
     </main>
 
     <footer><!--иконки соцсетей и "разработано" -->
-            <!-- скопировала из index.html -->
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social">
         <!-- иконки сделаю псевдоэлементами -->
         <li>
-          <a class="social__item instagram"></a>
+          <a class="social__item instagram" href="https://www.instagram.com"></a>
         </li>
         <li>
-          <a class="social__item facebook"></a>
+          <a class="social__item facebook" href="https://www.facebook.com"></a>
         </li>
         <li>
-          <a class="social__item twitter"></a>
+          <a class="social__item twitter" href="https://twitter.com"></a>
         </li>
       </ul>
-      <p class="developer">Разработано</p>
+      <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
 
-    <!-- Модальные окна скопировала из index.html, на лекции сказали, что потом будем решать вместе с наставником, как организовать структуру html-файлов  -->
-    <section class="modalMenu">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <a href="#">
-        <img class="modalMenu__image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка"><!-- ?? или здесь оставить class="header__image"-->
-      </a>
-      <button class="modalMenu__closeButton"></button>
-      <nav>
-        <ul class="modalMenu__list">
+    <section class="modal-add  layout">
+      <div class="modal-add__wrapper">
+        <h2 class="modal-add__title">Добавить в корзину</h2>
+        <p class="modal-add__choice">Выберите размер:</p>
+        <ul class="modal-add__sizeList">
           <li>
-            <a class="modalMenu__link" href="#">Каталог товаров</a>
+            <button class="modal-add__S">S</button>
           </li>
           <li>
-            <a class="modalMenu__link" href="#">Вязание на заказ</a>
-          </li>
-          <!-- иконки сделаю псевдоэлементами -->
-          <li>
-            <a class="modalMenu__link" href="#">Поиск по сайту</a>
+            <button class="modal-add__S">M</button>
           </li>
           <li>
-            <a class="modalMenu__link" href="#">Корзина: <span class="modalMenu__status empty">пока пуста</span></a>
+            <button class="modal-add__S">L</button>
           </li>
         </ul>
-      </nav>
-    </section>
-
-    <section class="modalAdd">
-      <h2 class="modalAdd__title">Добавить в корзину</h2>
-      <p class="modalAdd__choice">Выберите размер:</p>
-      <ul class="modalAdd__sizeList">
-        <li class="modalAdd__S">S</li>
-        <li class="modalAdd__M">M</li>
-        <li class="modalAdd__L">L</li>
-      </ul>
-      <button class="modalAdd__addButton">Добавить</button>
+        <button class="modal-add__add-button">Добавить</button>
+      </div>
     </section>
 
   </body>
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
+
 </html>

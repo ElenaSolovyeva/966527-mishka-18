@@ -5,15 +5,34 @@
     <title>HTML Academy: форма заказа в магазине "Мишка"</title>
   </head>
   <body>
-    <header> <!-- логотип и кнопка формы. Перенесла из index.html, -->
-      <div class="header">
-        <a href="index.html"><!-- ссылку исправила -->
-          <img class="header__image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
-        </a>
-        <a class="buttonForm" href="#">
-          <img class="buttonForm__image" src="img/menu-button.svg" width="20" height="14" alt="Кнопка размещения заказа">
-        </a>
-      </div>
+
+    <header  class="page-header  layout"> <!-- логотип и кнопка формы, position: relative; -->
+      <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
+        <img class="header__logo--image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
+      </a>
+      <nav class="menu"><!-- position: absolute; -->
+        <button class="page-header__menu">
+          <span area-label="Меню"></span><!--area-атрибут для скринридера, width="20" height="14"-->
+        </button>
+        <!-- Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем. -->
+        <div class="menu__wrapper">
+          <ul class="menu__list  visually-hidden">
+            <li>
+              <a class="menu__link" href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a class="menu__link" href="#">Вязание на заказ</a>
+            </li>
+            <!-- иконки сделаю псевдоэлементами -->
+            <li>
+              <a class="menu__link  menu__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li>
+              <a class="menu__link  menu__link--cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -23,47 +42,21 @@
     </main>
 
     <footer><!--иконки соцсетей и "разработано" -->
-            <!-- скопировала из index.html -->
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social">
         <!-- иконки сделаю псевдоэлементами -->
         <li>
-          <a class="social__item instagram"></a>
+          <a class="social__item instagram" href="https://www.instagram.com"></a>
         </li>
         <li>
-          <a class="social__item facebook"></a>
+          <a class="social__item facebook" href="https://www.facebook.com"></a>
         </li>
         <li>
-          <a class="social__item twitter"></a>
+          <a class="social__item twitter" href="https://twitter.com"></a>
         </li>
       </ul>
-      <p class="developer">Разработано</p>
+      <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
-
-    <!-- Модальное окно скопировала из index.html, пусть пока будет здесь  -->
-    <section class="modalMenu">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <a href="#">
-        <img class="modalMenu__image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка"><!-- ?? или здесь оставить class="header__image"-->
-      </a>
-      <button class="modalMenu__closeButton"></button>
-      <nav>
-        <ul class="modalMenu__list">
-          <li>
-            <a class="modalMenu__link" href="#">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="modalMenu__link" href="#">Вязание на заказ</a>
-          </li>
-          <!-- иконки сделаю псевдоэлементами -->
-          <li>
-            <a class="modalMenu__link" href="#">Поиск по сайту</a>
-          </li>
-          <li>
-            <a class="modalMenu__link" href="#">Корзина: <span class="modalMenu__status empty">пока пуста</span></a>
-          </li>
-        </ul>
-      </nav>
-    </section>
 
   </body>
 </html>
