@@ -6,17 +6,16 @@
   </head>
   <body>
 
-    <header  class="page-header  layout"> <!-- логотип и кнопка формы, position: relative; -->
+    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
       <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
-        <img class="header__logo--image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="menu"><!-- position: absolute; -->
-        <button class="page-header__menu">
-          <span area-label="Меню"></span><!--area-атрибут для скринридера, width="20" height="14"-->
-        </button>
+        <button class="menu__button burger-button" aria-label="Меню"></button>  <!--aria-атрибут для скринридера, width="20" height="14"-->
+        <!--menu__button - элемент блока меню, burger-button - навешу иконку бургера-->
         <!-- Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем. -->
         <div class="menu__wrapper">
-          <ul class="menu__list  visually-hidden">
+          <ul class="menu__list">  <!--Меню будет скрыто по умолчанию в верстке через свойство display: none; -->
             <li>
               <a class="menu__link" href="#">Каталог товаров</a>
             </li>
@@ -25,10 +24,10 @@
             </li>
             <!-- иконки сделаю псевдоэлементами -->
             <li>
-              <a class="menu__link  menu__link--search" href="#">Поиск по сайту</a>
+              <a class="menu__link  menu__link--icon-search" href="#">Поиск по сайту</a>
             </li>
             <li>
-              <a class="menu__link  menu__link--cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
+              <a class="menu__link  menu__link--icon-cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
             </li>
           </ul>
         </div>

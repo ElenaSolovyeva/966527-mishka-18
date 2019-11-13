@@ -4,22 +4,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-
   </head>
 
   <body>
 
-    <header  class="page-header  layout"> <!-- логотип и кнопка формы, position: relative; -->
+    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
       <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
-        <img class="header__logo--image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="menu"><!-- position: absolute; -->
-        <button class="page-header__menu">
-          <span area-label="Меню"></span><!--area-атрибут для скринридера, width="20" height="14"-->
-        </button>
+        <button class="menu__button burger-button" aria-label="Меню"></button>  <!--aria-атрибут для скринридера, width="20" height="14"-->
+        <!--menu__button - элемент блока меню, burger-button - навешу иконку бургера-->
         <!-- Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем. -->
         <div class="menu__wrapper">
-          <ul class="menu__list  visually-hidden">
+          <ul class="menu__list">  <!--Меню будет скрыто по умолчанию в верстке через свойство display: none; -->
             <li>
               <a class="menu__link" href="#">Каталог товаров</a>
             </li>
@@ -28,10 +26,10 @@
             </li>
             <!-- иконки сделаю псевдоэлементами -->
             <li>
-              <a class="menu__link  menu__link--search" href="#">Поиск по сайту</a>
+              <a class="menu__link menu__link--icon-search" href="#">Поиск по сайту</a>
             </li>
             <li>
-              <a class="menu__link  menu__link--cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
+              <a class="menu__link menu__link--icon-cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
             </li>
           </ul>
         </div>
@@ -39,70 +37,66 @@
     </header>
 
     <main>
-      <section class="layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
-        <h1 class="title-h1">Милые штуки ручной работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
-        <img class="mainBild" src="https://via.placeholder.com/150x150" width="320" height="373" alt="Заглавная картинка с образцами работ">
+      <section class="main-header layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
+        <h1 class="main-header__heading">Милые штуки ручной работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
+        <!-- изображение будет бэкграундом в css -->
       </section>
 
-      <section class="product-groups  layout-no-gutters"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
+      <section class="product-groups layout layout--no-gutters"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
         <nav>
-          <div class="green-block">
-            <a class="green-block__link" href="#">Предметы интерьера</a>
-            <!-- Иконки сделаю в css псевлоэлемнтом ::after -->
-            <!-- ТЗ п. 4.2. В блоках «Предметы интерьера» и «Детские игрушки» ссылкой должен быть не текст, а весь блок. При нажатии должен осуществляться переход на соответствующие разделы каталога (страницы разделов реализовывать не нужно). -->
-          </div>
-          <div class="darkgreen-block">
-            <a class="darkgreen-block__link" href="#">Детские игрушки</a>
-          </div>
+          <a class="green-block" href="#">Предметы интерьера</a>
+          <!-- Иконки сделаю в css псевлоэлемнтом ::after -->
+          <!-- ТЗ п. 4.2. В блоках «Предметы интерьера» и «Детские игрушки» ссылкой должен быть не текст, а весь блок. При нажатии должен осуществляться переход на соответствующие разделы каталога (страницы разделов реализовывать не нужно). -->
+          <a class="green-block green-block--darkgreen" href="#">Детские игрушки</a>
         </nav>
       </section>
 
-      <section class="week-product  layout">
+      <section class="week-product layout wave-line">
         <p class="week-product__titel">Товар недели</p>gtht
-        <h2 class="week-product__subtitel titel-h2">Вязаные корзинки</h2><!-- класс "titel-h2" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
+        <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2><!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <!-- А НУЖНА ЛИ ОТДЕЛЬНАЯ СУЩНОСТЬ ДЛЯ ПАРАГРАФОВ С ОДИНАКОВЫМ ШРИФТОМ? ведь в разных блоках с одинаковым размером шрифта разная высота строки (line-height)-->
-        <table class="week-product__description">
-          <tr>
-            <th class=visually-hidden>Характеристика товара</th>
-            <th class=visually-hidden>Значение</th>
+
+        <table class="table">
+          <tr class=visually-hidden>
+            <th>Характеристика товара</th>
+            <th>Значение</th>
           </tr>
-          <tr class="week-product__info">
-            <td class="week-product__feature">Цвет:</td>
-            <td class="week-product__value">«Тиффани»/серый</td>
+          <tr class="table__info">
+            <td class="table__feature">Цвет:</td>
+            <td class="table__value">«Тиффани»/серый</td>
           </tr>
-          <tr class="week-product__info">
-            <td class="week-product__feature">Диаметр:</td>
-            <td class="week-product__value">25 см</td>
+          <tr class="table__info">
+            <td class="table__feature">Диаметр:</td>
+            <td class="table__value">25 см</td>
           </tr>
-          <tr class="week-product__info">
-            <td class="week-product__feature">Высота:</td>
-            <td class="week-product__value">15 см</td>
+          <tr class="table__info">
+            <td class="table__feature">Высота:</td>
+            <td class="table__value">15 см</td>
           </tr>
         </table>
         <img class="week-product__foto" src="https://via.placeholder.com/150x150" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
-        <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущностьс модификатором, ведь цвет и положение текста разное -->
+        <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущность с модификатором, ведь цвет и положение текста разное -->
         <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
-        <button class="button week-product__order  wave-line">Заказать</button>
+        <button class="button week-product__order">Заказать</button>
         <!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
       </section>
 
-      <section class="about-us   layout">
+      <section class="about-us layout wave-line">
         <h2 class="aboutUs__subtitel subtitel">Коротко о нас:</h2>
         <!-- иконки сделаю псевдоэлементами в css-->
         <ul class="about-us__list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
-          <li class="about-us__item  about-us__item--flower">Экологически чистые материалы</li>
-          <li class="about-us__item  about-us__item--banknote">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item  about-us__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item  about-us__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us__item  about-us__item--box">Поставляется в подарочной упаковке</li>
-        </ul><!-- САМЫЙ НЕПОНЯТНЫЙ БЛОК (( -->
+          <li class="about-us__item text-with-icon text-with-icon--flower">Экологически чистые материалы</li>
+          <li class="about-us__item text-with-icon text-with-icon--banknote">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item text-with-icon text-with-icon--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item text-with-icon text-with-icon--handmade">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item text-with-icon text-with-icon--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item text-with-icon text-with-icon--box">Поставляется в подарочной упаковке</li>
+        </ul>
       </section>
 
-      <section class="feedback   layout">
-        <h2 class="feedback__titel  titel-h2">Отзывы</h2>
+      <section class="feedback layout">
+        <h2 class="feedback__titel subtitle">Отзывы</h2>
         <blockquote>
           <p class="feedback_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite>
@@ -111,47 +105,48 @@
           </cite>
         </blockquote>
         <div class="feedback__buttons">
-          <button class="feedback__prev" area-label="кнопка назад"></button>
-          <button class="feedback__next" area-label="кнопка вперед"></button>
+          <button class="feedback__prev" aria-label="Следующий отзыв"></button>
+          <button class="feedback__next" aria-label="Предыдущий отзыв"></button>
         </div>
         <!-- ТЗ п. 4.5. Кнопка в блоке «Отзывы» должна вести на страницу добавления отзыва (страницу добавления отзыва реализовывать не нужно). -->
-        <button class="button feedback__writeUsButton  wave-line">Написать</button>
-        <!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+        <a class="button feedback__writeUsButton">Написать</a>
       </section>
 
-      <section class="contacts   layout">
-        <h2 class="contacts__title  titel-h2--less">Контакты</h2><!-- "titel-h2 less" - потому что отступ меньше -->
-          <p class="contacts__email">
+      <section class="contacts layout">
+        <h2 class="contacts__title subtitel--less">Контакты</h2>
+          <p class="contacts__text">
             <span class="contacts__left-field"> e-mail:
             <a class="contacts__right-field" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </p>
-          <p class="contacts__adress">
+          <p class="contacts__text">
             <span class="contacts__left-field">адрес:</span>
-            <adress class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
+            <address class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
           </p>
 
         <div class="contacts__map-wrapper">
           <img class="contacts__map" src="https://via.placeholder.com/150x150" width="320" height="457" alt="схема проезда">
         </div>
-        <button class="button feedback__writeUsButton">Напишите нам</button>
+        <button class="button contacts__write-us-button">Напишите нам</button>
       </section>
     </main>
 
-    <footer><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social">
+      <ul class="main-footer__social social"><!-- main-footer__social для позиционирования, social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
+        <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
         <li>
-          <a class="social__item instagram" href="https://www.instagram.com"></a>
+          <a class="social__item social__item--instagram" href="https://www.instagram.com"></a>
         </li>
         <li>
-          <a class="social__item facebook" href="https://www.facebook.com"></a>
+          <a class="social__item social__item--facebook" href="https://www.facebook.com"></a>
         </li>
         <li>
-          <a class="social__item twitter" href="https://twitter.com"></a>
+          <a class="social__item social__item--twitter" href="https://twitter.com"></a>
         </li>
       </ul>
-      <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <!-- main-footer__developer для позиционирования, developer для стилизации -->
     </footer>
 
     <section class="modal-add  layout">
@@ -174,5 +169,5 @@
     </section>
 
   </body>
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
+
 </html>
