@@ -105,15 +105,21 @@
            в .cart-add - бордеры и внутренние элементы, их стили. -->
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
-        <ul class="modal__button-small button--small"><!--?? не уверена, что поняла правильно  -->
+
+        <!-- создаю блок кнопок S/M/L отдельным БЭМ-блоком (класс small-buttons) -->
+        <!-- класс modal__buttons для позиционирования блока кнопок относительно других html-блоков -->
+        <ul class="small-buttons modal__buttons ">
           <li>
-            <button class="modal__button-small modal__button-small--S button--small">S</button>
+            <!-- small-buttons__item это элемент БЭМ-блока с кнопками, в то же время это кнопка (класс button), но ширина у нее меньше, чем у стандартной кнопки, поэтому добавляю модификатор button тире тире extra-narrow-->
+            <!-- есть еще кнопка "сделать заказ" на странице каталога, она тоже у'же, чем остальные, у нее модификатор button тире тире narrow) -->
+            <!-- если понадобится обратиться к конкретной кнопке из этого списка, добавлю классы с названиями конкретных кнопок, на данном этапе имхо в них нет необходимости -->
+            <button class="small-buttons__item button button--extra-narrow">S</button>
           </li>
           <li>
-            <button class="modal__button-small modal__button-small--M button--small">M</button>
+            <button class="small-buttons__item button button--extra-narrow">M</button>
           </li>
           <li>
-            <button class="modal__button-small modal__button-small--L button--small">L</button>
+            <button class="small-buttons__item button button--extra-narrow">L</button>
           </li>
         </ul>
         <button class="modal__add-button button button--green">Добавить</button>
