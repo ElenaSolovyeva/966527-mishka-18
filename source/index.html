@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
+    <header class="page-header layout mobile"> <!-- логотип и кнопка формы, position: relative; -->
       <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
         <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
@@ -36,24 +37,28 @@
       </nav>
     </header>
 
-    <main>
-      <section class="main-header layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
-        <h1 class="main-header__heading">Милые штуки ручной работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
+    <main class="mobile">
+      <section class="main-header"><!-- класс "layout" для расположения секции: отступы и все такое -->
+        <h1 class="main-header__heading layout">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
         <!-- изображение будет бэкграундом в css -->
       </section>
 
-      <section class="product-groups layout layout--no-gutters"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
+      <section class="product-groups"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
         <nav>
-          <a class="green-block" href="#">Предметы интерьера</a>
+          <a class="green-block" href="#">
+            <span class="green-block__text layout">Предметы интерьера</span>
+          </a>
           <!-- Иконки сделаю в css псевлоэлемнтом ::after -->
           <!-- ТЗ п. 4.2. В блоках «Предметы интерьера» и «Детские игрушки» ссылкой должен быть не текст, а весь блок. При нажатии должен осуществляться переход на соответствующие разделы каталога (страницы разделов реализовывать не нужно). -->
-          <a class="green-block green-block--darkgreen" href="#">Детские игрушки</a>
+          <a class="green-block green-block--darkgreen " href="#">
+            <span class="green-block__text layout">Детские игрушки</span>
+          </a>
         </nav>
       </section>
 
       <section class="week-product layout wave-line">
-        <p class="week-product__titel">Товар недели</p>gtht
+        <p class="week-product__titel">Товар недели</p>
         <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2><!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
@@ -75,7 +80,7 @@
             <td class="table__value">15 см</td>
           </tr>
         </table>
-        <img class="week-product__foto" src="https://via.placeholder.com/150x150" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
+        <img class="week-product__foto" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
         <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущность с модификатором, ведь цвет и положение текста разное -->
         <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
         <button class="button week-product__order">Заказать</button>
@@ -83,7 +88,7 @@
       </section>
 
       <section class="about-us layout wave-line">
-        <h2 class="aboutUs__subtitel subtitel">Коротко о нас:</h2>
+        <h2 class="aboutUs__subtitel subtitle">Коротко о нас:</h2>
         <!-- иконки сделаю псевдоэлементами в css-->
         <ul class="about-us__list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
           <li class="about-us__item text-with-icon text-with-icon--flower">Экологически чистые материалы</li>
@@ -120,7 +125,7 @@
           </p>
           <p class="contacts__text">
             <span class="contacts__left-field">адрес:</span>
-            <address class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
+            <address class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
           </p>
 
         <div class="contacts__map-wrapper">
@@ -130,7 +135,7 @@
       </section>
     </main>
 
-    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout mobile"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="main-footer__social social"><!-- main-footer__social для позиционирования, social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
@@ -149,7 +154,7 @@
       <!-- main-footer__developer для позиционирования, developer для стилизации -->
     </footer>
 
-    <section class="modal-add  layout">
+    <section class="modal-add layout mobile">
       <div class="modal-add__wrapper">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__choice">Выберите размер:</p>

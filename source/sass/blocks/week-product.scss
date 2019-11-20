@@ -1,0 +1,60 @@
+.week-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-product__subtitel { // "Вязаные корзинки"
+  order: 0;
+}
+
+.week-product__titel {  // "Товар недели""
+  order: 1;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: $accent-color;
+  font-family: "OpenSans bold";
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.week-product__description {
+  order: 2;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  color: $second-color;
+  font-family: "OpenSans";
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.week-product__foto {
+  order: 2;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.week-product__price {
+  order: 2;
+
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: $main-color;
+  font-family: "OpenSans bold";
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+
+}
+
+.week-product__order {
+  order: 2;
+
+  margin-top: 25px;
+  margin-bottom: 0;
+}

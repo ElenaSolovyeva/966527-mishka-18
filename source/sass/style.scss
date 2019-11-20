@@ -1,0 +1,78 @@
+// Fonts:
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff"),
+       url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans bold";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+       url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+// @import 'normalize.scss'; - в самом конце, пока мешает просматривать css код
+@import "../sass/variables";
+@import "../sass/blocks/line-break";
+@import "../sass/blocks/mobile";
+@import "../sass/blocks/layout";
+@import "../sass/blocks/subtitle";
+@import "../sass/blocks/button";
+@import "../sass/blocks/wave-line";
+
+@import "../sass/blocks/page-header";
+@import "../sass/blocks/menu";
+
+@import "../sass/blocks/menu__list";
+@import "../sass/blocks/main-header";
+
+@import "../sass/blocks/product-groups";
+@import "../sass/blocks/green-block";
+@import "../sass/blocks/week-product";
+@import "../sass/blocks/table";
+
+
+html {
+  box-sizing: border-box;  /* чтобы при width: 100%; не вываливались из блока padding'и margin'ы */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+  font-family: 'OpenSans', Arial, sans-serif;
+   // background-color: green;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  color: $main-color;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap; /* Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой;*/
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+
+// @import 'normalize.scss';

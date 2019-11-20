@@ -1,0 +1,23 @@
+.green-block {
+  display: flex;
+
+  min-height: 100px;
+  padding-top: 25px;
+
+  color: $opposit-color;
+  font-family: "OpenSans bold";
+  font-size: 19px;
+  line-height: 24px;
+
+  background-color: $accent-color;
+  border: 1px dashed grey;
+}
+
+.green-block--darkgreen {
+  background-color: $accent-color-2;
+}
+
+.green-block__text {
+  width: 160px;
+  border-right: 1px dashed white;
+}

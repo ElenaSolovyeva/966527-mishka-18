@@ -1,0 +1,11 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  min-height: 80px;
+  padding-top: 20px;
+}
+
+.page-header__logo {
+  padding-left: 80px;
+}
