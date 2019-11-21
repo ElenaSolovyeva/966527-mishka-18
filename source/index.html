@@ -38,12 +38,12 @@
     </header>
 
     <main class="mobile">
-      <section class="main-header"><!-- класс "layout" для расположения секции: отступы и все такое -->
-        <h1 class="main-header__heading layout">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
+      <section class="main-header layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
+        <h1 class="main-header__heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
         <!-- изображение будет бэкграундом в css -->
       </section>
 
-      <section class="product-groups"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
+      <section class="product-groups layout--no-gutters"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
         <nav>
           <a class="green-block" href="#">
@@ -84,70 +84,78 @@
         <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущность с модификатором, ведь цвет и положение текста разное -->
         <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
         <button class="button week-product__order">Заказать</button>
-        <!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+
       </section>
 
-      <section class="about-us layout wave-line">
+      <section class="about-us layout"><!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
         <h2 class="aboutUs__subtitel subtitle">Коротко о нас:</h2>
         <!-- иконки сделаю псевдоэлементами в css-->
-        <ul class="about-us__list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
-          <li class="about-us__item text-with-icon text-with-icon--flower">Экологически чистые материалы</li>
-          <li class="about-us__item text-with-icon text-with-icon--banknote">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item text-with-icon text-with-icon--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item text-with-icon text-with-icon--handmade">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item text-with-icon text-with-icon--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us__item text-with-icon text-with-icon--box">Поставляется в подарочной упаковке</li>
+        <ul class="about-us__list reset-list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
+          <li class="about-us__item about-us__item--icon-flower">Экологически<span class="line-break"></span> чистые материалы</li>
+          <li class="about-us__item about-us__item--icon-banknote">Скандинавский стиль<span class="line-break"></span> по российской цене</li>
+          <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки<span class="line-break"></span> на фотографиях</li>
+          <li class="about-us__item about-us__item--icon-handmade">Связано вручную с<span class="line-break"></span> любовью и умилением</li>
+          <li class="about-us__item about-us__item--icon-rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--icon-gift">Поставляется в<span class="line-break"></span> подарочной упаковке</li>
         </ul>
       </section>
 
-      <section class="feedback layout">
+      <section class="feedback layout wave-line">
         <h2 class="feedback__titel subtitle">Отзывы</h2>
-        <blockquote>
-          <p class="feedback_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <blockquote class="feedback__block">
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite>
             <p class="feedback__author">Анастасия Красильникова</p>
             <p class="feedback__author-social">@misssssiskras</p>
           </cite>
         </blockquote>
         <div class="feedback__buttons">
-          <button class="feedback__prev" aria-label="Следующий отзыв"></button>
-          <button class="feedback__next" aria-label="Предыдущий отзыв"></button>
+          <button class="feedback__button feedback__button--prev" aria-label="Следующий отзыв"></button>
+          <button class="feedback__button feedback__button--next" aria-label="Предыдущий отзыв"></button>
         </div>
         <!-- ТЗ п. 4.5. Кнопка в блоке «Отзывы» должна вести на страницу добавления отзыва (страницу добавления отзыва реализовывать не нужно). -->
-        <a class="button feedback__writeUsButton">Написать</a>
+        <a href="#" class="button feedback__writeUsButton">Написать</a>
       </section>
 
       <section class="contacts layout">
-        <h2 class="contacts__title subtitel--less">Контакты</h2>
-          <p class="contacts__text">
-            <span class="contacts__left-field"> e-mail:
-            <a class="contacts__right-field" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </p>
-          <p class="contacts__text">
-            <span class="contacts__left-field">адрес:</span>
-            <address class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
-          </p>
-
-        <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="https://via.placeholder.com/150x150" width="320" height="457" alt="схема проезда">
-        </div>
-        <button class="button contacts__write-us-button">Напишите нам</button>
+        <h2 class="contacts__title subtitle--less">Контакты</h2>
+        <p class="contacts__text">
+          <span class="contacts__left-field"> e-mail:</span>
+          <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </p>
+        <p class="contacts__text second">
+          <span class="contacts__left-field">адрес:</span>
+          <address class="contacts__right-field">
+            г. Санкт-Петербург,<span class="line-break"></span>
+            ул. Большая Конюшенная,<span class="line-break"></span>
+            д. 19/8, офис 101
+          </address>
+        </p>
       </section>
+
+      <section class="map layout--no-gutters">
+        <img class="map__img layout--no-gutters" src="../img/map-mobile@1x.jpg" width="320" height="457" alt="схема проезда">
+      </section>
+
+      <section class="write-us layout">
+        <button class="button write-us__button"> Напишите нам </button>
+      </section>
+
     </main>
 
-    <footer class="main-footer layout mobile"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout--no-gutters mobile"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="main-footer__social social"><!-- main-footer__social для позиционирования, social для стилей -->
+      <ul class="social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
         <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
-        <li>
-          <a class="social__item social__item--instagram" href="https://www.instagram.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
         </li>
-        <li>
-          <a class="social__item social__item--facebook" href="https://www.facebook.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
         </li>
-        <li>
-          <a class="social__item social__item--twitter" href="https://twitter.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com"></a>
         </li>
       </ul>
       <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>

@@ -1,0 +1,144 @@
+.about-us.layout {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.about-us {
+  border: 1px dashed grey;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-us__item {
+  display: block;
+
+  margin-top: 25px;
+  margin-bottom: 0;
+
+  min-height: 80px;
+  font-family: "OpenSans bold";
+  font-size: 17px;
+  line-height: 20px;
+
+  // border: 1px solid red;
+}
+
+.about-us__item--icon-flower {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: " ";
+
+    width: 32px;
+    height: 38px;
+    margin-bottom: 10px; // отступы пока примерно, потом с пиксель перфект подравняю
+
+    background-image: url("../img/icon-feature-flower-green.svg");
+    background-size: 32px 38px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--icon-banknote {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: " ";
+
+    width: 47px;
+    height: 27px; // сверху и снизу - прозрачные отступы
+    margin-bottom: 15px;
+
+    background-image: url("../img/icon-feature-money-green.svg");
+    background-size: 47px 27px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--icon-heart {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: " ";
+
+    width: 34px;
+    height: 27px; // сверху и снизу - прозрачные отступы
+    margin-bottom: 10px;
+
+    background-image: url("../img/icon-feature-heart-green.svg");
+    background-size: 34px 27px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--icon-handmade {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: " ";
+
+    width: 35px;
+    height: 34px; // сверху и снизу - прозрачные отступы
+    margin-bottom: 10px;
+
+    background-image: url("../img/icon-feature-ball-green.svg");
+    background-size: 35px 34px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--icon-rocket {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: -5px;
+    content: " ";
+
+    width: 35px;
+    height: 34px; // сверху и снизу - прозрачные отступы
+    margin-bottom: 10px;
+
+    background-image: url("../img/icon-feature-rocket-green.svg");
+    background-size: 35px 34px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item--icon-gift {
+  position: relative;
+  &::before {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: " ";
+
+    width: 35px;
+    height: 34px; // сверху и снизу - прозрачные отступы
+    margin-bottom: 10px;
+
+    background-image: url("../img/icon-feature-gift-green.svg");
+    background-size: 35px 34px;
+    background-repeat: no-repeat;
+  }
+}

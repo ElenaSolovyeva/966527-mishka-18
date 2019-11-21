@@ -1,0 +1,33 @@
+.main-footer {
+  background-color: #f1f1f1;
+  border: 1px dashed grey;
+}
+
+.main-footer.layout--no-gutters {
+  margin-top: 40px;
+}
+
+.main-footer__developer {
+  &::after {
+    display: block;
+    position: absolute;
+    right: 65px;
+    bottom: 23px;
+    content: "";
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/htmlacademy-green.svg");
+  }
+  display: block;
+  position: relative;
+
+  min-height: 80px;
+  padding-top: 30px;
+  padding-left: 39px;
+  font-family: "OpenSans bold";
+  font-size: 19px;
+  line-height: 18px;
+
+}

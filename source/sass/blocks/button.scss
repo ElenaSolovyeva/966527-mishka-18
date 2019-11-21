@@ -2,14 +2,28 @@
   width: 260px;
   height: 48px;
 
-
+  margin: 0;
 
   color: $second-color;
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", Arial, sans-serif;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $second-color;
+}
+
+
+/* 1* Тэги нельзя использовать в качестве селекторов,
+но как тогда быть с тем, что у тэга <button> по умолчанию
+задано свойство: -webkit-writing-mode: horizontal-tb !important;
+пока не нашла, как его отменить
+*/
+
+a.button { // 1*
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }

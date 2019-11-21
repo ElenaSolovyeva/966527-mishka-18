@@ -1,6 +1,8 @@
 .week-product {
   display: flex;
   flex-direction: column;
+
+  border: 1px dashed grey;
 }
 
 .week-product__subtitel { // "Вязаные корзинки"
