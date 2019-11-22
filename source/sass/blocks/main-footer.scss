@@ -1,5 +1,5 @@
 .main-footer {
-  background-color: #f1f1f1;
+  background-color: $footer-grey;
   border: 1px dashed grey;
 }
 
@@ -11,7 +11,7 @@
   &::after {
     display: block;
     position: absolute;
-    right: 65px;
+    right: 75px;
     bottom: 23px;
     content: "";
 
@@ -25,9 +25,8 @@
 
   min-height: 80px;
   padding-top: 30px;
-  padding-left: 39px;
+  padding-left: 70px;
   font-family: "OpenSans bold";
   font-size: 19px;
   line-height: 18px;
-
 }

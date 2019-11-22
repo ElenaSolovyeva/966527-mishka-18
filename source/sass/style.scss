@@ -19,7 +19,6 @@
 @import "../sass/blocks/line-break";
 @import "../sass/blocks/mobile";
 @import "../sass/blocks/subtitle";
-@import "../sass/blocks/reset-list";
 @import "../sass/blocks/wave-line";
 
 @import "../sass/blocks/page-header";
@@ -38,26 +37,38 @@
 @import "../sass/blocks/contacts";
 @import "../sass/blocks/write-us";
 
+@import "../sass/blocks/map";
+
 @import "../sass/blocks/main-footer";
 @import "../sass/blocks/social";
 
 @import "../sass/blocks/modal-add";
 
-html {
-  box-sizing: border-box;  /* чтобы при width: 100%; не вываливались из блока padding'и margin'ы */
-}
+// стили страницы каталога
+@import "../sass/blocks/catalog";
+@import "../sass/blocks/product";
+@import "../sass/blocks/cart-button";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import "../sass/blocks/production";
+
+@import "../sass/blocks/modal"
+
+// чтобы при width: 100%; не вываливались из блока padding'и margin'ы
+// html {
+//   box-sizing: border-box;
+// }
+//
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 body {
   margin: 0;
   padding: 0;
   color: $main-color;
-  font-family: 'OpenSans', Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
    // background-color: green;
 }
 
@@ -83,4 +94,18 @@ a {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
   overflow: hidden;
+}
+
+.reset-list {
+  position: relative;
+
+  list-style: none;
+  padding: 0;
+}
+
+.heading {
+  font-family: "OpenSans bold";
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
 }

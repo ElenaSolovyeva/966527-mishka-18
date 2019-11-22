@@ -39,7 +39,7 @@
 
     <main class="mobile">
       <section class="main-header layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
-        <h1 class="main-header__heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
+        <h1 class="main-header__heading heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
         <!-- изображение будет бэкграундом в css -->
       </section>
 
@@ -119,22 +119,22 @@
 
       <section class="contacts layout">
         <h2 class="contacts__title subtitle--less">Контакты</h2>
-        <p class="contacts__text">
+        <p class="contacts__text"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
           <span class="contacts__left-field"> e-mail:</span>
           <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </p>
-        <p class="contacts__text second">
+        <div class="contacts__text second"> <!-- тег <address> не вкладыается в тег <p>-->
           <span class="contacts__left-field">адрес:</span>
           <address class="contacts__right-field">
             г. Санкт-Петербург,<span class="line-break"></span>
             ул. Большая Конюшенная,<span class="line-break"></span>
             д. 19/8, офис 101
           </address>
-        </p>
+        </div>
       </section>
 
       <section class="map layout--no-gutters">
-        <img class="map__img layout--no-gutters" src="../img/map-mobile@1x.jpg" width="320" height="457" alt="схема проезда">
+        <img class="map__img" src="../img/map-mobile@1x.jpg" width="320" height="457" alt="схема проезда">
       </section>
 
       <section class="write-us layout">
@@ -145,7 +145,7 @@
 
     <footer class="main-footer layout--no-gutters mobile"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
+      <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
         <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
         <li class="social__item">
