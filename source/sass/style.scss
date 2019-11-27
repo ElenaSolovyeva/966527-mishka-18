@@ -1,4 +1,3 @@
-// Fonts:
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensans.woff") format("woff"),
@@ -14,59 +13,21 @@
 @import "../sass/normalize";
 @import "../sass/variables";
 
-@import "../sass/blocks/button";
-@import "../sass/blocks/layout";
-@import "../sass/blocks/line-break";
-@import "../sass/blocks/mobile";
-@import "../sass/blocks/subtitle";
-@import "../sass/blocks/wave-line";
-
-@import "../sass/blocks/page-header";
-
-@import "../sass/blocks/menu";
-@import "../sass/blocks/main-header";
-
-@import "../sass/blocks/product-groups";
-@import "../sass/blocks/green-block";
-@import "../sass/blocks/week-product";
-@import "../sass/blocks/table";
-
-@import "../sass/blocks/about-us";
-@import "../sass/blocks/feedback";
-
-@import "../sass/blocks/contacts";
-@import "../sass/blocks/write-us";
-
-@import "../sass/blocks/map";
-
-@import "../sass/blocks/main-footer";
-@import "../sass/blocks/social";
-
-@import "../sass/blocks/modal-add";
-
-// стили страницы каталога
-@import "../sass/blocks/catalog";
-@import "../sass/blocks/product";
-@import "../sass/blocks/cart-button";
-
-@import "../sass/blocks/production";
-
-@import "../sass/blocks/modal"
-
 // чтобы при width: 100%; не вываливались из блока padding'и margin'ы
-// html {
-//   box-sizing: border-box;
-// }
-//
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
+html {
+  box-sizing: border-box;
+}
+
+*,
+  *::before,
+  *::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   padding: 0;
+
   color: $main-color;
   font-family: "OpenSans", Arial, sans-serif;
    // background-color: green;
@@ -109,3 +70,43 @@ a {
   line-height: 30px;
   text-align: center;
 }
+
+@import "../sass/blocks/button";
+@import "../sass/blocks/layout";
+@import "../sass/blocks/line-break";
+@import "../sass/blocks/mobile";
+@import "../sass/blocks/subtitle";
+@import "../sass/blocks/wave-line";
+
+@import "../sass/blocks/page-header";
+
+@import "../sass/blocks/menu";
+@import "../sass/blocks/burger-button";
+@import "../sass/blocks/main-header";
+
+@import "../sass/blocks/product-groups";
+@import "../sass/blocks/green-block";
+@import "../sass/blocks/week-product";
+@import "../sass/blocks/table";
+
+@import "../sass/blocks/about-us";
+@import "../sass/blocks/feedback";
+
+@import "../sass/blocks/contacts";
+@import "../sass/blocks/map";
+@import "../sass/blocks/write-us";
+
+
+@import "../sass/blocks/main-footer";
+@import "../sass/blocks/social";
+
+@import "../sass/blocks/modal-add";
+
+// стили страницы каталога
+@import "../sass/blocks/catalog";
+@import "../sass/blocks/product";
+@import "../sass/blocks/cart-button";
+
+@import "../sass/blocks/production";
+
+@import "../sass/blocks/modal"

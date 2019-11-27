@@ -80,7 +80,9 @@
             <td class="table__value">15 см</td>
           </tr>
         </table>
-        <img class="week-product__foto" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
+        <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg"
+            width="260" height="315"
+            alt="Фотография товара недели: вязанной корзинки">
         <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущность с модификатором, ведь цвет и положение текста разное -->
         <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
         <button class="button week-product__order">Заказать</button>
@@ -105,8 +107,8 @@
         <blockquote class="feedback__block">
           <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite>
-            <p class="feedback__author">Анастасия Красильникова</p>
-            <p class="feedback__author-social">@misssssiskras</p>
+            <span class="feedback__author">Анастасия Красильникова</span> <!-- Error: Element p not allowed as child of element cite in this context.-->
+            <span class="feedback__author-social">@misssssiskras</span>
           </cite>
         </blockquote>
         <div class="feedback__buttons">
@@ -134,10 +136,14 @@
       </section>
 
       <section class="map layout--no-gutters">
-        <img class="map__img" src="../img/map-mobile@1x.jpg" width="320" height="457" alt="схема проезда">
+        <h2 class="visually-hidden">Схема проезда</h2>
+        <img class="map__img" src="img/map-mobile@1x.jpg"
+            width="320" height="457"
+            alt="схема проезда">
       </section>
 
       <section class="write-us layout">
+        <h2 class="visually-hidden">Кнопка обратной связи</h2>
         <button class="button write-us__button"> Напишите нам </button>
       </section>
 

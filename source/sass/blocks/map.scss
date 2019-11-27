@@ -3,15 +3,22 @@
 }
 
 .map__img {
+  display: block;
   position: relative;
+  z-index: 2;
+
+  width: 320px;
+  height: 457px;
+
+  // background-image: url("../img/map-mobile@1x.jpg");
 
   &::after {
     display: block;
+    content: " ";
     position: absolute;
     z-index: 3;
-    bottom: 100px;
-    right: 100px;
-    content: " ";
+    bottom: 215px;
+    right: 110px;
 
     width: 67px;
     height: 100px;

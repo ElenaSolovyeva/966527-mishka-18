@@ -11,7 +11,7 @@
   line-height: 24px;
 
   background-color: $accent-color;
-  border: 1px dashed grey;
+  // border: 1px dashed grey;
 
   &::after {
     display: block;
@@ -50,5 +50,5 @@
 
 .green-block__text {
   width: 160px;
-  border-right: 1px dashed white;
+  // border-right: 1px dashed white;
 }

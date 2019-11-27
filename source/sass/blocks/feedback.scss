@@ -1,5 +1,5 @@
 .feedback {
-  border: 1px dashed grey;
+  // border: 1px dashed grey;
 }
 
 .feedback__block {
@@ -17,6 +17,8 @@
 }
 
 .feedback__author {
+  display: block;
+
   margin-top: 30px;
 
   font-family: "OpenSans bold";
@@ -25,6 +27,7 @@
 }
 
 .feedback__author-social {
+  display: block;
   margin-top: 10px;
 
   color: $second-color;
