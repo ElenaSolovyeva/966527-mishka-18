@@ -1,3 +1,5 @@
+// Не поняла замечание "Паддинги лучше задать в родителе"
+
 .week-product {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
 .week-product__titel {  // "Товар недели""
   order: 1;
 
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 0;
 
   color: $accent-color;
@@ -25,7 +27,7 @@
 .week-product__description {
   order: 2;
 
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 0;
 
   color: $second-color;
@@ -38,7 +40,7 @@
   order: 2;
   // width: 260px;
   // height: 315px;
-  margin-top: 30px;
+  margin-top: 21px;
   margin-bottom: 0;
 
   // background-image: url("../img/triple-set-mobile@1x.jpg");
@@ -47,8 +49,9 @@
 .week-product__price {
   order: 2;
 
-  margin-top: 25px;
+  margin-top: 24px;
   margin-bottom: 0;
+  margin-left: -2px;
   color: $main-color;
   font-family: "OpenSans bold";
   font-size: 17px;

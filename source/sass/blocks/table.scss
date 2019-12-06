@@ -1,11 +1,21 @@
 .table {
   order: 2;
 
-  margin-top: 25px;
+  margin-top: 21px;
   margin-bottom: 0;
+  margin-left: -5px;
 
   color: $second-color;
   font-family: "OpenSans";
   font-size: 15px;
   line-height: 20px;
+}
+
+.table__info {
+  display: block;
+  min-height: 40px;
+}
+
+.table__feature {
+  width: 97px;
 }

@@ -1,6 +1,6 @@
 .main-footer {
   background-color: $footer-grey;
-  // border: 1px dashed grey;
+  // Рамку убрала
 }
 
 .main-footer.layout--no-gutters {
@@ -12,19 +12,21 @@
     display: block;
     position: absolute;
     right: 75px;
-    bottom: 23px;
+    bottom: 30px;
     content: "";
 
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 34px;
 
+    background-size: 27px 34px; // не понимаю почему не получается подогнать размер логотипа
+    background-repeat: none;
     background-image: url("../img/htmlacademy-green.svg");
   }
   display: block;
   position: relative;
 
   min-height: 80px;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 70px;
   font-family: "OpenSans bold";
   font-size: 19px;

@@ -2,6 +2,10 @@
   // border: 1px dashed grey;
 }
 
+.feedback__titel {
+  margin-top: 50px;
+}
+
 .feedback__block {
   margin: 0;
 }
@@ -65,7 +69,11 @@
 .feedback__writeUsButton {
   display: block;
 
-  margin-top: 40px;
-  margin-bottom: 10px; //после этой кнопки отступ на 10рх больше, чем после "ЗАКАЗТЬ"
+  margin-top: 38px;
+  margin-bottom: 0; //после этой кнопки отступ на 10рх больше, чем после "ЗАКАЗТЬ"
 
+}
+
+.feedback.wave-line::after {
+  bottom: -52px;
 }

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
 
-  min-height: 100px;
+  min-height: 105px;
   padding-top: 25px;
 
   color: $opposit-color;
@@ -17,7 +17,7 @@
     display: block;
     position: absolute;
     right: 35px;
-    top: 20px;
+    top: 25px;
     content: " ";
 
     width: 40px;
@@ -30,6 +30,8 @@
 
 .green-block--darkgreen {
   position: relative;
+min-height: 100px;
+
   background-color: $accent-color-2;
 
     &::after {
