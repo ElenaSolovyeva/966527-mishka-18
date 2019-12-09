@@ -1,18 +1,23 @@
 .feedback {
-  // border: 1px dashed grey;
+  margin-bottom: 30px;
 }
 
 .feedback__titel {
-  margin-top: 50px;
+  margin: 0;
+  padding-top: 19px;
+  margin-bottom: 23px;
 }
 
 .feedback__block {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 35px;
+  margin-left: 0;
 }
 
 .feedback__text {
-  margin-top: 25px;
-  margin-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 30px;
 
   color: $second-color;
   font-size: 15px;
@@ -23,7 +28,7 @@
 .feedback__author {
   display: block;
 
-  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-family: "OpenSans bold";
   font-size: 17px;
@@ -32,7 +37,7 @@
 
 .feedback__author-social {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 0;
 
   color: $second-color;
   font-size: 17px;
@@ -41,8 +46,7 @@
 
 .feedback__buttons {
   display: flex;
-
-  margin-top: 35px;
+  margin-bottom: 38px;
 }
 
 .feedback__button {
@@ -69,11 +73,10 @@
 .feedback__writeUsButton {
   display: block;
 
-  margin-top: 38px;
   margin-bottom: 0; //после этой кнопки отступ на 10рх больше, чем после "ЗАКАЗТЬ"
 
 }
 
 .feedback.wave-line::after {
-  bottom: -52px;
+  bottom: -12px;
 }

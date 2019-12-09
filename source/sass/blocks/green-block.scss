@@ -4,6 +4,7 @@
 
   min-height: 105px;
   padding-top: 25px;
+  padding-left: 30px;
 
   color: $opposit-color;
   font-family: "OpenSans bold";
@@ -30,18 +31,18 @@
 
 .green-block--darkgreen {
   position: relative;
-min-height: 100px;
+  min-height: 100px;
 
   background-color: $accent-color-2;
 
     &::after {
       display: block;
       position: absolute;
-      right: 30px;
+      right: 25px;
       top: 20px;
       content: " ";
 
-      width: 60px;
+      width: 65px;
       height: 60px;
 
       background-image: url("../img/icon-toy-green.svg");

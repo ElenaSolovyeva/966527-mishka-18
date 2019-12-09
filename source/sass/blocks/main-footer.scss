@@ -1,33 +1,29 @@
 .main-footer {
   background-color: $footer-grey;
-  // Рамку убрала
-}
-
-.main-footer.layout--no-gutters {
-  margin-top: 40px;
 }
 
 .main-footer__developer {
   &::after {
     display: block;
     position: absolute;
-    right: 75px;
-    bottom: 30px;
+    right: 68px;
+    bottom: 17px;
     content: "";
 
-    width: 27px;
-    height: 34px;
+    width: 31px;
+    height: 42px;
 
-    background-size: 27px 34px; // не понимаю почему не получается подогнать размер логотипа
-    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url("../img/htmlacademy-green.svg");
   }
   display: block;
   position: relative;
 
   min-height: 80px;
-  padding-top: 25px;
-  padding-left: 70px;
+  padding-top: 28px;
+  padding-left: 68px;
   font-family: "OpenSans bold";
   font-size: 19px;
   line-height: 18px;
