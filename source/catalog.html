@@ -38,10 +38,12 @@
     </header>
 
     <main class="mobile">
-      <section class="catalog layout--no-gutters">
-        <h1 class="catalog__title heading">Каталог товаров</h1><!--Для заголовков уровня h1 "heading", h2 - "subtitle" -->
+      <section class="catalog-header">
+        <h1 class="catalog-header__title heading">Каталог товаров</h1><!--Для заголовков уровня h1 "heading", h2 - "subtitle" -->
+      </section>
 
-        <article class="product layout--margin"><!--Карточку товара можно сделать отдельныс БЭМ-блоком, а все элементы внутри карточки сделать БЭМ-элементами этого блока.-->
+      <section class="catalog layout">
+        <article class="product"><!--Карточку товара можно сделать отдельныс БЭМ-блоком, а все элементы внутри карточки сделать БЭМ-элементами этого блока.-->
           <a href="#">
             <img class="product__foto" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото вязанного зайчика">
             <h2 class="product__name">Зайчик-попрыгайчик</h2>
@@ -53,7 +55,7 @@
           </div>
         </article >
 
-        <article  class="product layout--margin">
+        <article  class="product">
           <a href="#">
             <img class="product__foto" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для белья">              <h2 class="product__name">Корзинка для белья</h2>
           </a>
@@ -65,7 +67,7 @@
         </article >
 
 
-          <article class="product layout--margin">
+          <article class="product">
             <a href="#">
               <img class="product__foto" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото большой корзинки для игрушек">
               <h2 class="product__name">Большая корзинка<span class="line-break"></span> для игрушек</h2>
@@ -78,23 +80,28 @@
           </article>
       </section>
 
-      <section class="production layout--margin">
-        <h2 class="production_header production_header--icon">Процесс производства</h2>
-        <video class="production__video" width="260" height="150"
-               poster="img/video-mobile@1x.jpg"
-               aria-label="Видеоролик процесса производства"><!--?? controls -->
-          <source src="../img/video.ogv" type="video/ogg">
-          Тег video не поддерживается вашим браузером.
-        </video>
-        <p class="production__text layout">По просьбам наших любимых фолловеров
-           мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="button production__order-narrow">Сделать заказ</button>
+      <section class="production layout">
+        <div class="production--wrapper">
+          <h2 class="production_header production_header--icon">Процесс производства</h2>
+          <video class="production__video" width="260" height="150"
+                 poster="img/video-mobile@1x.jpg"
+                 aria-label="Видеоролик процесса производства"><!--?? controls -->
+            <source src="../img/video.ogv" type="video/ogg">
+            Тег video не поддерживается вашим браузером.
+          </video>
+          <div class="production__video--logo"></div>
+          <p class="production__text">По просьбам наших любимых фолловеров
+             мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <div class="production__button-wrapper">
+            <button class="button production__order-narrow">Сделать заказ</button>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="main-footer layout mobile"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer mobile"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
+      <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
         <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
         <li class="social__item">
