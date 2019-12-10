@@ -106,12 +106,18 @@ a {
 
 @import "../sass/blocks/modal-add";
 
+@import "../sass/blocks/grey-header"; // для страницы каталог и формы
+
 // стили страницы каталога
 @import "../sass/blocks/catalog";
-@import "../sass/blocks/catalog-header";
+
 @import "../sass/blocks/product";
 @import "../sass/blocks/cart-button";
 
 @import "../sass/blocks/production";
 
-@import "../sass/blocks/modal"
+@import "../sass/blocks/modal";
+
+//
+@import "../sass/blocks/form-text";
+@import "../sass/blocks/order-form";
