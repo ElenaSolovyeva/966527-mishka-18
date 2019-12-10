@@ -1,0 +1,57 @@
+.green-block {
+  position: relative;
+  display: flex;
+
+  min-height: 105px;
+  padding-top: 25px;
+  padding-left: 30px;
+
+  color: $opposit-color;
+  font-family: "OpenSans bold";
+  font-size: 19px;
+  line-height: 24px;
+
+  background-color: $accent-color;
+  // border: 1px dashed grey;
+
+  &::after {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    content: " ";
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/icon-interior-green.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.green-block--darkgreen {
+  position: relative;
+  min-height: 100px;
+
+  background-color: $accent-color-2;
+
+    &::after {
+      display: block;
+      position: absolute;
+      right: 25px;
+      top: 20px;
+      content: " ";
+
+      width: 65px;
+      height: 60px;
+
+      background-image: url("../img/icon-toy-green.svg");
+      background-repeat: no-repeat;
+    }
+
+}
+
+.green-block__text {
+  width: 160px;
+  // border-right: 1px dashed white;
+}

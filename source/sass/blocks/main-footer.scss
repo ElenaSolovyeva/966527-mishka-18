@@ -1,0 +1,30 @@
+.main-footer {
+  background-color: $footer-grey;
+}
+
+.main-footer__developer {
+  &::after {
+    display: block;
+    position: absolute;
+    right: 68px;
+    bottom: 20px;
+    content: "";
+
+    width: 31px;
+    height: 42px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/htmlacademy-green.svg");
+  }
+  display: block;
+  position: relative;
+
+  min-height: 80px;
+  padding-top: 28px;
+  padding-left: 68px;
+  font-family: "OpenSans bold";
+  font-size: 19px;
+  line-height: 18px;
+}

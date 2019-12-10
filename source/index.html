@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
+    <header class="page-header layout mobile"> <!-- логотип и кнопка формы, position: relative; -->
       <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
         <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
@@ -36,24 +37,25 @@
       </nav>
     </header>
 
-    <main>
-      <section class="main-header layout"><!-- класс "layout" для расположения секции: отступы и все такое -->
-        <h1 class="main-header__heading">Милые штуки ручной работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
-        <!-- изображение будет бэкграундом в css -->
+    <main class="main-block mobile">
+      <section class="main-header layout">
+        <h1 class="main-header__heading heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
       </section>
 
-      <section class="product-groups layout layout--no-gutters"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
+      <section class="product-groups"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
         <nav>
-          <a class="green-block" href="#">Предметы интерьера</a>
-          <!-- Иконки сделаю в css псевлоэлемнтом ::after -->
-          <!-- ТЗ п. 4.2. В блоках «Предметы интерьера» и «Детские игрушки» ссылкой должен быть не текст, а весь блок. При нажатии должен осуществляться переход на соответствующие разделы каталога (страницы разделов реализовывать не нужно). -->
-          <a class="green-block green-block--darkgreen" href="#">Детские игрушки</a>
+          <a class="green-block" href="#">
+            <span class="green-block__text">Предметы интерьера</span>
+          </a>
+          <a class="green-block green-block--darkgreen " href="#">
+            <span class="green-block__text">Детские игрушки</span>
+          </a>
         </nav>
       </section>
 
       <section class="week-product layout wave-line">
-        <p class="week-product__titel">Товар недели</p>gtht
+        <p class="week-product__titel">Товар недели</p>
         <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2><!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
@@ -75,81 +77,96 @@
             <td class="table__value">15 см</td>
           </tr>
         </table>
-        <img class="week-product__foto" src="https://via.placeholder.com/150x150" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
-        <p class="week-product__price">Цена: 990 руб.</p><!--СОМНЕВАЮСЬ ИЛИ НЕ ПОНИМАЮ ЗАЧЕМ: сделать отдельную бэм-сущность с модификатором, ведь цвет и положение текста разное -->
+        <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg"
+            width="260" height="315"
+            alt="Фотография товара недели: вязанной корзинки">
+        <p class="week-product__price">Цена: 990 руб.</p>
         <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
         <button class="button week-product__order">Заказать</button>
-        <!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+
       </section>
 
-      <section class="about-us layout wave-line">
-        <h2 class="aboutUs__subtitel subtitel">Коротко о нас:</h2>
+      <section class="about-us layout"><!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+        <h2 class="aboutUs__subtitel subtitle">Коротко о нас:</h2>
         <!-- иконки сделаю псевдоэлементами в css-->
-        <ul class="about-us__list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
-          <li class="about-us__item text-with-icon text-with-icon--flower">Экологически чистые материалы</li>
-          <li class="about-us__item text-with-icon text-with-icon--banknote">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item text-with-icon text-with-icon--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item text-with-icon text-with-icon--handmade">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item text-with-icon text-with-icon--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us__item text-with-icon text-with-icon--box">Поставляется в подарочной упаковке</li>
+        <ul class="about-us__list reset-list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
+          <li class="about-us__item about-us__item--icon-flower">Экологически<span class="line-break"></span> чистые материалы</li>
+          <li class="about-us__item about-us__item--icon-banknote">Скандинавский стиль<span class="line-break"></span> по российской цене</li>
+          <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки<span class="line-break"></span> на фотографиях</li>
+          <li class="about-us__item about-us__item--icon-handmade">Связано вручную с<span class="line-break"></span> любовью и умилением</li>
+          <li class="about-us__item about-us__item--icon-rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--icon-gift">Поставляется в<span class="line-break"></span> подарочной упаковке</li>
         </ul>
       </section>
 
-      <section class="feedback layout">
+      <section class="feedback layout wave-line">
         <h2 class="feedback__titel subtitle">Отзывы</h2>
-        <blockquote>
-          <p class="feedback_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <blockquote class="feedback__block">
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite>
-            <p class="feedback__author">Анастасия Красильникова</p>
-            <p class="feedback__author-social">@misssssiskras</p>
+            <span class="feedback__author">Анастасия Красильникова</span> <!-- Error: Element p not allowed as child of element cite in this context.-->
+            <span class="feedback__author-social">@misssssiskras</span>
           </cite>
         </blockquote>
         <div class="feedback__buttons">
-          <button class="feedback__prev" aria-label="Следующий отзыв"></button>
-          <button class="feedback__next" aria-label="Предыдущий отзыв"></button>
+          <button class="feedback__button feedback__button--prev" aria-label="Следующий отзыв"></button>
+          <button class="feedback__button feedback__button--next" aria-label="Предыдущий отзыв"></button>
         </div>
         <!-- ТЗ п. 4.5. Кнопка в блоке «Отзывы» должна вести на страницу добавления отзыва (страницу добавления отзыва реализовывать не нужно). -->
-        <a class="button feedback__writeUsButton">Написать</a>
+        <a href="#" class="button feedback__writeUsButton">Написать</a>
       </section>
 
       <section class="contacts layout">
-        <h2 class="contacts__title subtitel--less">Контакты</h2>
-          <p class="contacts__text">
-            <span class="contacts__left-field"> e-mail:
-            <a class="contacts__right-field" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </p>
-          <p class="contacts__text">
-            <span class="contacts__left-field">адрес:</span>
-            <address class="contacts__right-field">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
-          </p>
-
-        <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="https://via.placeholder.com/150x150" width="320" height="457" alt="схема проезда">
+        <h2 class="contacts__title subtitle--less">Контакты</h2>
+        <p class="contacts__text"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
+          <span class="contacts__left-field"> e-mail:</span>
+          <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </p>
+        <div class="contacts__text"> <!-- тег <address> не вкладыается в тег <p>-->
+          <span class="contacts__left-field">адрес:</span>
+          <address class="contacts__right-field">
+            г. Санкт-Петербург,<span class="line-break"></span>
+            ул. Большая Конюшенная,<span class="line-break"></span>
+            д. 19/8, офис 101
+          </address>
         </div>
-        <button class="button contacts__write-us-button">Напишите нам</button>
       </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Схема проезда</h2>
+        <img class="map__img" src="img/map-mobile@1x.jpg"
+            width="320" height="457"
+            alt="схема проезда">
+        <div class="map__pointer"><div>
+      </section>
+
+      <section class="write-us layout">
+        <h2 class="visually-hidden">Кнопка обратной связи</h2>
+        <button class="button write-us__button"> Напишите нам </button>
+      </section>
+
     </main>
 
-    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer mobile"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="main-footer__social social"><!-- main-footer__social для позиционирования, social для стилей -->
+      <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
         <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
-        <li>
-          <a class="social__item social__item--instagram" href="https://www.instagram.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
         </li>
-        <li>
-          <a class="social__item social__item--facebook" href="https://www.facebook.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
         </li>
-        <li>
-          <a class="social__item social__item--twitter" href="https://twitter.com"></a>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com"></a>
         </li>
       </ul>
       <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       <!-- main-footer__developer для позиционирования, developer для стилизации -->
     </footer>
 
-    <section class="modal-add  layout">
+    <section class="modal-add layout mobile"> <!-- layout  пока оставилa -->
       <div class="modal-add__wrapper">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__choice">Выберите размер:</p>

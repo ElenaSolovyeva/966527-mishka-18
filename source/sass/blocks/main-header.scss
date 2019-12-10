@@ -1,0 +1,17 @@
+.main-header {
+  width: 320px;
+  height: 355px;
+  padding-top: 70px; // "в этой ситуации лучше задать паддинг топ родителю"
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: -127px -20px;
+  // background-size: 320px 373px;
+  // border: 1px dashed grey;
+}
+
+.main-header__heading {
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+}

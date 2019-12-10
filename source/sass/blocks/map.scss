@@ -1,0 +1,28 @@
+.map {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.map__img {
+  display: block;
+
+  width: 320px;
+  height: 457px;
+
+  background-image: url("../img/map-mobile@1x.jpg");
+}
+
+.map__pointer::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: 215px;
+    right: 115px;
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url("../img/icon-map-pin.svg");
+    background-size: 67px 100px;
+    background-repeat: no-repeat;
+}

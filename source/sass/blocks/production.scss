@@ -1,0 +1,82 @@
+.production {
+  position: relative;
+
+  margin-bottom: 60px;
+  padding-left: 30px;
+
+}
+
+.production--wrapper  {
+  position: relative;
+  border: 1px solid $light-grey;
+}
+
+.production_header {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 23px;
+  padding-top: 23px;
+  padding-left: 88px;
+
+  font-family: "OpenSans bold";
+  font-size: 17px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 33px;
+
+    width: 32px;
+    height: 30px;
+
+    background-size: cover;
+    background-image: url("../img/icon-video-green.svg");
+  }
+}
+
+.production__video {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 25px;
+  width: 260px;
+  height: 150px;
+}
+
+.production__video--logo {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    z-index: 2;
+
+    width: 101px;
+    height: 77px;
+
+    background-size: cover;
+    background-image: url("../img/icon-play.svg");
+
+}
+
+.production__text {
+  margin-bottom: 25px;
+  padding-right: 40px;
+  padding-left: 33px;
+
+  color: $second-color;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production__button-wrapper { // чтобы не задавать кнопке margin-left
+  display: flex;
+  // margin-left: 34px;
+  padding-bottom: 30px;
+}
+
+.production__order-narrow {
+  margin-right: auto;
+  margin-left: auto;
+  width: 192px;
+}

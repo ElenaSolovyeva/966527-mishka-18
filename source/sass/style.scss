@@ -1,0 +1,117 @@
+  @font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff"),
+       url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans bold";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+       url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@import "../sass/normalize";
+@import "../sass/variables";
+
+// чтобы при width: 100%; не вываливались из блока padding'и margin'ы
+html {
+  box-sizing: border-box;
+}
+
+*,
+  *::before,
+  *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: $main-color;
+  font-family: "OpenSans", Arial, sans-serif;
+   // background-color: green;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  color: $main-color;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap; /* Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой;*/
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.reset-list {
+  position: relative;
+
+  list-style: none;
+  padding: 0;
+}
+
+.heading {
+  font-family: "OpenSans bold";
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-block {
+  margin-bottom: 40px;
+}
+
+@import "../sass/blocks/button";
+@import "../sass/blocks/layout";
+@import "../sass/blocks/line-break";
+@import "../sass/blocks/mobile";
+@import "../sass/blocks/subtitle";
+@import "../sass/blocks/wave-line";
+
+@import "../sass/blocks/page-header";
+
+@import "../sass/blocks/menu";
+@import "../sass/blocks/burger-button";
+@import "../sass/blocks/main-header";
+
+@import "../sass/blocks/product-groups";
+@import "../sass/blocks/green-block";
+@import "../sass/blocks/week-product";
+@import "../sass/blocks/table";
+
+@import "../sass/blocks/about-us";
+@import "../sass/blocks/feedback";
+
+@import "../sass/blocks/contacts";
+@import "../sass/blocks/map";
+@import "../sass/blocks/write-us";
+
+
+@import "../sass/blocks/main-footer";
+@import "../sass/blocks/social";
+
+@import "../sass/blocks/modal-add";
+
+// стили страницы каталога
+@import "../sass/blocks/catalog";
+@import "../sass/blocks/catalog-header";
+@import "../sass/blocks/product";
+@import "../sass/blocks/cart-button";
+
+@import "../sass/blocks/production";
+
+@import "../sass/blocks/modal"

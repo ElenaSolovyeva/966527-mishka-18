@@ -1,0 +1,82 @@
+.feedback {
+  margin-bottom: 30px;
+}
+
+.feedback__titel {
+  margin: 0;
+  padding-top: 19px;
+  margin-bottom: 23px;
+}
+
+.feedback__block {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 35px;
+  margin-left: 0;
+}
+
+.feedback__text {
+  padding-top: 0;
+  margin-bottom: 30px;
+
+  color: $second-color;
+  font-size: 15px;
+  line-height: 30px;
+  // border: 1px solid red;
+}
+
+.feedback__author {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-family: "OpenSans bold";
+  font-size: 17px;
+  font-style: normal;
+}
+
+.feedback__author-social {
+  display: block;
+  margin-bottom: 0;
+
+  color: $second-color;
+  font-size: 17px;
+  font-style: normal;
+}
+
+.feedback__buttons {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.feedback__button {
+  width: 130px;
+  height: 52px;
+
+  background-color: $opposit-color;
+  border: 1px solid $light-grey;
+}
+
+.feedback__button--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.feedback__button--next {
+  margin-left: -1px;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.feedback__writeUsButton {
+  display: block;
+
+  margin-bottom: 0; //после этой кнопки отступ на 10рх больше, чем после "ЗАКАЗТЬ"
+
+}
+
+.feedback.wave-line::after {
+  bottom: -12px;
+}
