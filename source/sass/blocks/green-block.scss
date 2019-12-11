@@ -7,7 +7,7 @@
   padding-left: 30px;
 
   color: $opposit-color;
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 19px;
   line-height: 24px;
 
@@ -35,20 +35,19 @@
 
   background-color: $accent-color-2;
 
-    &::after {
-      display: block;
-      position: absolute;
-      right: 25px;
-      top: 20px;
-      content: " ";
+  &::after {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    content: " ";
 
-      width: 65px;
-      height: 60px;
+    width: 65px;
+    height: 60px;
 
-      background-image: url("../img/icon-toy-green.svg");
-      background-repeat: no-repeat;
-    }
-
+    background-image: url("../img/icon-toy-green.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .green-block__text {

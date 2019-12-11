@@ -8,9 +8,9 @@
   margin-bottom: 31px;
   padding: 0;
 
-    &--last-child {
-      margin-bottom: 16px;
-    }
+  &--last-child {
+    margin-bottom: 16px;
+  }
 }
 
 .order-form__legend {
@@ -19,12 +19,12 @@
   margin-bottom: 23px;
 
   color: $accent-color;
-  font-family: "OpenSans bold", Arial, sans-serif;
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
 
-  &:after {
+  &::after {
     content: " ";
     position: absolute;
     top: 8px;
@@ -33,14 +33,13 @@
     width: 200px;
     height: 1px;
     border-bottom: 1px solid $accent-color;
-
   }
 }
 
 .order-form__legend--tel {
   position: relative;
 
-  &:before {
+  &::before {
     content: " ";
     position: absolute;
     top: 32px;
@@ -48,7 +47,7 @@
     z-index: 3;
 
     width: 25px;
-    height:24px;
+    height: 24px;
     opacity: 30%;
 
     background-size: cover;
@@ -59,7 +58,7 @@
 .order-form__legend--email {
   position: relative;
 
-  &:before {
+  &::before {
     content: " ";
     position: absolute;
     top: 35px;
@@ -67,14 +66,14 @@
     z-index: 3;
 
     width: 32px;
-    height:21px;
+    height: 21px;
     opacity: 30%;
 
     background-size: cover;
     background-image: url("../img/icon-mail.svg");
   }
 
-  &:after {
+  &::after {
     content: " ";
     position: absolute;
     top: 8px;
@@ -88,7 +87,8 @@
 .order-form__legend--description {
   position: relative;
   margin-bottom: 26px;
-  &:after {
+
+  &::after {
     content: " ";
     position: absolute;
     top: 9px;
@@ -107,19 +107,20 @@
   padding-top: 10px;
   padding-left: 60px;
 
-  font-family: "OpenSans bold", Arial, sans-serif;
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
 
 
-    &:last-child {
-        margin-bottom: 0;
-      }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .order-form__label--icon-circle {
   min-height: 42px;
-  &:before {
+
+  &::before {
     content: " ";
     position: absolute;
     top: 2px;
@@ -135,7 +136,7 @@
 }
 
 .order-form__label--icon-circle.checked {
-  &:after {
+  &::after {
     content: " ";
     position: absolute;
     top: 13px;
@@ -154,7 +155,7 @@
   padding-top: 12px;
   padding-bottom: 11px;
 
-  &:before {
+  &::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -168,20 +169,19 @@
 }
 
 .order-form__label--icon-square.checked {
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 13px;
+    left: 7px;
 
-    &:after {
-      content: " ";
-      position: absolute;
-      top: 13px;
-      left: 7px;
+    width: 22px;
+    height: 16px;
 
-      width: 22px;
-      height: 16px;
-
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url("../img/icon-tick.svg");
-    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-tick.svg");
+  }
 }
 
 .order-form__name {
@@ -198,7 +198,7 @@
   padding-bottom: 16px;
   width: 260px;
 
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   opacity: 30%;
@@ -234,7 +234,7 @@
   margin-bottom: 30px;
   width: 260px;
 
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
 }

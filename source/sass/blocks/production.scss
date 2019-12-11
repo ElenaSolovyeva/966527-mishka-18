@@ -3,10 +3,9 @@
 
   margin-bottom: 60px;
   padding-left: 30px;
-
 }
 
-.production--wrapper  {
+.production--wrapper {
   position: relative;
   border: 1px solid $light-grey;
 }
@@ -18,7 +17,7 @@
   padding-top: 23px;
   padding-left: 88px;
 
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
 
@@ -46,17 +45,16 @@
 }
 
 .production__video--logo {
-    position: absolute;
-    top: 130px;
-    left: 80px;
-    z-index: 2;
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  z-index: 2;
 
-    width: 101px;
-    height: 77px;
+  width: 101px;
+  height: 77px;
 
-    background-size: cover;
-    background-image: url("../img/icon-play.svg");
-
+  background-size: cover;
+  background-image: url("../img/icon-play.svg");
 }
 
 .production__text {
