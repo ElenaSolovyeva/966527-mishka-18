@@ -1,11 +1,15 @@
+.order-form {
+  margin-bottom: 56px;
+}
+
 .order-form__fieldset {
   border: none;
   margin: 0;
   margin-bottom: 31px;
   padding: 0;
 
-    &:last-child {
-      margin-bottom: 0;
+    &--last-child {
+      margin-bottom: 16px;
     }
 }
 
@@ -30,6 +34,68 @@
     height: 1px;
     border-bottom: 1px solid $accent-color;
 
+  }
+}
+
+.order-form__legend--tel {
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 32px;
+    left: 227px;
+    z-index: 3;
+
+    width: 25px;
+    height:24px;
+    opacity: 30%;
+
+    background-size: cover;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
+
+.order-form__legend--email {
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 35px;
+    left: 225px;
+    z-index: 3;
+
+    width: 32px;
+    height:21px;
+    opacity: 30%;
+
+    background-size: cover;
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: 80px;
+    width: 180px;
+    height: 1px;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.order-form__legend--description {
+  position: relative;
+  margin-bottom: 26px;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    left: 63px;
+    width: 197px;
+    height: 1px;
+    border-bottom: 1px solid $accent-color;
   }
 }
 
@@ -129,7 +195,7 @@
   position: relative;
 
   padding-top: 17px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   width: 260px;
 
   font-family: "OpenSans", Arial, sans-serif;
@@ -139,34 +205,36 @@
 
   border-top: none;
   border-right: none;
-  border-bottom: none;
+  border-bottom: 2px solid $accent-color;
   border-left: none;
-
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    left: 0;
-    z-index: 3;
-
-    width: 260px;
-    height: 20px;
-    border-bottom: 2px solid red;
-  }
 }
 
-.order-form__tel {
+.order-form__input--tel {
   padding-top: 0;
-  padding-bottom: 18px;
+}
+
+.order-form__input--email {
+  padding-top: 0;
+}
+
+.order-form__input--description {
+  display: block;
+
+  width: 260px;
+  min-height: 143px;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-left: 18px;
+
+  vertical-align: top;
+  border: 2px solid #444444;
+}
+
+.order-form__rem {
+  margin-bottom: 30px;
   width: 260px;
 
   font-family: "OpenSans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  opacity: 30%;
-
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
+  font-size: 14px;
+  line-height: 16px;
 }
