@@ -1,10 +1,13 @@
 .grey-header {
-  margin-bottom: 20px;
-}
-
-.grey-header__title {
   min-height: 177px;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
   padding-top: 70px;
   background-color: $footer-grey;
+}
+
+.grey-header--catalog {
+  margin-bottom: 29px;
 }
