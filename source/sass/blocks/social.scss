@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 
   min-height: 80px;
   padding-top: 0;
@@ -11,7 +10,7 @@
   &::after {
     position: absolute;
     bottom: 0;
-    left: 30px;;
+    left: 30px;
     content: "";
     width: 260px;
     height: 1px;
@@ -37,6 +36,7 @@
     background-size: 22px 21px;
     background-repeat: no-repeat;
   }
+
   &--facebook {
     display: block;
 

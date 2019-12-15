@@ -1,0 +1,27 @@
+.order-form {
+  margin-bottom: 56px;
+}
+
+.order-form__fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+}
+
+.order-form__fieldset:last-of-type {
+  margin-bottom: 16px;
+}
+
+.order-form__legend {
+  margin-bottom: 23px;
+}
+
+.order-form__rem {
+  width: 260px;
+  margin-bottom: 30px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}

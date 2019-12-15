@@ -1,0 +1,39 @@
+.title-with-line {
+  position: relative;
+
+  color: $accent-color;
+  font-family: "OpenSans bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.title-with-line--tel {
+  margin-bottom: 5px;
+}
+
+.title-with-line--email {
+  margin-bottom: 6px;
+  padding-top: 2px;
+
+  &::after {
+    width: 179px;
+    top: 9px;
+    left: 80px;
+  }
+}
+
+.title-with-line--description {
+  margin-bottom: 25px;
+}

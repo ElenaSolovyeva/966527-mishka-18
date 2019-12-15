@@ -1,13 +1,11 @@
-  @font-face {
+@font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff") format("woff"),
-       url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "OpenSans bold";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-       url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
 }
 
 @import "../sass/normalize";
@@ -19,8 +17,8 @@ html {
 }
 
 *,
-  *::before,
-  *::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -29,8 +27,7 @@ body {
   padding: 0;
 
   color: $main-color;
-  font-family: "OpenSans", Arial, sans-serif;
-   // background-color: green;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 
 a {
@@ -65,7 +62,7 @@ a {
 }
 
 .heading {
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -81,37 +78,36 @@ a {
 @import "../sass/blocks/mobile";
 @import "../sass/blocks/subtitle";
 @import "../sass/blocks/wave-line";
-
 @import "../sass/blocks/page-header";
-
 @import "../sass/blocks/menu";
 @import "../sass/blocks/burger-button";
 @import "../sass/blocks/main-header";
-
 @import "../sass/blocks/product-groups";
 @import "../sass/blocks/green-block";
 @import "../sass/blocks/week-product";
 @import "../sass/blocks/table";
-
 @import "../sass/blocks/about-us";
 @import "../sass/blocks/feedback";
-
 @import "../sass/blocks/contacts";
 @import "../sass/blocks/map";
 @import "../sass/blocks/write-us";
-
-
 @import "../sass/blocks/main-footer";
 @import "../sass/blocks/social";
-
 @import "../sass/blocks/modal-add";
-
+@import "../sass/blocks/grey-header"; // для страницы каталог и формы
 // стили страницы каталога
 @import "../sass/blocks/catalog";
-@import "../sass/blocks/catalog-header";
 @import "../sass/blocks/product";
 @import "../sass/blocks/cart-button";
-
 @import "../sass/blocks/production";
-
-@import "../sass/blocks/modal"
+@import "../sass/blocks/modal";
+// стили страницы с формой
+@import "../sass/blocks/form-text";
+@import "../sass/blocks/order-form";
+@import "../sass/blocks/title-with-line";
+@import "../sass/blocks/radio-field";
+@import "../sass/blocks/checkbox-field";
+@import "../sass/blocks/input-field";
+@import "../sass/blocks/tel-field";
+@import "../sass/blocks/email-field";
+@import "../sass/blocks/description-field";

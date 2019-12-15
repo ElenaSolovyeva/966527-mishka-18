@@ -30,7 +30,7 @@
 
   margin-bottom: 10px;
 
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   font-style: normal;
 }
@@ -74,7 +74,6 @@
   display: block;
 
   margin-bottom: 0; //после этой кнопки отступ на 10рх больше, чем после "ЗАКАЗТЬ"
-
 }
 
 .feedback.wave-line::after {
