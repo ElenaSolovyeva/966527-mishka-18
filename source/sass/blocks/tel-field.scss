@@ -1,0 +1,35 @@
+.tel-field {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: 227px;
+    z-index: 3;
+
+    width: 25px;
+    height: 24px;
+    opacity: 30%;
+
+    background-size: cover;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
+
+.tel-field__input {
+  padding-top: 17px;
+  padding-bottom: 18px;
+  width: 260px;
+
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  border-left: none;
+}
+//
