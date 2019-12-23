@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
 
-  min-height: 100px;
+  min-height: 103px;
   padding-top: 25px;
+  padding-left: 30px;
 
   color: $opposit-color;
   font-family: "OpenSans bold";
@@ -17,7 +18,7 @@
     display: block;
     position: absolute;
     right: 35px;
-    top: 20px;
+    top: 25px;
     content: " ";
 
     width: 40px;

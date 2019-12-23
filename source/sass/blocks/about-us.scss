@@ -1,10 +1,10 @@
-.about-us.layout {
-  margin-top: 60px;
-  margin-bottom: 0;
+.about-us {
+  margin-bottom: 30px;
 }
 
-.about-us {
-  // border: 1px dashed grey;
+.about-us__subtitel {
+  padding-top: 12px;
+  margin-bottom: 30px;
 }
 
 .about-us__list {
@@ -18,10 +18,11 @@
 .about-us__item {
   display: block;
 
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 8px;
 
-  min-height: 80px;
+  min-height: 60px;
   font-family: "OpenSans bold";
   font-size: 17px;
   line-height: 20px;
@@ -34,8 +35,8 @@
   &::before {
     display: block;
     position: relative;
-    top: 0;
-    left: 0;
+    top: -7px;
+    left: 6px;
     content: " ";
 
     width: 32px;
@@ -50,10 +51,11 @@
 
 .about-us__item--icon-banknote {
   position: relative;
+  padding-top: 20px;
   &::before {
     display: block;
     position: relative;
-    top: 0;
+    top: -10px;
     left: 0;
     content: " ";
 
@@ -69,11 +71,13 @@
 
 .about-us__item--icon-heart {
   position: relative;
+  padding-top: 25px;
+
   &::before {
     display: block;
     position: relative;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: 7px;
     content: " ";
 
     width: 34px;
@@ -88,11 +92,12 @@
 
 .about-us__item--icon-handmade {
   position: relative;
+  padding-top: 20px;
   &::before {
     display: block;
     position: relative;
-    top: 0;
-    left: 0;
+    top: -6px;
+    left: 3px;
     content: " ";
 
     width: 35px;
@@ -107,29 +112,32 @@
 
 .about-us__item--icon-rocket {
   position: relative;
+  padding-top: 28px;
+
   &::before {
     display: block;
     position: relative;
-    top: 0;
+    top: -16px;
     left: -5px;
     content: " ";
 
-    width: 35px;
-    height: 34px; // сверху и снизу - прозрачные отступы
+    width: 58px;
+    height: 25px; // сверху и снизу - прозрачные отступы
     margin-bottom: 10px;
 
     background-image: url("../img/icon-feature-rocket-green.svg");
-    background-size: 35px 34px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
 .about-us__item--icon-gift {
   position: relative;
+  padding-top: 19px;
   &::before {
     display: block;
     position: relative;
-    top: 0;
+    top: -8px;
     left: 0;
     content: " ";
 

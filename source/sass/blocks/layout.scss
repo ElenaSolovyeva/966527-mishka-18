@@ -1,13 +1,24 @@
 .layout {
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.layout--no-gutters {
-  padding: 0;
-}
 
-.layout--margin {
-  margin-right: 30px;
-  margin-left: 30px;
+@media(min-width: $tablet-width) {
+  .layout {
+    padding-right: 50px;
+    padding-left: 50px;
+    //
+    // &--tablett {
+    //   padding-right: 50px;
+    //   padding-left: 50px;
+    // }
+  }
+
+  .layout--tablett {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }

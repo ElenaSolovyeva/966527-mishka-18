@@ -1,10 +1,11 @@
 .contacts {
-  // border: 1px dashed grey;
+  margin-bottom: 38px;
 }
 
-.contacts.layout {
-  margin-top: 40px;
-  margin-bottom: 0;
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding-top: 25px;
 }
 
 .contacts__text {
@@ -51,6 +52,6 @@
   // border: 1px dashed grey;
 }
 
-.contacts__text.second {
-  margin-top: 30px;
+.contacts__text--first {
+  margin-bottom: 30px;
 }

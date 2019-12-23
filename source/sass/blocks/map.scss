@@ -1,5 +1,6 @@
 .map {
-  margin-top: 40px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .map__img {
@@ -27,4 +28,9 @@
     background-size: 67px 100px;
     background-repeat: no-repeat;
   }
+}
+
+.map__icon {
+position: absolute;
+
 }

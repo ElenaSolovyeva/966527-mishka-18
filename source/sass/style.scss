@@ -12,6 +12,8 @@
 
 @import "../sass/normalize";
 @import "../sass/variables";
+@import "../sass/blocks/container";
+
 
 // чтобы при width: 100%; не вываливались из блока padding'и margin'ы
 html {
@@ -30,7 +32,6 @@ body {
 
   color: $main-color;
   font-family: "OpenSans", Arial, sans-serif;
-   // background-color: green;
 }
 
 a {
@@ -39,6 +40,11 @@ a {
 
   color: $main-color;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
