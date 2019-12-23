@@ -17,13 +17,12 @@
 
 .about-us__item {
   display: block;
-
   margin-top: 0px;
   margin-bottom: 20px;
   padding-top: 8px;
 
   min-height: 60px;
-  font-family: "OpenSans bold";
+  font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
 
@@ -32,6 +31,7 @@
 
 .about-us__item--icon-flower {
   position: relative;
+
   &::before {
     display: block;
     position: relative;
@@ -52,6 +52,7 @@
 .about-us__item--icon-banknote {
   position: relative;
   padding-top: 20px;
+
   &::before {
     display: block;
     position: relative;
@@ -93,6 +94,7 @@
 .about-us__item--icon-handmade {
   position: relative;
   padding-top: 20px;
+
   &::before {
     display: block;
     position: relative;
@@ -134,6 +136,7 @@
 .about-us__item--icon-gift {
   position: relative;
   padding-top: 19px;
+  
   &::before {
     display: block;
     position: relative;
