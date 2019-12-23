@@ -1,11 +1,11 @@
 .contacts {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
+  padding-top: 15px;
 }
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 27px;
-  padding-top: 25px;
+  margin-bottom: 26px;
 }
 
 .contacts__text {
@@ -14,7 +14,8 @@
   flex-direction: row;
   justify-content: space-between;
 
-  margin: 0;
+  margin-bottom: 30px;
+
   color: $second-color;
   font-size: 15px;
   line-height: 30px;
@@ -50,8 +51,4 @@
   line-height: 30px;
   font-style: normal;
   // border: 1px dashed grey;
-}
-
-.contacts__text--first {
-  margin-bottom: 30px;
 }

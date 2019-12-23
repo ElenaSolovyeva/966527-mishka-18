@@ -1,25 +1,25 @@
-.tel-field {
+.email-field {
   position: relative;
 
   &::after {
     content: " ";
     position: absolute;
     top: 12px;
-    left: 227px;
+    left: 225px;
     z-index: 3;
 
-    width: 25px;
-    height: 24px;
+    width: 32px;
+    height: 25px;
     opacity: 30%;
 
     background-size: cover;
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
-.tel-field__input {
+.email-field__input {
   padding-top: 17px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   width: 260px;
 
   color: rgba(0, 0, 0, 0.3);

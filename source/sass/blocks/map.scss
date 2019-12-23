@@ -1,33 +1,30 @@
 .map {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .map__img {
   display: block;
-  position: relative;
-  z-index: 2;
 
   width: 320px;
   height: 457px;
 
-  // background-image: url("../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
+}
 
-  &::after {
-    display: block;
-    content: " ";
-    position: absolute;
-    z-index: 3;
-    bottom: 215px;
-    right: 110px;
+.map__pointer::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  bottom: 215px;
+  right: 115px;
 
-    width: 67px;
-    height: 100px;
+  width: 67px;
+  height: 100px;
 
-    background-image: url("../img/icon-map-pin.svg");
-    background-size: 67px 100px;
-    background-repeat: no-repeat;
-  }
+  background-image: url("../img/icon-map-pin.svg");
+  background-size: 67px 100px;
+  background-repeat: no-repeat;
 }
 
 .map__icon {

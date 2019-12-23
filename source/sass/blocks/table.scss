@@ -1,25 +1,20 @@
 .table {
   order: 2;
 
-  margin-left: -4px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-left: -5px;
 
   color: $second-color;
-  font-family: "OpenSans";
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
 
 .table__info {
   display: block;
-
-  min-height: 39px;
-  padding-top: 7px;
-  padding-bottom: 8px;
-
-  border-bottom: 1px solid $light-grey;
+  min-height: 40px;
 }
 
 .table__feature {
-  min-width: 94px;
+  width: 95px;
 }
