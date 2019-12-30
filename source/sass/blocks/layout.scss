@@ -6,7 +6,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .layout {
     padding-right: 50px;
     padding-left: 50px;
@@ -15,10 +15,5 @@
     //   padding-right: 50px;
     //   padding-left: 50px;
     // }
-  }
-
-  .layout--tablett {
-    padding-right: 50px;
-    padding-left: 50px;
   }
 }

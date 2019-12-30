@@ -11,3 +11,9 @@
   background-size: 20px 14px;
   background-image: url("../img/icon-menu-open.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .burger-button {
+    display: none;
+  }  
+}

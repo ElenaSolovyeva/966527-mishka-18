@@ -11,12 +11,12 @@
   <body>
   <div class="container">
 
-    <header class="page-header layout">
+    <header class="page-header">
       <a class="page-header__logo"></a>
       <nav class="menu"><!-- position: absolute; -->
         <button class="menu__button burger-button" aria-label="Меню"></button>
         <div class="menu__wrapper">
-          <ul class="menu__list reset-list"><!--Меню скрыто по умолчанию через свойство display: none; -->
+          <ul class="menu__list reset-list">
             <li class="menu__item--catalog">
               <a class="menu__link" href="#">Каталог товаров</a>
             </li>
@@ -29,24 +29,29 @@
               </a>
             </li>
             <li class="menu__item--cart">
-              <a class="menu__link menu__link--icon-cart" href="#">
-                Корзина: <span class="menu__status">пока пуста</span>
-              </a>
+              <a class="menu__link menu__link--icon-cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
             </li>
-            <li class="menu__item--free-delivery">Бесплатная доставка по росии</li>
+            <li class="menu__item--new-items">
+              <a class="menu__link " href="#">Новые поступления</a>
+            </li>
+            <li class="menu__item--sale">
+              <a class="menu__link" href="#">Распродажа</a>
+            </li>
+            <li class="menu__item--free-delivery">Бесплатная доставка по Росии</li>
+            <li class="menu__item-placeholder"></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="main-block mobile">
+    <main class="main-block">
       <section class="main-header layout">
         <h1 class="main-header__heading heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
       </section>
 
       <section class="product-groups"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
-        <nav>
+        <nav class="product-groups__nav">
           <a class="green-block" href="#">
             <span class="green-block__text">Предметы интерьера</span>
           </a>
@@ -57,35 +62,37 @@
       </section>
 
       <section class="week-product layout wave-line">
-        <p class="week-product__titel">Товар недели</p>
-        <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2><!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
-        <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="week-product__titel-wrapper">
+          <p class="week-product__titel">Товар недели</p>
+          <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2>
+          <!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
+        </div>
 
-        <table class="table">
-          <tr class=visually-hidden>
-            <th>Характеристика товара</th>
-            <th>Значение</th>
-          </tr>
-          <tr class="table__info">
-            <td class="table__feature">Цвет:</td>
-            <td class="table__value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="table__info">
-            <td class="table__feature">Диаметр:</td>
-            <td class="table__value">25 см</td>
-          </tr>
-          <tr class="table__info">
-            <td class="table__feature">Высота:</td>
-            <td class="table__value">15 см</td>
-          </tr>
-        </table>
-        <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg"
-            width="260" height="315"
-            alt="Фотография товара недели: вязанной корзинки">
-        <p class="week-product__price">Цена: 990 руб.</p>
-        <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
-        <button class="button week-product__order">Заказать</button>
-
+        <div class="week-product__wrapper">
+          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="table">
+            <tr class=visually-hidden>
+              <th>Характеристика товара</th>
+              <th>Значение</th>
+            </tr>
+            <tr class="table__info">
+              <td class="table__feature">Цвет:</td>
+              <td class="table__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="table__info">
+              <td class="table__feature">Диаметр:</td>
+              <td class="table__value">25 см</td>
+            </tr>
+            <tr class="table__info">
+              <td class="table__feature">Высота:</td>
+              <td class="table__value">15 см</td>
+            </tr>
+          </table>
+          <p class="week-product__price">Цена: 990 руб.</p>
+          <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
+          <button class="button week-product__order">Заказать</button>        
+        </div>
+        <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
       </section>
 
       <section class="about-us layout"><!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
@@ -149,7 +156,7 @@
 
     </main>
 
-    <footer class="main-footer mobile"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
         <!-- иконки сделаю псевдоэлементами -->
@@ -168,7 +175,7 @@
       <!-- main-footer__developer для позиционирования, developer для стилизации -->
     </footer>
 
-    <section class="modal-add layout mobile"> <!-- layout  пока оставилa -->
+    <section class="modal-add layout"> <!-- layout  пока оставилa -->
       <div class="modal-add__wrapper">
         <h2 class="modal-add__title">Добавить в корзину</h2>
         <p class="modal-add__choice">Выберите размер:</p>

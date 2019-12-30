@@ -75,10 +75,8 @@ img {
   text-align: center;
 }
 
-.main-block {
-  margin-bottom: 40px;
-}
 
+@import "../sass/blocks/main-block";
 @import "../sass/blocks/button";
 @import "../sass/blocks/layout";
 @import "../sass/blocks/line-break";

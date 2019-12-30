@@ -4,7 +4,7 @@
 
   min-height: 105px;
   padding-top: 25px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   color: $opposit-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -17,8 +17,8 @@
   &::after {
     display: block;
     position: absolute;
-    right: 35px;
-    top: 25px;
+    right: 37px;
+    top: 23px;
     content: " ";
 
     width: 40px;
@@ -53,4 +53,49 @@
 .green-block__text {
   width: 160px;
   // border-right: 1px dashed white;
+}
+
+@media (min-width: $tablet-width) {
+  .green-block {
+    width: 334px;
+    min-height: 118px;
+
+    padding-top: 28px;
+    padding-left: 37px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      right: 35px;
+      top: 28px;
+      content: " ";
+
+      width: 40px;
+      height: 62px;
+
+      background-image: url("../img/icon-interior-green.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .green-block--darkgreen {
+    width: 334px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      right: 28px;
+      top: 30px;
+      content: " ";
+
+      width: 65px;
+      height: 60px;
+
+      background-image: url("../img/icon-toy-green.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }

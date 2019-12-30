@@ -1,9 +1,10 @@
 .week-product {
+  margin-bottom: 30px;
+}
+
+.week-product__titel-wrapper {
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 30px;
-  padding-top: 30px;
 }
 
 .week-product__subtitel { // "Вязаные корзинки"
@@ -27,7 +28,7 @@
 .week-product__description {
   order: 2;
 
-  padding-top: 25px;
+  padding-top: 24px;
   margin-bottom: 22px;
 
   color: $second-color;
@@ -38,7 +39,7 @@
 
 .week-product__foto {
   order: 2;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   // background-image: url("../img/triple-set-mobile@1x.jpg");
 }
@@ -46,7 +47,7 @@
 .week-product__price {
   order: 2;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   margin-left: -2px;
   color: $main-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -58,4 +59,25 @@
 .week-product__order {
   order: 2;
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product__titel-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .week-product__subtitel {
+    margin-right: 70px;
+    padding-top: 15px;
+  }
+
+  .week-product__titel {
+    width: 167px;
+    padding-top: 24px;
+    padding-left: 57px;
+
+    line-height: 19px;
+    text-align: center;
+  }
 }

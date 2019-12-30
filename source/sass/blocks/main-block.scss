@@ -1,0 +1,13 @@
+.main-block {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -41px;
+  }
+
+}

@@ -14,52 +14,59 @@
   display: none;
 }
 
-@media(min-width: $tablet-width) {
+.menu__item--new-items {
+  display: none;
+}
+
+.menu__item--sale {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
   .menu {
     display: block;
   }
 
   .menu__list {
-    z-index: 1;
-
-    position: absolute;
-    top: 30px;
-    left: 0;
-
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
 
     width: 100%;
     min-height: 110px;
 
-    font-family: inherit;
+    font-family: "OpenSans bold", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   //flex-elements
-  .menu__item--catalog {
-    order: 3;
-  }
+  .menu__item-placeholder {
+    display: block;
+    // position: relative;
+    order: 1;
 
-  .menu__item--knitting {
-    order: 4;
+    width: 370px;
+
+    border-bottom: 1px solid $light-grey;
   }
 
   .menu__item--search {
     display: block;
     position: relative;
-    order: 1;
+    order: 2;
 
-    width: 358px;
-    height: 19px;
-    margin-right: 50px;
+    width: 83px;
+    min-height: 89px;
+
+    border-bottom: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
   }
 
   .menu__link--icon-search {
     display: block;
-    margin-left: 340px;
-
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
     width: 18px;
     height: 19px;
 
@@ -69,15 +76,78 @@
     opacity: 0.2;
   }
 
+  .menu__item--cart {
+    order: 3;
+    position: relative;
+    width: 314px;
+    padding-top: 30px;
+    padding-left: 82px;
+
+    font-size: 17px;
+    letter-spacing: normal;
+    border-bottom: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+  }
+
+  .menu__status {
+    font-family: "OpenSans bold", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+
+  .menu__link--icon-cart {
+    position: relative;
+
+    font-size: 17px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: -51px;
+      width: 22px;
+      height: 19px;
+
+      background-size: cover;
+      background-image: url("../img/icon-cart.svg");
+    }
+  }
   .menu__link--text {   //invisible text for "search"
     display: none;
   }
 
-  .menu__item--cart {
-    order: 2;
+  .menu__item--catalog {
+    order: 4;
+
+    margin-right: 37px;
+    padding-top: 17px;
+    padding-left: 49px;
+  }
+
+  .menu__item--knitting {
+    order: 5;
+
+    margin-right: 133px;
+    padding-top: 17px;
   }
 
   .menu__item--free-delivery {
-    order: 5;
+    display: block;
+    order: 6;
+
+    padding-top: 17px;
+
+    font-family: "OpenSans", "Arial", sans-serif;
+    letter-spacing: 0.23px;
   }
-}
+
+
+  .menu__item--new-items {
+    display: none;
+  }
+
+  .menu__item--sale {
+    display: none;
+  }
+} // @media (min-width: $tablet-width)

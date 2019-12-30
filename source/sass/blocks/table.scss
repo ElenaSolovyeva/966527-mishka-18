@@ -12,7 +12,10 @@
 
 .table__info {
   display: block;
-  min-height: 40px;
+  min-height: 35px;
+  margin-bottom: 5px;
+
+  border-bottom: 1px solid $light-grey;
 }
 
 .table__feature {
