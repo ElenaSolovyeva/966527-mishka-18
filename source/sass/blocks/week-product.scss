@@ -16,7 +16,6 @@
   order: 1;
 
   padding-top: 3px;
-  margin-bottom: 0;
 
   color: $accent-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -28,8 +27,8 @@
 .week-product__description {
   order: 2;
 
-  padding-top: 24px;
-  margin-bottom: 22px;
+  padding-top: 25px;
+  margin-bottom: 23px;
 
   color: $second-color;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -39,9 +38,9 @@
 
 .week-product__foto {
   order: 2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
-  // background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-image: url("../img/triple-set-mobile@1x.jpg");
 }
 
 .week-product__price {
@@ -69,15 +68,28 @@
 
   .week-product__subtitel {
     margin-right: 70px;
+    margin-left: 0;
     padding-top: 15px;
   }
 
   .week-product__titel {
     width: 167px;
+    margin-bottom: 30px;
     padding-top: 24px;
     padding-left: 57px;
 
     line-height: 19px;
     text-align: center;
+  }
+
+  .week-product__wrapper {
+    position: relative;
+    width: 291px;
+  }
+
+  .week-product__description {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

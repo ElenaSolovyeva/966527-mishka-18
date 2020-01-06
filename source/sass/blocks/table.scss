@@ -1,8 +1,10 @@
 .table {
   order: 2;
 
+width: 100%;
+  margin-right: 0;
   margin-bottom: 20px;
-  margin-left: -5px;
+  margin-left: 0;
 
   color: $second-color;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -12,6 +14,7 @@
 
 .table__info {
   display: block;
+  width: 100%; //260px;
   min-height: 35px;
   margin-bottom: 5px;
 
@@ -19,5 +22,21 @@
 }
 
 .table__feature {
-  width: 95px;
+  width: 90px;
+  margin-left: -2px;
+}
+
+.table-value {
+  width: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .table__feature {
+    width: 80px;
+  }
+
+  .table__value {
+    width: 290px;
+    padding-left: 12px;
+  }
 }
