@@ -68,7 +68,7 @@
           <!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
         </div>
 
-        <div class="week-product__wrapper">
+        <div class="week-product__article-wrapper">
           <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="table">
             <tr class=visually-hidden>
@@ -88,7 +88,17 @@
               <td class="table__value">15 см</td>
             </tr>
           </table>
-          <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография товара недели: вязанной корзинки">
+          <picture> <!--Picturefill   http://scottjehl.github.io/picturefill/ -->
+          <!-- Сделала как на 64м слайде Лекции 6 "Фдфптивная графика"-->
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/triple-set-desktop@1x.jpg"/>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/triple-set-tablet@1x.jpg"/>
+            <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg" alt="Фотография товара недели: вязанной корзинки"> <!-- width="260" height="315" -->
+          </picture>
+
           <p class="week-product__price">Цена: 990 руб.</p>
           <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
           <button class="button week-product__order">Заказать</button>

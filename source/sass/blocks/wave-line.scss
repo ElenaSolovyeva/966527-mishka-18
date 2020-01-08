@@ -17,3 +17,9 @@
     background-size: 319px 6px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .wave-line::after {
+    display: none;
+  }
+}

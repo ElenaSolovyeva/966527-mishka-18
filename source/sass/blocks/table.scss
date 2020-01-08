@@ -31,12 +31,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .table {
+    margin-bottom: 48px;
+    margin-left: -3px;
+  }
+
   .table__feature {
     width: 80px;
   }
 
   .table__value {
-    width: 290px;
+    width: 190px;
     padding-left: 12px;
   }
 }
