@@ -80,3 +80,71 @@
 .feedback.wave-line::after {
   bottom: -12px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+
+      width: 350px;
+      height: 457px;
+
+      background-size: cover;
+      background-image: url("../img/review@1x.jpg");
+    }
+  }
+
+  .feedback__titel {
+    position: relative;
+    z-index: 2;
+
+    margin-left: -5px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
+
+  .feedback__block {
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 0;
+  }
+
+  .feedback__text {
+    margin-right: 20px;
+    margin-bottom: 55px;
+    font-size: 17px;
+  }
+
+  .feedback__author {
+    letter-spacing: 0.8px;;
+  }
+
+  .feedback__buttons {
+    position: absolute;
+    right: 53px;
+    bottom: 45px;
+
+    width: 171px;
+    margin: 0;
+  }
+
+  .feedback__button {
+    border-style: none;
+  }
+
+  .feedback__writeUsButton {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+
+    width: 175px;
+    margin: 0;
+  }
+}

@@ -154,3 +154,45 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 80px;
+  }
+
+  .about-us__subtitel {
+    margin-bottom: 40px;
+  }
+
+  .about-us__flex-container {
+    display: flex;
+  }
+
+  .about-us__list {
+    width: 50%;
+  //можно ли так делать или слишком большая вложенность получается?
+    &:nth-child(2) {
+      .about-us__item {
+        margin-bottom: 59px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .about-us__item {
+    margin-bottom: 64px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-us__item--icon-handmade {
+    padding-top: 15px;
+  }
+}
