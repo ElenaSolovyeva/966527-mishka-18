@@ -2,6 +2,10 @@
   background-color: $footer-grey;
 }
 
+.main-footer__logo {
+  display: none;
+}
+
 .main-footer__developer {
   &::after {
     display: block;
@@ -27,4 +31,41 @@
   font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 19px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__flex-wrapper {
+    display: flex;
+
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .main-footer__logo {
+    display: block;
+
+    width: 102px;
+    height: 34px;
+    margin-right: 158px;
+
+    background-size: cover;
+    background-image: url("../img/logo-footer.svg");
+  }
+
+  .main-footer__social {
+    margin-right: 84px;
+  }
+
+  .main-footer__developer {
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 0;
+
+    &::after {
+      top: 3px;
+      right: -58px;
+    }
+  }
+
+
 }

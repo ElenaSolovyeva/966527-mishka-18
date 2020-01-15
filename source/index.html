@@ -142,17 +142,19 @@
 
       <section class="contacts layout">
         <h2 class="contacts__title subtitle--less">Контакты</h2>
-        <div class="contacts__text  contacts__text--first"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
-          <span class="contacts__left-field"> e-mail:</span>
-          <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <div class="contacts__text"> <!-- тег <address> не вкладыается в тег <p>-->
-          <span class="contacts__left-field">адрес:</span>
-          <address class="contacts__right-field">
-            г. Санкт-Петербург,<span class="line-break"></span>
-            ул. Большая Конюшенная,<span class="line-break"></span>
-            д. 19/8, офис 101
-          </address>
+        <div class="contacts__flex-container">
+          <div class="contacts__text  contacts__text--first"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
+            <span class="contacts__left-field"> e-mail:</span>
+            <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__text"> <!-- тег <address> не вкладыается в тег <p>-->
+            <span class="contacts__left-field">адрес:</span>
+            <address class="contacts__right-field">
+              г. Санкт-Петербург,<span class="line-break"></span>
+              ул. Большая Конюшенная,<span class="line-break"></span>
+              д. 19/8, офис 101
+            </address>
+          </div>
         </div>
       </section>
 
@@ -173,21 +175,25 @@
 
     <footer class="main-footer"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
-        <!-- иконки сделаю псевдоэлементами -->
-        <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com"></a>
-        </li>
-      </ul>
-      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-      <!-- main-footer__developer для позиционирования, developer для стилизации -->
+      <div class="main-footer__flex-wrapper">
+        <a href="" class="main-footer__logo"></a>
+        <ul class="social main-footer__social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
+          <!-- иконки сделаю псевдоэлементами -->
+          <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com"></a>
+          </li>
+        </ul>
+        <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <!-- main-footer__developer для позиционирования, developer для стилизации -->
+      </div>
+
     </footer>
 
     <section class="modal-add layout"> <!-- layout  пока оставилa -->

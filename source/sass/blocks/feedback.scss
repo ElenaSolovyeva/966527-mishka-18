@@ -17,7 +17,7 @@
 
 .feedback__text {
   padding-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   color: $second-color;
   font-size: 15px;
@@ -84,6 +84,8 @@
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 150px;
 
     &::before {
       content: "";
@@ -97,6 +99,21 @@
 
       background-size: cover;
       background-image: url("../img/review@1x.jpg");
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 550px;
+      left: 0;
+
+      width: 768px;
+      height: 24px;
+
+      background-size: cover;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: 0 0;
     }
   }
 
@@ -129,7 +146,7 @@
   .feedback__buttons {
     position: absolute;
     right: 53px;
-    bottom: 45px;
+    bottom: 155px;
 
     width: 171px;
     margin: 0;
