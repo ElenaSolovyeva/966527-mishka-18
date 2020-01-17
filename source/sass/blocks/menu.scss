@@ -152,3 +152,32 @@
     display: none;
   }
 } // @media (min-width: $tablet-width)
+
+@media (min-width: $desktop-width) {
+  .menu {
+    position: absolute;
+    display: block;
+    margin: 0;
+  }
+
+  .menu__wrapper {
+
+  }
+  
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    min-height: 110px;
+
+    font-family: "OpenSans bold", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .menu__item--catalog {
+    display: block;
+    order: 1;
+  }
+}
