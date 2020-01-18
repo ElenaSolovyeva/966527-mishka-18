@@ -17,11 +17,11 @@
 
 .feedback__text {
   padding-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   color: $second-color;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 31px;
 }
 
 .feedback__author {
@@ -100,21 +100,21 @@
       background-size: cover;
       background-image: url("../img/review@1x.jpg");
     }
-
-    &::after {
-      content: " ";
-      position: absolute;
-      z-index: 3;
-      top: 550px;
-      left: 0;
-
-      width: 768px;
-      height: 24px;
-
-      background-size: cover;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-position: 0 0;
-    }
+    //
+    // &::after {
+    //   content: " ";
+    //   position: absolute;
+    //   z-index: 3;
+    //   top: 550px;
+    //   left: 0;
+    //
+    //   width: 768px;
+    //   height: 24px;
+    //
+    //   background-size: cover;
+    //   background-image: url("../img/bg-zigzag-line.svg");
+    //   background-position: 0 0;
+    // }
   }
 
   .feedback__titel {
@@ -162,7 +162,6 @@
     top: 80px;
     right: 50px;
 
-    width: 175px;
     margin: 0;
   }
 }

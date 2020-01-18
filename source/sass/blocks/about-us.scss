@@ -19,139 +19,113 @@
 
 .about-us__item {
   display: block;
-  min-height: 92px;
+  position: relative;
+
+  min-height: 90px;
   margin-top: 0;
-  margin-bottom: 33px;
-  padding-top: 8px;
+  margin-bottom: 0;
+  padding-top:54px;
   padding-bottom: 0;
 
   font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
-}
-
-.about-us__item--icon-flower {
-  position: relative;
 
   &::before {
     display: block;
-    position: relative;
-    top: -5px;
-    left: 10px;
+    position: absolute;
     content: " ";
+    top: 0;
 
-    width: 32px;
-    height: 38px;
-    margin-bottom: 10px; // отступы пока примерно, потом с пиксель перфект подравняю
-
-    background-image: url("../img/icon-feature-flower-green.svg");
-    background-size: 32px 38px;
     background-repeat: no-repeat;
   }
-}
 
-.about-us__item--icon-banknote {
-  position: relative;
-  margin-bottom: 36px;
+  &--icon-flower {
+    margin-bottom: 30px;
 
-  &::before {
-    display: block;
-    position: relative;
-    top: -10px;
-    left: 2px;
-    content: " ";
+    &::before {
+      top: 0;
+      left: 10px;
 
-    width: 47px;
-    height: 27px; // сверху и снизу - прозрачные отступы
-    margin-bottom: 15px;
+      width: 32px;
+      height: 38px;
 
-    background-image: url("../img/icon-feature-money-green.svg");
-    background-size: 47px 27px;
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-flower-green.svg");
+      background-size: 32px 38px;
+    }
   }
-}
 
-.about-us__item--icon-heart {
-  position: relative;
-  margin-bottom: 24px;
+  &--icon-banknote {
+    margin-bottom: 36px;
 
-  &::before {
-    display: block;
-    position: relative;
-    top: -11px;
-    left: 8px;
-    content: " ";
-
-    width: 34px;
-    height: 27px; // сверху и снизу - прозрачные отступы
-    margin-bottom: 10px;
-
-    background-image: url("../img/icon-feature-heart-green.svg");
-    background-size: 34px 27px;
-    background-repeat: no-repeat;
+    &::before {
+      left: 2px;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money-green.svg");
+      background-size: 47px 27px;
+    }
   }
-}
 
-.about-us__item--icon-handmade {
-  position: relative;
-  margin-bottom: 31px;
+  &--icon-heart {
+    margin-bottom: 30px;
+    padding-top: 50px;
 
-  &::before {
-    display: block;
-    position: relative;
-    top: -6px;
-    left: 3px;
-    content: " ";
+    &::before {
+      left: 8px;
 
-    width: 35px;
-    height: 34px; // сверху и снизу - прозрачные отступы
-    margin-bottom: 10px;
+      width: 34px;
+      height: 27px;
+      margin-bottom: 10px;
 
-    background-image: url("../img/icon-feature-ball-green.svg");
-    background-size: 35px 34px;
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-heart-green.svg");
+      background-size: 34px 27px;
+    }
   }
-}
 
-.about-us__item--icon-rocket {
-  position: relative;
-  margin-bottom: 31px;
+  &--icon-handmade {
+    margin-bottom: 27px;
 
-  &::before {
-    display: block;
-    position: relative;
-    top: -10px;
-    left: -5px;
-    content: " ";
+    &::before {
+      left: 3px;
 
-    width: 55px;
-    height: 34px; // сверху и снизу - прозрачные отступы
-    margin-bottom: 10px;
+      width: 35px;
+      height: 34px; // сверху и снизу - прозрачные отступы
+      margin-bottom: 10px;
 
-    background-image: url("../img/icon-feature-rocket-green.svg");
-    background-size: 55px 34px;
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-ball-green.svg");
+      background-size: 35px 34px;
+    }
   }
-}
 
-.about-us__item--icon-gift {
-  position: relative;
-  margin-bottom: 0;
+  &--icon-rocket {
+    margin-bottom: 31px;
 
-  &::before {
-    display: block;
-    position: relative;
-    top: -8px;
-    left: 3px;
-    content: " ";
+    &::before {
+      left: -5px;
 
-    width: 35px;
-    height: 34px; // сверху и снизу - прозрачные отступы
-    margin-bottom: 10px;
+      width: 55px;
+      height: 34px; // сверху и снизу - прозрачные отступы
+      margin-bottom: 10px;
 
-    background-image: url("../img/icon-feature-gift-green.svg");
-    background-size: 35px 34px;
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-rocket-green.svg");
+      background-size: 55px 34px;
+    }
+  }
+
+  &--icon-gift {
+    margin-bottom: 0;
+
+    &::before {
+      left: 3px;
+
+      width: 35px;
+      height: 34px; // сверху и снизу - прозрачные отступы
+      margin-bottom: 10px;
+
+      background-image: url("../img/icon-feature-gift-green.svg");
+      background-size: 35px 34px;
+    }
   }
 }
 

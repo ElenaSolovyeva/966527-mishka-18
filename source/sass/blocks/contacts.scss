@@ -112,5 +112,10 @@
     margin: 0;
 
     font-size: 17px;
+
+    &--line-bottom::after {
+      bottom: 55px;
+      width: 200px;
+    }
   }
 }

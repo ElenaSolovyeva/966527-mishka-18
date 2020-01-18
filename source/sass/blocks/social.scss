@@ -6,16 +6,16 @@
 
   min-height: 35px;
   padding-top: 0;
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-    content: "";
-    width: 260px;
-    height: 1px;
-    border-bottom: 1px solid $grey;
-  }
+  // 
+  // &::after {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 30px;
+  //   content: "";
+  //   width: 260px;
+  //   height: 1px;
+  //   border-bottom: 1px solid $grey;
+  // }
 }
 
 .social-item {
