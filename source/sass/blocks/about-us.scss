@@ -135,7 +135,7 @@
   }
 
   .about-us__subtitel {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .about-us__flex-container {
@@ -157,17 +157,26 @@
   }
 
   .about-us__item {
+    left: 3px;
     margin-bottom: 64px;
 
     font-size: 20px;
     line-height: 22px;
 
+    &--icon-flower {
+      margin-bottom: 60px;
+    }
+    //
+    // &--icon-banknote {
+    // }
+
+    &--icon-heart {
+      left: 4px;
+      padding-top: 48px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  .about-us__item--icon-handmade {
-    padding-top: 15px;
   }
 }
