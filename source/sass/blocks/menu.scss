@@ -21,6 +21,11 @@
 @media (min-width: $tablet-width) {
   .menu {
     display: block;
+    width: 100%;
+  }
+
+  .menu__wrapper {
+    display: block;
   }
 
   .menu__list {
