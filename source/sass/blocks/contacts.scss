@@ -115,6 +115,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    order: 0;
+
+    margin-bottom: 0;
+  }
+
   .contacts__title {
     margin-bottom: 30px;
     margin-left: 0;

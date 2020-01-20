@@ -1,10 +1,20 @@
 .find-us-container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .find-us-container {
+    margin-bottom: 55px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .find-us-container {
     flex-direction: row;
+
+    margin-bottom: 105px;
   }
 }

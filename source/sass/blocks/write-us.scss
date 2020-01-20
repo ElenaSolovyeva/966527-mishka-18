@@ -1,11 +1,13 @@
 .write-us {
+  order: 2;
+
   margin-bottom: 0;
   padding-top: 9px;
 }
 
 .write-us__button {
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
   margin-bottom: 0;
   padding-bottom: 0;
 
@@ -14,6 +16,17 @@
 
 @media (min-width: $tablet-width) {
   .write-us {
-    margin-bottom: 55px;
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .write-us {
+    position: absolute;
+    bottom: 0;
+    left: 175px;
+
+    margin: 0;
   }
 }

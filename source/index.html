@@ -143,7 +143,7 @@
       </section>
       <!--flex-контейнер для расположения контактов, карты и кнопки "Напишите нам" в планшетной версии -->
       <div class="find-us-container">
-        <section class="contacts layout">
+        <section class="contacts layout layout--contacts">
           <h2 class="contacts__title subtitle--less">Контакты</h2>
           <div class="contacts__flex-container">
             <div class="contacts__text  contacts__text--first"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
@@ -161,6 +161,11 @@
           </div>
         </section>
 
+        <section class="write-us layout">
+          <h2 class="visually-hidden">Кнопка обратной связи</h2>
+          <button class="button button--write-us write-us__button"> Напишите нам </button>
+        </section>
+
         <section class="map">
           <h2 class="visually-hidden">Схема проезда</h2>
           <picture>
@@ -173,11 +178,6 @@
             <img class="map__img" src="img/map-mobile@1x.jpg" alt="схема проезда"/>
           </picture>
           <div class="map__pointer"></div>
-        </section>
-
-        <section class="write-us layout">
-          <h2 class="visually-hidden">Кнопка обратной связи</h2>
-          <button class="button button--write-us write-us__button"> Напишите нам </button>
         </section>
       </div>
 
