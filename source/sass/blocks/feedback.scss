@@ -100,21 +100,6 @@
       background-size: cover;
       background-image: url("../img/review@1x.jpg");
     }
-    //
-    // &::after {
-    //   content: " ";
-    //   position: absolute;
-    //   z-index: 3;
-    //   top: 550px;
-    //   left: 0;
-    //
-    //   width: 768px;
-    //   height: 24px;
-    //
-    //   background-size: cover;
-    //   background-image: url("../img/bg-zigzag-line.svg");
-    //   background-position: 0 0;
-    // }
   }
 
   .feedback__titel {
@@ -163,5 +148,42 @@
     right: 50px;
 
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+.feedback {
+  margin-bottom: 70px;
+  padding-bottom: 180px;
+
+  &::before {
+    left: 50px;
+  }
+}
+
+  .feedback__titel {
+    padding-top: 70px;
+    padding-left: 175px;
+  }
+
+  .feedback__block {
+    padding-left: 175px;
+  }
+
+  .feedback__text {
+    margin-bottom: 38px;
+    padding-right: 54px;
+  }
+
+  .feedback__author {
+    letter-spacing: 0.1px;
+  }
+
+  .feedback__author-social {
+    letter-spacing: -0.6px;
+  }
+
+  .feedback__buttons {
+    top: 309px;
   }
 }

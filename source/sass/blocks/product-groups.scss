@@ -27,3 +27,9 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-groups {
+    margin-bottom: 40px;
+  }
+}

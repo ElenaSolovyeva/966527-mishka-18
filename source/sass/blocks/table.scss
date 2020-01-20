@@ -45,3 +45,9 @@
     padding-left: 12px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .table {
+    margin-bottom: 100px;
+  }
+}

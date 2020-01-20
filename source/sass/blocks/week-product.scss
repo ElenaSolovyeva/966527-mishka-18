@@ -110,3 +110,52 @@
     margin-bottom: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .week-product {
+    margin-bottom: 70px;
+  }
+
+  .week-product__titel-wrapper {
+    margin-bottom: 25px;
+    padding-top: 67px;
+  }
+
+  .week-product__subtitel {
+    order: 2;
+
+    width: 528px;
+    margin-right: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: -0.1px;
+  }
+
+  .week-product__titel {
+    order: 1;
+
+    width: 170px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .week-product__article-wrapper {
+    position: static;
+    width: 473px;
+    padding-left: 175px;
+  }
+
+  .week-product__description {
+    margin-bottom: 55px;
+  }
+
+  .week-product__foto {
+    top: 30px;
+    right: 50px;
+
+    background-size: 525px 636px;
+  }
+}

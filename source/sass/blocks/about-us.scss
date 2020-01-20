@@ -180,3 +180,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 87px;
+  }
+
+  .about-us__subtitel {
+    padding-left: 175px;
+  }
+
+  .about-us__list:first-child {
+    padding-left: 175px;
+  }
+
+  .about-us__list:nth-child(2) {
+    padding-right: 175px;
+  }
+}
