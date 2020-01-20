@@ -152,14 +152,14 @@
 }
 
 @media (min-width: $desktop-width) {
-.feedback {
-  margin-bottom: 70px;
-  padding-bottom: 180px;
+  .feedback {
+    margin-bottom: 70px;
+    padding-bottom: 180px;
 
-  &::before {
-    left: 50px;
+    &::before {
+      left: 50px;
+    }
   }
-}
 
   .feedback__titel {
     padding-top: 70px;
