@@ -25,3 +25,137 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__fieldset {
+    display: flex;
+
+    &:last-of-type {
+      margin-bottom: 120px;
+    }
+  }
+
+  .order-form__legend {
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__radio-wrapper {
+    width: 501px;
+  }
+
+  .order-form__fieldset--checkbox {
+    position: relative;
+
+    margin-bottom: 120px;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: -50px;
+
+      width: $tablet-width;
+      height: 305px;
+
+      background-color: $light-grey;
+    }
+  }
+
+  .order-form__checkbox-wrapper {
+    display: flex;
+
+    width: 501px;
+  }
+
+  .order-form__checkbox-column1 {
+    width: 50%;
+  }
+  .order-form__checkbox-column2 {
+    width: 50%;
+  }
+
+  .order-form__name-wrapper {
+    width: 501px;
+  }
+
+  .input-field {
+    display: flex;
+  }
+
+  .input-field__label {
+    margin-right: 30px;
+  }
+
+  .input-field__input {
+    padding-top: 0;
+  }
+
+  .tel-email-wrapper {
+    position: relative;
+    padding-top: 30px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: -50px;
+
+      width: $tablet-width;
+      height: 225px;
+
+      background-color: $light-grey;
+    }
+  }
+
+  .tel-field__input {
+    background-color: transparent;
+  }
+
+  .email-field__input {
+    background-color: transparent;
+  }
+
+  .description-field {
+    width: 501px;
+    margin-bottom: 100px;
+  }
+
+  .order-form__rem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .order-form__button-send {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__fieldset--checkbox {
+    min-height: 225px;
+
+    &::before {
+      min-height: 225px;
+    }
+  }
+
+  .order-form__checkbox-wrapper {
+    flex-direction: column;
+  }
+
+  .order-form__checkbox-column1,
+  .order-form__checkbox-column2 {
+    display: flex;
+  }
+}
