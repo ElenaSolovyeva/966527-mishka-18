@@ -15,3 +15,61 @@
   font-size: 27px;
   line-height: 30px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: $tablet-width;
+    min-height: 746px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: -190px 0;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 732px;
+      left: 0;
+      width: 768px;
+      height: 24px;
+
+      background-size: cover;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      background-position: 0 0;
+    }
+  }
+
+  .main-header__heading {
+    padding-top: 83px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+    min-height: 746px;
+
+    background-size: over;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 0 0;
+
+    &::after {
+      top: 725px;
+      width: $desktop-width;
+      height: 34px;
+
+      background-image: url("../img/zigzag-fill-desktop.png");
+    }
+  }
+
+  .main-header__heading {
+    padding-top: 84px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

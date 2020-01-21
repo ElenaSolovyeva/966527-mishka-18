@@ -2,14 +2,71 @@
   display: flex;
   flex-wrap: wrap;
 
+  width: 100%;
   min-height: 80px;
   padding-top: 21px;
 }
 
-.page-header__logo {
-  padding-left: 85px;
+.page-header__logo--wrapper {
+  width: 260px;
+  margin-right: 6px;
 }
 
-.page-header__logo-image {
-  margin-right: 65px;
+.page-header__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin-left: 115px;
+
+  background-size: cover;
+  background-image: url("../img/mishka-logo-mobile.png");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    z-index: 2;
+    min-height: 130px;
+    padding-top: 0;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 21px;
+    left: 48px;
+    width: 113px;
+    height: 46px;
+    margin: 0;
+    background-size: cover;
+    background-image: url("../img/mishka-logo-tablet.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    z-index: 2;
+    min-height: 130px;
+    padding-top: 0;
+  }
+
+  .page-header__logo--wrapper {
+    position: relative;
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 149px;
+    height: 72px;
+    margin: 0;
+    background-size: cover;
+    background-image: url("../img/mishka-logo-desktop.png");
+  }
 }

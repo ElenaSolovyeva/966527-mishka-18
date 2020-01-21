@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header layout mobile"> <!-- логотип и кнопка формы, position: relative; -->
+  <div class="container">
+
+    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
       <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
         <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
@@ -44,7 +46,7 @@
       <section class="catalog layout">
         <article class="product"><!--Карточку товара можно сделать отдельныс БЭМ-блоком, а все элементы внутри карточки сделать БЭМ-элементами этого блока.-->
           <a href="#">
-            <img class="product__foto" src="img/photo-hare-mobile@1x.jpg" width="258" height="196" alt="Фото вязанного зайчика">
+            <img class="product__foto" src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Фото вязанного зайчика">
             <h2 class="product__name">Зайчик-попрыгайчик</h2>
           </a>
           <p class="product__size">Рост 30 см, вес 200 г</p>
@@ -141,6 +143,7 @@
       </div>
     </section>
 
+  </div>
   </body>
 
 </html>
