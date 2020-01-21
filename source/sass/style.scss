@@ -75,6 +75,14 @@ img {
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+
 
 @import "../sass/blocks/main-block";
 @import "../sass/blocks/button";

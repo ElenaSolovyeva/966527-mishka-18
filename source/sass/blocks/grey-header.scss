@@ -2,12 +2,30 @@
   min-height: 177px;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   margin-left: 0;
   padding-top: 70px;
   background-color: $footer-grey;
 }
 
-.grey-header--catalog {
-  margin-bottom: 29px;
+@media (min-width: $tablet-width) {
+  .grey-header {
+    min-height: 226px;
+    margin-bottom: 80px;
+    padding-top: 90px;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 210px;
+      left: 0;
+      width: $tablet-width;
+      height: 24px;
+
+      background-size: cover;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      background-position: 0 0;
+    }
+  }
 }

@@ -9,76 +9,107 @@
   <body>
   <div class="container">
 
-    <header class="page-header layout"> <!-- логотип и кнопка формы, position: relative; -->
-      <a class="page-header__logo"> <!--убираю href="#" тк ссылка ссылается на себя -->
-        <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
-      <!-- page-header__menu для позиционирования и menu для стилизации -->
-      <nav class="page-header__menu menu"><!-- position: absolute; -->
-        <button class="menu__button burger-button" aria-label="Меню"></button>  <!--aria-атрибут для скринридера, width="20" height="14"-->
-        <!--menu__button - элемент блока меню, burger-button - навешу иконку бургера-->
-
-        <!-- Зададим обёртку для списков в меню. Это поможет спозиционировать элементы в будущем. -->
+    <header class="page-header">
+      <div class="page-header__logo--wrapper">
+        <a class="page-header__logo"></a>
+      </div>
+      <nav class="menu"><!-- position: absolute; -->
+        <button class="menu__button burger-button" aria-label="Меню"></button>
         <div class="menu__wrapper">
-          <ul class="menu__list">  <!--Меню будет скрыто по умолчанию в верстке через свойство display: none; -->
-            <li>
+          <ul class="menu__list reset-list">
+            <li class="menu__item menu__item--catalog">
               <a class="menu__link" href="#">Каталог товаров</a>
             </li>
-            <li>
+            <li class="menu__item menu__item--knitting">
               <a class="menu__link" href="#">Вязание на заказ</a>
             </li>
-            <!-- иконки сделаю псевдоэлементами -->
-            <li>
-              <a class="menu__link menu__link--icon-search" href="#">Поиск по сайту</a>
+            <li class="menu__item menu__item--search">
+              <a class="menu__link menu__link--icon-search" href="#">
+                <span class="menu__link--text">Поиск по сайту</span>
+              </a>
             </li>
-            <li>
+            <li class="menu__item menu__item--cart">
               <a class="menu__link menu__link--icon-cart" href="#">Корзина: <span class="menu__status">пока пуста</span></a>
             </li>
+            <li class="menu__item menu__item--new-items">
+              <a class="menu__link " href="#">Новые поступления</a>
+            </li>
+            <li class="menu__item menu__item--sale">
+              <a class="menu__link" href="#">Распродажа</a>
+            </li>
+            <li class="menu__item menu__item--free-delivery">Бесплатная доставка по Росии</li>
+            <li class="menu__item menu__item--placeholder"></li>
           </ul>
         </div>
-
       </nav>
     </header>
 
-    <main class="mobile">
-      <h1 class="grey-header grey-header--catalog heading">Каталог товаров</h1><!--Для заголовков уровня h1 "heading", h2 - "subtitle" -->
+    <main class="main-block">
+      <!-- Нужно ли оборачивать h1 в section?-->
+      <h1 class="grey-header heading">Каталог товаров</h1>
 
+<!-- ***********************************************************************-->
       <section class="catalog layout">
-        <article class="product"><!--Карточку товара можно сделать отдельныс БЭМ-блоком, а все элементы внутри карточки сделать БЭМ-элементами этого блока.-->
-          <a href="#">
+        <article class="product">
+          <a class="product__link" href="#">
             <img class="product__foto" src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Фото вязанного зайчика">
-            <h2 class="product__name">Зайчик-попрыгайчик</h2>
           </a>
-          <p class="product__size">Рост 30 см, вес 200 г</p>
-          <div class="product__price-wrapper">
-            <p class="product__price">1 200 руб.</p>
-            <button class="cart-button" aria-label="Кнопка открытия формы заказа"></button>
+
+          <div class="product__description">
+            <div class="product__description--wrapper">
+              <a href="#">
+                <h2 class="product__name">Зайчик-попрыгайчик</h2>
+              </a>
+              <p class="product__size">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product__price-wrapper">
+              <p class="product__price">1 200 руб.</p>
+              <button class="cart-button" aria-label="Кнопка открытия формы заказа"></button>
+            </div>
           </div>
+
         </article >
 
         <article  class="product">
-          <a href="#">
-            <img class="product__foto" src="img/photo-bowl-mobile@1x.jpg" width="258" height="196" alt="Фото корзинки для белья">              <h2 class="product__name">Корзинка для белья</h2>
+          <a class="product__link" href="#">
+            <img class="product__foto" src="img/photo-bowl-mobile@1x.jpg" width="258" height="196" alt="Фото корзинки для белья">
           </a>
-          <p class="product__size">Диаметр 15 см, высота 10 см</p>
-          <div class="product__price-wrapper">
-            <p class="product__price">690 руб.</p>
-            <button class="cart-button" aria-label="Кнопка открытия формы заказа"></button>
+
+          <div class="product__description">
+            <div class="product__description--wrapper">
+              <a href="#">
+                <h2 class="product__name">Корзинка для белья</h2>
+              </a>
+              <p class="product__size">Диаметр 15 см, высота 10 см</p>
+            </div>
+
+            <div class="product__price-wrapper">
+              <p class="product__price">690 руб.</p>
+              <button class="cart-button" aria-label="Кнопка открытия формы заказа"></button>
+            </div>
           </div>
         </article >
 
 
-          <article class="product">
-            <a href="#">
-              <img class="product__foto" src="img/photo-toys-mobile@1x.jpg" width="258" height="196" alt="Фото большой корзинки для игрушек">
-              <h2 class="product__name">Большая корзинка<span class="line-break"></span> для игрушек</h2>
-            </a>
-            <p class="product__size">Диаметр 30 см, высота 30 см</p>
+        <article class="product">
+          <a class="product__link" href="#">
+            <img class="product__foto" src="img/photo-toys-mobile@1x.jpg" width="258" height="196" alt="Фото большой корзинки для игрушек">
+          </a>
+
+          <div class="product__description">
+            <div class="product__description--wrapper">
+              <a href="#">
+                <h2 class="product__name">Большая корзинка<span class="line-break"></span> для игрушек</h2>
+              </a>
+              <p class="product__size">Диаметр 30 см, высота 30 см</p>
+            </div>
+
             <div class="product__price-wrapper">
               <p class="product__price">1 500 руб.</p>
               <button class="cart-button" aria-label="Кнопка открытия формы заказа"></button>
             </div>
-          </article>
+          </div>
+        </article>
       </section>
 
       <section class="production layout">
@@ -97,24 +128,26 @@
       </section>
     </main>
 
-    <footer class="main-footer mobile"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social reset-list layout"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
-        <!-- иконки сделаю псевдоэлементами -->
-        <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com"></a>
-        </li>
-      </ul>
-      <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-      <!-- main-footer__developer для позиционирования, developer для стилизации -->
-    </footer>
+      <div class="main-footer__flex-wrapper">
+        <a href="" class="main-footer__logo"></a>
+        <ul class="social main-footer__social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
+          <!-- иконки сделаю псевдоэлементами -->
+          <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com"></a>
+          </li>
+        </ul>
+        <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <!-- main-footer__developer для позиционирования, developer для стилизации -->
+      </div>
 
     <section class="modal">
       <div class="modal__content cart-add layout">

@@ -61,3 +61,53 @@
   font-size: 15px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    min-height: 334px;
+    margin-bottom: 50px;
+  }
+
+  .product__link {
+    width: 50%;
+    border: 1px solid red;
+  }
+
+  .product__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .product__description--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .product__name {
+    margin-top: 25px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__size {
+    padding-top: 5px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .product__price-wrapper {
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .product__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
