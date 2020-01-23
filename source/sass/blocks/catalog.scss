@@ -1,3 +1,11 @@
 .catalog {
   margin-bottom: 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+
+    width: 100%;
+  }
+}
