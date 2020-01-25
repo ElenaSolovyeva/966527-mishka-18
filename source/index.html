@@ -90,8 +90,7 @@
               <td class="table__value">15 см</td>
             </tr>
           </table>
-          <picture> <!--Picturefill   http://scottjehl.github.io/picturefill/ -->
-          <!-- Сделала как на 64м слайде Лекции 6 "Адаптивная графика"-->
+          <picture>
             <source
               media="(min-width: 1150px)"
               srcset="img/triple-set-desktop@1x.jpg"/>
@@ -108,9 +107,8 @@
 
       </section>
 
-      <section class="about-us layout"><!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+      <section class="about-us layout">
         <h2 class="about-us__subtitel subtitle">Коротко о нас:</h2>
-        <!-- иконки сделаю псевдоэлементами в css-->
         <div class="about-us__flex-container">
           <ul class="about-us__list reset-list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
             <li class="about-us__item about-us__item--icon-flower">Экологически<span class="line-break"></span> чистые материалы</li>
@@ -130,7 +128,7 @@
         <blockquote class="feedback__block">
           <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="feedback__author">
-            <span class="feedback__author">Анастасия Красильникова</span> <!-- Error: Element p not allowed as child of element cite in this context.-->
+            <span class="feedback__author">Анастасия Красильникова</span>
             <span class="feedback__author-social">@misssssiskras</span>
           </cite>
         </blockquote>
@@ -173,7 +171,7 @@
               media="(min-width: 1150px)"
               srcset="img/map-desktop@1x.jpg"/>
             <source
-              media="min-width: 768px"
+              media="(min-width: 768px)"
               srcset="img/map-tablet@1x.jpg"/>
             <img class="map__img" src="img/map-mobile@1x.jpg" alt="схема проезда"/>
           </picture>

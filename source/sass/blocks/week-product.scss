@@ -85,8 +85,9 @@
 
   .week-product__article-wrapper {
     position: relative;
-    width: 291px;
+    width: 50%;
     margin-bottom: 48px;
+    padding-right: 50px;
   }
 
   .week-product__description {
@@ -98,7 +99,7 @@
   .week-product__foto {
     position: absolute;
     top: 30px;
-    right: -377px;
+    left: 100%;
 
     width: 333px;
     height: 404px;
@@ -113,6 +114,7 @@
 
 @media (min-width: $desktop-width) {
   .week-product {
+    position: relative;
     margin-bottom: 70px;
   }
 
@@ -122,6 +124,7 @@
   }
 
   .week-product__subtitel {
+    z-index: 2;
     order: 2;
 
     width: 528px;
@@ -143,8 +146,9 @@
   }
 
   .week-product__article-wrapper {
-    position: static;
-    width: 473px;
+    position: relative;
+    z-index: 1;
+    width: 50%;
     padding-left: 175px;
   }
 
@@ -153,9 +157,12 @@
   }
 
   .week-product__foto {
-    top: 30px;
-    right: 50px;
+    position: absolute;
+    z-index: 1;
+    top: -130px;
+    left: 100%;
 
-    background-size: 525px 636px;
-  }
+    width: 525px;
+    height: 636px;
+    }
 }
