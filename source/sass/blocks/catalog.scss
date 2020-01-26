@@ -7,3 +7,13 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 57px;
+  }
+}

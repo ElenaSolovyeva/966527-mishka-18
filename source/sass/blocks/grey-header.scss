@@ -10,15 +10,17 @@
 
 @media (min-width: $tablet-width) {
   .grey-header {
-    min-height: 226px;
-    margin-bottom: 78px;
+    position: relative;
+
+    min-height: 230px;
+    margin-bottom: 73px;
     padding-top: 95px;
 
     &::after {
       content: " ";
       position: absolute;
       z-index: 3;
-      top: 212px;
+      bottom: -5px;
       left: 0;
       width: $tablet-width;
       height: 24px;
@@ -26,6 +28,24 @@
       background-size: cover;
       background-image: url("../img/zigzag-fill-desktop.png");
       background-position: 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .grey-header {
+    min-height: 270px;
+    margin-bottom: 112px;
+    padding-top: 95px;
+
+    &::after {
+      bottom: 0;
+
+      width: $desktop-width;
+      height: 34px;
+
+      background-size: cover;
+      background-image: url("../img/zigzag-fill-desktop_.png");
     }
   }
 }

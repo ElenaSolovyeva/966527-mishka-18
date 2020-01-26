@@ -82,7 +82,12 @@ img {
   }
 }
 
-
+@media (min-width: $desktop-width) {
+  .heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
 
 @import "../sass/blocks/main-block";
 @import "../sass/blocks/button";

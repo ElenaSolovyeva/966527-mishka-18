@@ -7,3 +7,9 @@
 
   background-image: url("../img/icon-cart-grey.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .cart-button {
+    margin-right: 8px;
+  }
+}
