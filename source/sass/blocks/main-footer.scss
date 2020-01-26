@@ -85,11 +85,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 53px;
+  }
+
   .main-footer__logo {
-    margin-right: 355px;
+    margin-right: 349px;
   }
 
   .main-footer__social {
-    margin-right: 270px;
+    margin-right: 273px;
   }
 }

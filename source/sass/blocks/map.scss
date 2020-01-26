@@ -55,4 +55,9 @@
     margin-right: 50px;
     margin-bottom: 0;
   }
+
+  .map__pointer::after {
+    left: 238px;
+    top: 145px;
+  }
 }

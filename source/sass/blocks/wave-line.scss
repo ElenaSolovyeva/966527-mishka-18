@@ -42,9 +42,9 @@
 @media (min-width: $desktop-width) {
   .wave-line {
     position: relative;
+    padding-bottom: 47px;
 
     &::after {
-      top: 740px;
       left: 50px;
 
       width: 1050px;
