@@ -68,13 +68,13 @@
 
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 7px;
+    padding-top: 20px;
 
     &::after {
       content: " ";
       position: absolute;
-      top: -7px;
-      right: 5px;
+      top: 7px;
+      right: 4px;
 
       width: 47px;
       height: 81px;
