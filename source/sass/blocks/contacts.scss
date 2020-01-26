@@ -47,7 +47,8 @@
   &--line-bottom::after {
     position: absolute;
     bottom: 30px;
-    left: 0;
+    left: -1px;
+    bottom: 32px;
     display: block;
     content: "";
     width: 185px;

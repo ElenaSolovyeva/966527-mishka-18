@@ -10,12 +10,13 @@
 .week-product__subtitel { // "Вязаные корзинки"
   order: 0;
   margin: 0;
+  padding-top: 5px;
 }
 
 .week-product__titel {  // "Товар недели""
   order: 1;
 
-  padding-top: 8px;
+  padding-top: 3px;
 
   color: $accent-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -48,7 +49,8 @@
   order: 2;
 
   margin-bottom: 26px;
-  margin-left: -2px;
+  margin-left: -3px;
+  padding-top: 3px;
   color: $main-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
