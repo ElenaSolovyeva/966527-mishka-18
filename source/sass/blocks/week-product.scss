@@ -15,7 +15,7 @@
 .week-product__titel {  // "Товар недели""
   order: 1;
 
-  padding-top: 3px;
+  padding-top: 8px;
 
   color: $accent-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -28,7 +28,7 @@
   order: 2;
 
   padding-top: 25px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   color: $second-color;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -70,14 +70,14 @@
   .week-product__subtitel {
     margin-right: 70px;
     margin-left: 0;
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .week-product__titel {
     width: 167px;
-    margin-bottom: 30px;
-    padding-top: 24px;
-    padding-left: 57px;
+    margin-bottom: 26px;
+    padding-top: 25px;
+    padding-left: 55px;
 
     line-height: 19px;
     text-align: center;
@@ -91,7 +91,7 @@
   }
 
   .week-product__description {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -109,6 +109,7 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 35px;
+    margin-left: 3px;
   }
 }
 

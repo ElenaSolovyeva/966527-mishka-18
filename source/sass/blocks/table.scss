@@ -4,7 +4,7 @@
   width: 100%;
   margin-right: 0;
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: -5px;
 
   color: $second-color;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -14,7 +14,7 @@
 
 .table__info {
   display: block;
-  width: 100%; //260px;
+  width: 100%;
   min-height: 35px;
   margin-bottom: 5px;
 
@@ -22,7 +22,7 @@
 }
 
 .table__feature {
-  width: 90px;
+  width: 97px;
   margin-left: -2px;
 }
 
@@ -36,13 +36,18 @@
     margin-left: -3px;
   }
 
+  .table__info {
+    min-height: 35px;
+    margin-bottom: 5px;
+  }
+
   .table__feature {
     width: 80px;
   }
 
   .table__value {
     width: 190px;
-    padding-left: 12px;
+    padding-left: 15px;
   }
 }
 

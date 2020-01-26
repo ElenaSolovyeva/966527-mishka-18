@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 25px;
   background-color: $footer-grey;
 }
@@ -9,6 +9,7 @@
 }
 
 .main-footer__social {
+  margin-left: -5px;
   padding-bottom: 25px;
   border-bottom: 1px solid $grey;
 }
@@ -19,7 +20,7 @@
 
   min-height: 80px;
   padding-top: 28px;
-  padding-left: 38px;
+  padding-left: 35px;
   font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 19px;
   line-height: 18px;
@@ -27,7 +28,7 @@
   &::after {
     display: block;
     position: absolute;
-    right: 38px;
+    right: 40px;
     bottom: 20px;
     content: "";
 

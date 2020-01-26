@@ -22,18 +22,18 @@
   .wave-line {
     position: relative;
 
+
     &::after {
       content: " ";
       position: absolute;
       z-index: 3;
-      top: 530px;
       left: 0;
 
       width: 768px;
       height: 17px;
 
       background-size: cover;
-      background-image: url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/zigzag-line-tablet_.svg");
       background-position: 0 0;
     }
   }
