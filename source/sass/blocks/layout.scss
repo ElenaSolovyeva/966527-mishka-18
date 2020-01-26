@@ -10,16 +10,9 @@
   .layout {
     padding-right: 50px;
     padding-left: 50px;
-    //
-    // &--tablett {
-    //   padding-right: 50px;
-    //   padding-left: 50px;
-    // }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .layout--contacts {
-    padding-right: 0;
-  }
+
 }

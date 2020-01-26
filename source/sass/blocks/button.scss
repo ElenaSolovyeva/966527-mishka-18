@@ -32,6 +32,7 @@
   .button {
     &--feedback {
       width: 175px;
+      padding-top: 15px;
     }
 
     &--order {
@@ -40,6 +41,8 @@
 
     &--write-us {
       width: 230px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
   }
 }

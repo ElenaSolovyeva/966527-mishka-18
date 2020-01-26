@@ -18,7 +18,7 @@
 
 .feedback__text {
   padding-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   color: $second-color;
   font-size: 15px;
@@ -42,7 +42,7 @@
 
   color: $second-color;
   font-size: 17px;
-  font-style: normal;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .feedback__buttons {
@@ -85,8 +85,8 @@
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
-    margin-bottom: 35px;
-    padding-bottom: 150px;
+    margin-bottom: 65px;
+    padding-bottom: 115px;
 
     &::before {
       content: "";
@@ -107,9 +107,8 @@
     position: relative;
     z-index: 2;
 
-    margin-left: -5px;
-    padding-top: 80px;
-    padding-bottom: 25px;
+    padding-top: 77px;
+    padding-bottom: 28px;
   }
 
   .feedback__block {
@@ -129,10 +128,15 @@
     letter-spacing: 0.8px;
   }
 
+
+  .feedback__author--social {
+    letter-spacing: -0.3px;
+  }
+
   .feedback__buttons {
     position: absolute;
     right: 53px;
-    bottom: 155px;
+    bottom: 120px;
 
     width: 171px;
     margin: 0;

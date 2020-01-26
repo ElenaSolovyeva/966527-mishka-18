@@ -135,11 +135,11 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
   .about-us__subtitel {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .about-us__flex-container {
@@ -148,16 +148,6 @@
 
   .about-us__list {
     width: 50%;
-    //можно ли так делать или слишком большая вложенность получается?
-    &:nth-child(2) {
-      .about-us__item {
-        margin-bottom: 59px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
   }
 
   .about-us__item {
@@ -170,13 +160,27 @@
     &--icon-flower {
       margin-bottom: 60px;
     }
-    //
-    // &--icon-banknote {
-    // }
 
     &--icon-heart {
       left: 4px;
       padding-top: 48px;
+    }
+
+    &--icon-handmade {
+      margin-bottom: 55px;
+      padding-top: 60px;
+
+      &::before {
+        top: 8px;
+      }
+    }
+
+    &--icon-rocket {
+      margin-bottom: 57px;
+    }
+
+    &--icon-gift {
+      padding-top: 55px;
     }
 
     &:last-child {

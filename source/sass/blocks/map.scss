@@ -36,6 +36,12 @@
     margin-bottom: 45px;
   }
 
+  .map__pointer::after {
+    left: 363px;
+    top: 139px;
+
+  }
+
   .map__img {
     width: 768px;
     height: 457px;

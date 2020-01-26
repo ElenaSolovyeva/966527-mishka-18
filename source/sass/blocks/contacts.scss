@@ -58,6 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    width: 100%;
     margin-bottom: 57px;
   }
 
@@ -66,7 +67,6 @@
 
     margin-top: 0;
     margin-bottom: 50px;
-    margin-left: -6px;
     padding-top: 7px;
 
     &::after {
@@ -86,10 +86,12 @@
 
   .contacts__flex-container {
     display: flex;
+    margin-left: 0;
   }
 
   .contacts__text {
     justify-content: flex-start;
+    margin-left: 0;
 
     &--first {
       margin-right: 30px;
@@ -110,7 +112,8 @@
     font-size: 17px;
 
     &--line-bottom::after {
-      bottom: 55px;
+      bottom: 58px;
+      left: 3px;
       width: 200px;
     }
   }
