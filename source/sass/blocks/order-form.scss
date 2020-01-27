@@ -57,7 +57,7 @@
 
     &--color {
       min-height: 304px;
-      padding-top: 40px;
+      padding-top: 50px;
     }
 
     &--name {
@@ -85,6 +85,14 @@
       padding-top: 8px;
     }
 
+    &--color {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      width: 500px;
+      margin-bottom: 37px;
+    }
+
     &--name {
       flex-grow: 1;
     }
@@ -94,6 +102,10 @@
     width: 160px;
     margin-right: 7px;
     padding-top: 25px;
+
+    &--color {
+      padding-top: 20px;
+    }
 
     &--email {
       padding-top: 20px;
@@ -119,5 +131,60 @@
   .order-form__button-send {
     width: 230px;
     margin-right: 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    margin-bottom: 47px;
+  }
+
+  .order-form__fieldset {
+    &--layout {
+      margin-right: 225px;
+      margin-left: 112px;
+    }
+
+    &--layout-color {
+      margin-right: 112px;
+    }
+
+    &--color {
+      min-height: 228px;
+      margin-bottom: 0;
+    }
+
+    &--name {
+      padding-top: 45px;
+    }
+
+    &--optionally {
+      margin-bottom: 49px;
+    }
+  }
+
+  .order-form__buttons-wrapper {
+    width: 700px;
+    margin-bottom: 0;
+
+    &--color {
+      width: 813px;
+      margin-bottom: 22px;
+    }
+
+    &--name {
+      padding-left: 3px;
+    }
+  }
+
+  .order-form__legend {
+    width: 100px;
+    margin-right: 12px;
+  }
+
+  .order-form__button-send {
+    width: 230px;
+    margin-right: 165px;
+    margin-left: 115px;
   }
 }

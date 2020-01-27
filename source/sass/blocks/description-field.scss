@@ -24,3 +24,9 @@
     letter-spacing: normal;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .description-field {
+    width: 700px;
+  }
+}

@@ -40,7 +40,7 @@
 
     &::after {
       top: 12px;
-    left: 448px;
+      left: 448px;
     }
   }
 
@@ -49,5 +49,16 @@
     padding-top: 15px;
     padding-left: 17px;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email-field {
+    width: 700px;
+
+    &::after {
+      top: 12px;
+      left: 665px;
+    }
   }
 }

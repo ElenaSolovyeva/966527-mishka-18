@@ -51,3 +51,18 @@
     padding-left: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .input-field {
+    margin-bottom: 18px;
+  }
+
+  .input-field__input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 218x;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

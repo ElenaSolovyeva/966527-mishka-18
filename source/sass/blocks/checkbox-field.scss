@@ -49,25 +49,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .checkboxfield__two-fields-wrapper {
-    display: flex;
-    flex-direction: row;
-
-    min-width: 500px;
-    margin-bottom: 12px;
-
-    &:first-child {
-      padding-top: 10px;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   .checkbox-field {
-    &:first-child {
+    &:nth-child(2n+1) {
+      min-height: 50px;
       margin-right: 32px;
+      margin-bottom: 1px;
     }
   }
 
@@ -97,5 +83,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/icon-tick-tablet.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-field {
+    &:nth-child(3n+1) {
+      min-height: 50px;
+      margin-right: 33px;
+      margin-bottom: 1px;
+    }
+
+    &:nth-child(3n+2) {
+      min-height: 50px;
+      margin-right: 33px;
+      margin-bottom: 1px;
+    }
   }
 }
