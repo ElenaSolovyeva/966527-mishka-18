@@ -5,3 +5,13 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media(min-width: $tablet-width) {
+  .form-text {
+    margin-bottom: 50px;
+    padding-top: 8px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

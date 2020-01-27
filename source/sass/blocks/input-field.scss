@@ -32,3 +32,22 @@
   font-size: 17px;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .input-field {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .input-field__label {
+    margin-right: 25px;
+    padding-top: 15px;
+
+    font-size: 19px;
+  }
+
+  .input-field__input {
+    flex-grow: 1;
+    padding-left: 16px;
+  }
+}

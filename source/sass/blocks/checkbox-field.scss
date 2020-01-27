@@ -47,3 +47,55 @@
   background-repeat: no-repeat;
   background-image: url("../img/icon-tick.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .checkboxfield__two-fields-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    min-width: 500px;
+    margin-bottom: 12px;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .checkbox-field {
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+
+  .checkbox-field__label {
+    min-width: 230px;
+    padding-top: 15px;
+    padding-left: 83px;
+
+    font-size: 19px;
+  }
+
+  .checkbox-field__label--icon-square::before {
+    top: 0;
+    left: 0;
+
+    width: 54px;
+    height: 52px;
+  }
+
+  .input:checked + .checkbox-field__label--icon-square::after {
+    top: 18px;
+    left:9px;
+
+    width: 33px;
+    height: 22px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-tick-tablet.png");
+  }
+}

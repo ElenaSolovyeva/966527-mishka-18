@@ -12,7 +12,7 @@
 
     <header class="page-header">
       <div class="page-header__logo--wrapper">
-        <a class="page-header__logo"></a>
+        <a href="index.html" class="page-header__logo"></a>
       </div>
       <nav class="menu">
         <button class="menu__button burger-button" aria-label="Меню"></button>
@@ -50,89 +50,101 @@
       <h1 class="grey-header grey-header--form heading">Вязание на заказ</h1>
       <p class="form-text layout">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-      <form class="order-form layout">
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend title-with-line">Тип</legend>
+      <form class="order-form  layout--form">
+        <section class="order-form__fieldset order-form__fieldset--layout order-form__fieldset--type">
+          <legend class="order-form__legend  title-with-line">Тип</legend>
 
-          <div class="radio-field">
-            <input class="input visually-hidden" type="radio" name="product-type" id="accessory" value="accessory">
-            <label class="radio-field__label  radio-field__label--icon-circle" for="accessory">Аксессуар для интерьера</label>
+          <div class="order-form__buttons-wrapper order-form__buttons-wrapper--type">
+            <div class="radio-field radio-field--accessories">
+              <input class="input visually-hidden" type="radio" name="product-type" id="accessory" value="accessory">
+              <label class="radio-field__label  radio-field__label--icon-circle" for="accessory">Аксессуар для интерьера</label>
+            </div>
+
+            <div class="radio-field">
+              <input class="input visually-hidden" type="radio" name="product-type" id="toy" value="toy">
+              <label class="radio-field__label  radio-field__label--icon-circle" for="toy">Детская игрушка</label>
+            </div>
           </div>
+        </section>
 
-          <div class="radio-field">
-            <input class="input visually-hidden" type="radio" name="product-type" id="toy" value="toy">
-            <label class="radio-field__label  radio-field__label--icon-circle" for="toy">Детская игрушка</label>
-          </div>
-        </fieldset>
+        <div class="order-form__background-wrapper">
+          <section class="order-form__fieldset order-form__fieldset--layout order-form__fieldset--color">
+            <legend class="order-form__legend title-with-line">Цвет</legend>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend title-with-line">Цвет</legend>
+            <div class="order-form__buttons-wrapper order-form__buttons-wrapper--color">
 
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="white">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="white">Белый</label>
-          </div>
+              <div class="checkboxfield__two-fields-wrapper">
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="white">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="white">Белый</label>
+                </div>
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="grey">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="grey">Серый</label>
+                </div>
+              </div>
 
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="grey">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="grey">Серый</label>
-          </div>
+              <div class="checkboxfield__two-fields-wrapper">
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="tiffany">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="tiffany">«Тиффани»</label>
+                </div>
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="black">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="black">Черный</label>
+                </div>
+              </div>
 
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="tiffany">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="tiffany">«Тиффани»</label>
-          </div>
+              <div class="checkboxfield__two-fields-wrapper">
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="pink">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="pink">Розовый</label>
+                </div>
+                <div class="checkbox-field">
+                  <input class="input visually-hidden" type="checkbox" name="product-color" id="orange">
+                  <label class="checkbox-field__label  checkbox-field__label--icon-square" for="orange">Оранжевый</label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="black">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="black">Черный</label>
-          </div>
-
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="pink">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="pink">Розовый</label>
-          </div>
-
-          <div class="checkbox-field">
-            <input class="input visually-hidden" type="checkbox" name="product-color" id="orange">
-            <label class="checkbox-field__label  checkbox-field__label--icon-square" for="orange">Оранжевый</label>
-          </div>
-        </fieldset>
-
-        <fieldset class="order-form__fieldset">
+        <section class="order-form__fieldset order-form__fieldset--layout order-form__fieldset--name">
           <legend class="order-form__legend title-with-line">ФИО</legend>
+          <div class="order-form__buttons-wrapper order-form__buttons-wrapper--name">
+            <div class="input-field">
+              <label class="input-field__label" for="firstname">Имя:</label>
+              <input class="input-field__input" type="text" name="firstname" id="firstname" value="Введите ваше имя*">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label" for="lastname">Фамилия:</label>
+              <input class="input-field__input" type="text" name="lastname" id="lastname" value="Укажите фамилию*">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label" for="lastname">Отчество:</label>
+              <input class="input-field__input" type="text" name="lastname" id="lastname" value="Отчество, если желаете">
+            </div>
+          </div>
+        </section>
 
-          <div class="input-field">
-            <label class="input-field__label" for="firstname">Имя:</label>
-            <input class="input-field__input" type="text" name="firstname" id="firstname" value="Введите ваше имя*">
+
+        <div class="order-form__background-wrapper">
+          <div class="order-form__fieldset order-form__fieldset--layout order-form__fieldset--tel">
+            <legend class="order-form__legend title-with-line title-with-line--tel">ТЕЛ</legend>
+            <div class="tel-field">
+              <input class="tel-field__input" type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{3} [0-9]2 [09]2" value="+7 XXX XXX XX XX*">
+            </div>
           </div>
 
-          <div class="input-field">
-            <label class="input-field__label" for="lastname">Фамилия:</label>
-            <input class="input-field__input" type="text" name="lastname" id="lastname" value="Укажите фамилию*">
-          </div>
+          <div class="order-form__fieldset order-form__fieldset--layout">
+            <legend class="order-form__legend order-form__legend--email title-with-line title-with-line--email">E-mail</legend>
+            <div class="email-field">
+              <input class="email-field__input" type="email" name="email" value="Ваш Email*">
+            </div>
+          </divt>
+        </div>
 
-          <div class="input-field">
-            <label class="input-field__label" for="lastname">Отчество:</label>
-            <input class="input-field__input" type="text" name="lastname" id="lastname" value="Отчество, если желаете">
-          </div>
-        </fieldset>
-
-        <fieldset class="order-form__fieldset ">
-          <legend class="order-form__legend title-with-line title-with-line--tel">ТЕЛ</legend>
-          <div class="tel-field">
-            <input class="tel-field__input" type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{3} [0-9]2 [09]2" value="+7 XXX XXX XX XX*">
-          </div>
-        </fieldset>
-
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend title-with-line title-with-line--email">E-mail</legend>
-          <div class="email-field">
-            <input class="email-field__input" type="email" name="email" value="Ваш Email*">
-          </div>
-        </fieldset>
-
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--last">
           <legend class="order-form__legend title-with-line title-with-line--description">Доп</legend>
           <textarea class="description-field" placeholder="Опишите все ваши пожелания к заказу" name="wishes"></textarea>
         </fieldset>

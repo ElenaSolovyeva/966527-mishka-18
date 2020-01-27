@@ -32,3 +32,22 @@
   border-bottom: 2px solid #000000;
   border-left: none;
 }
+
+
+@media (min-width: $tablet-width) {
+  .email-field {
+    width: 500px;
+
+    &::after {
+      top: 12px;
+    left: 448px;
+    }
+  }
+
+  .email-field__input {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 17px;
+    background-color: transparent;
+  }
+}
