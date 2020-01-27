@@ -40,6 +40,11 @@
     width: 768px;
     height: 457px;
   }
+
+  .map__pointer::after {
+    left: 47%;
+    top: 30%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -49,4 +54,6 @@
     margin-right: 50px;
     margin-bottom: 0;
   }
+
+
 }

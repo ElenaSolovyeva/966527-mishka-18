@@ -18,6 +18,10 @@
   color: $second-color;
   font-size: 15px;
   line-height: 30px;
+
+  &--first {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__left-field {
@@ -27,7 +31,6 @@
   min-height: 25px;
   margin-top: 0;
   margin-right: 5px;
-  margin-bottom: 15px;
   margin-left: 0;
 }
 
@@ -35,7 +38,7 @@
   display: block;
   position: relative;
   width: 185px;
-  min-height: 60px;
+  min-height: 25px;
   margin: 0;
   color: $second-color;
   font-size: 15px;
@@ -44,7 +47,7 @@
 
   &--line-bottom::after {
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     left: 0;
     display: block;
     content: "";
@@ -57,6 +60,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 57px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .contacts__title {
@@ -65,12 +70,12 @@
     margin-top: 0;
     margin-bottom: 50px;
     margin-left: -6px;
-    padding-top: 7px;
+    padding-top: 12px;
 
     &::after {
       content: " ";
       position: absolute;
-      top: -7px;
+      top: 0;
       right: 5px;
 
       width: 47px;
@@ -84,13 +89,15 @@
 
   .contacts__flex-container {
     display: flex;
+
+    padding-top: 2px;
   }
 
   .contacts__text {
     justify-content: flex-start;
 
     &--first {
-      margin-right: 30px;
+      margin-right: 28px;
     }
   }
 
@@ -108,7 +115,7 @@
     font-size: 17px;
 
     &--line-bottom::after {
-      bottom: 55px;
+      bottom: 27px;
       width: 200px;
     }
   }
