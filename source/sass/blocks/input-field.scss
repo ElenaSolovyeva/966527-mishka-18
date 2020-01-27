@@ -1,6 +1,6 @@
 .input-field {
   margin-bottom: 16px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 0;
 
   &:last-child {
@@ -36,7 +36,7 @@
 @media (min-width: $tablet-width) {
   .input-field {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .input-field__label {
@@ -54,13 +54,13 @@
 
 @media (min-width: $desktop-width) {
   .input-field {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   .input-field__input {
     padding-top: 12px;
     padding-bottom: 13px;
-    padding-left: 218x;
+    padding-left: 218px;
 
     font-size: 19px;
     line-height: 18px;

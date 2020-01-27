@@ -1,6 +1,6 @@
 .order-form {
   display: block;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 }
 
 .order-form__fieldset {
@@ -8,14 +8,27 @@
   margin: 0;
   margin-bottom: 31px;
   padding: 0;
-}
 
-.order-form__fieldset--optionally {
-  margin-bottom: 16px;
+  &--optionally {
+    margin-bottom: 16px;
+  }
 }
 
 .order-form__legend {
   margin-bottom: 23px;
+
+  &--tel {
+    margin-bottom: 4px;
+  }
+
+  &--email {
+    margin-bottom: 4px;
+  }
+
+  &--description {
+    padding-top: 4px;
+    margin-bottom: 23px;
+  }
 }
 
 .order-form__rem {
@@ -66,7 +79,7 @@
     }
 
     &--tel {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       padding-top: 42px;
     }
 
@@ -79,6 +92,8 @@
   .order-form__buttons-wrapper {
     display: flex;
     flex-direction: column;
+
+    width: 500px;
 
     &--type {
       min-height: 140px;
@@ -136,7 +151,7 @@
 
 @media (min-width: $desktop-width) {
   .order-form {
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 
   .order-form__fieldset {
@@ -155,11 +170,12 @@
     }
 
     &--name {
-      padding-top: 45px;
+      padding-top: 43px;
     }
 
     &--optionally {
-      margin-bottom: 49px;
+      margin-bottom: 48px;
+      padding-top: 0;
     }
   }
 
@@ -185,6 +201,10 @@
   .order-form__button-send {
     width: 230px;
     margin-right: 165px;
-    margin-left: 115px;
+    margin-left: 113px;
+  }
+
+  .order-form__rem {
+    padding-top: 10px;
   }
 }
