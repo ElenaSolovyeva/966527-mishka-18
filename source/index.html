@@ -95,8 +95,7 @@
               <td class="table__value">15 см</td>
             </tr>
           </table>
-          <picture> <!--Picturefill   http://scottjehl.github.io/picturefill/ -->
-          <!-- Сделала как на 64м слайде Лекции 6 "Адаптивная графика"-->
+          <picture>
             <source
               media="(min-width: 1150px)"
               srcset="img/triple-set-desktop@1x.jpg"/>
@@ -176,11 +175,11 @@
           <picture>
             <source
               media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.jpg"/>
+              srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg"/>
             <source
               media="(min-width: 768px)"
-              srcset="img/map-tablet@1x.jpg"/>
-            <img class="map__img" src="img/map-mobile@1x.jpg" alt="схема проезда"/>
+              srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg"/>
+            <img class="map__img" src="img/map-mobile@1x.jpg"  srcset="img/map-mobile@2x.jpg" alt="схема проезда"/>
           </picture>
           <div class="map__pointer"></div>
         </section>
