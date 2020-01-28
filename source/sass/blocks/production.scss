@@ -8,6 +8,14 @@
 .production--wrapper {
   position: relative;
   border: 1px solid $light-grey;
+
+    &:hover {
+      box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
 }
 
 .production__header {
@@ -55,6 +63,27 @@
 
   background-size: cover;
   background-image: url("../img/icon-play.svg");
+
+  &:hover {
+    top: 122px;
+    left: 70px;
+
+    width: 121px;
+    height: 92px;
+
+    background-size: cover;
+  }
+
+  &:active {
+    top: 136px;
+    left: 82px;
+
+    width: 97px;
+    height: 74px;
+
+    background-size: cover;
+    opacity: 0.3;
+  }
 }
 
 .production__text {

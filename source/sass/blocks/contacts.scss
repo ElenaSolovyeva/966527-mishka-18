@@ -57,6 +57,16 @@
   }
 }
 
+.contacts__email {
+  &:hover {
+  color: $green-mail-hover;
+  }
+
+  &:active {
+    color: $green-mail-active;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 57px;

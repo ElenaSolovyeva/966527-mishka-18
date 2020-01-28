@@ -34,6 +34,14 @@
     border-radius: 50%;
     background-color: transparent;
   }
+
+  &:hover::before {
+    border: 3px solid $green-radio-hover;
+  }
+
+  &:active::before {
+    border: 3px solid $grey-radio-active;
+  }
 }
 
 .input:checked + .radio-field__label--icon-circle::after {

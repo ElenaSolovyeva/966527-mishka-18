@@ -60,6 +60,10 @@
 
     background-size: cover;
     background-image: url("../img/logo-footer.svg");
+
+    &:hover {
+      background-image: url("../img/logo-footer.svg");
+    }
   }
 
   .main-footer__social {

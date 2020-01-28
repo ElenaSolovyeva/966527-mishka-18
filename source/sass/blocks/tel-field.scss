@@ -31,6 +31,15 @@
   border-right: none;
   border-bottom: 2px solid #000000;
   border-left: none;
+
+  &:hover {
+    border-bottom: 2px solid $green-radio-hover;
+  }
+
+  &:active {
+    color:rgba(0, 0, 0, 1.0);
+    border-bottom: 2px solid $green-radio-hover;
+  }
 }
 
 @media (min-width: $tablet-width) {

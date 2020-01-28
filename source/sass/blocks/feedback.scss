@@ -55,6 +55,14 @@
 
   background-color: $opposit-color;
   border: 1px solid $light-grey;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .feedback__button--prev {

@@ -6,6 +6,14 @@
   height: 19px;
 
   background-image: url("../img/icon-cart-grey.svg");
+
+  &:hover {
+    background-image: url("../img/icon-cart-green.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-cart-light-green.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

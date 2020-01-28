@@ -22,7 +22,8 @@
   line-height: 18px;
 }
 
-.checkbox-field__label--icon-square::before {
+.checkbox-field__label--icon-square {
+  &::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -32,6 +33,15 @@
   height: 40px;
 
   border: 2px solid #444444;
+  }
+
+  &:hover::before {
+    border: 2px solid $green-radio-hover;
+  }
+
+  &:active::before {
+    border: 2px solid $grey-radio-active;
+  }
 }
 
 .input:checked + .checkbox-field__label--icon-square::after {
