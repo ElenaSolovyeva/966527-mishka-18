@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: каталог "Мишки"</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
@@ -171,30 +176,22 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <div class="modal__content cart-add layout">
-      <!-- в .modal__content описывается только позиционирование посередине;
-           в .layout будет обозначена сетка;
-           в .cart-add - бордеры и внутренние элементы, их стили. -->
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <!-- создаю блок кнопок S/M/L отдельным БЭМ-блоком (класс small-buttons) -->
-        <!-- класс modal__buttons для позиционирования блока кнопок относительно других html-блоков -->
-        <ul class="small-buttons modal__buttons ">
-          <li>
-            <!-- small-buttons__item это элемент БЭМ-блока с кнопками, в то же время это кнопка (класс button), но ширина у нее меньше, чем у стандартной кнопки, поэтому добавляю модификатор button тире тире extra-narrow-->
-            <!-- есть еще кнопка "сделать заказ" на странице каталога, она тоже у'же, чем остальные, у нее модификатор button тире тире narrow) -->
-            <!-- если понадобится обратиться к конкретной кнопке из этого списка, добавлю классы с названиями конкретных кнопок, на данном этапе имхо в них нет необходимости -->
-            <button class="small-buttons__item button button--extra-narrow">S</button>
+    <section>
+      <div class="modal-add__wrapper">
+        <h2 class="modal-add__title subtitle">Добавить в корзину</h2>
+        <p class="modal-add__choice">Выберите размер:</p>
+        <ul class="modal-add__sizeList reset-list">
+          <li class="modal__item">
+            <button class="modal-size">S</button>
           </li>
-          <li>
-            <button class="small-buttons__item button button--extra-narrow">M</button>
+          <li class="modal__item">
+            <button class="modal-size">M</button>
           </li>
-          <li>
-            <button class="small-buttons__item button button--extra-narrow">L</button>
+          <li class="modal__item">
+            <button class="modal-size">L</button>
           </li>
         </ul>
-        <button class="modal__add-button button button--green">Добавить</button>
+        <button class="modal-add__add-button button">Добавить</button>
       </div>
     </section>
 
