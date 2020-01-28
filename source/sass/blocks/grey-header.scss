@@ -44,8 +44,12 @@
 @media (min-width: $desktop-width) {
   .grey-header {
     min-height: 270px;
-    margin-bottom: 100px;
+    margin-bottom: 111px;
     padding-top: 95px;
+
+    &--form {
+      margin-bottom: 100px;
+    }
 
     &::after {
       bottom: 0;
