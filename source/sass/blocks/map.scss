@@ -28,6 +28,25 @@
 }
 
 .map__icon {
-position: absolute;
+  position: absolute;
+}
 
+@media (min-width: $tablet-width) {
+  .map {
+    margin-bottom: 45px;
+  }
+
+  .map__img {
+    width: 768px;
+    height: 457px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    order: 2;
+
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }

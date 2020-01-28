@@ -1,8 +1,35 @@
 .product-groups {
-  display: flex;
-  flex-direction: column;
-
   min-height: 200px;
   margin-top: -74px;
   margin-bottom: 30px;
+}
+
+.product-groups__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .product-groups {
+    flex-direction: row;
+
+    min-height: 117px;
+    margin-top: -119px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .product-groups__nav {
+    display: flex;
+    flex-direction: row;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-groups {
+    margin-bottom: 40px;
+  }
 }

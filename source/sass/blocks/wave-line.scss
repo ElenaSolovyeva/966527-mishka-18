@@ -17,3 +17,46 @@
     background-size: 319px 6px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .wave-line {
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 530px;
+      left: 0;
+
+      width: 768px;
+      height: 17px;
+
+      background-size: cover;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wave-line {
+    position: relative;
+
+    &::after {
+      top: 740px;
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: cover;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: 0 0;
+    }
+
+    &--feedback::after {
+      top: 520px;
+    }
+  }
+}

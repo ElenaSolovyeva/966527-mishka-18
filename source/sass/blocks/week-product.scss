@@ -1,9 +1,10 @@
 .week-product {
+  margin-bottom: 30px;
+}
+
+.week-product__titel-wrapper {
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 30px;
-  padding-top: 30px;
 }
 
 .week-product__subtitel { // "Вязаные корзинки"
@@ -15,7 +16,6 @@
   order: 1;
 
   padding-top: 3px;
-  margin-bottom: 0;
 
   color: $accent-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -28,7 +28,7 @@
   order: 2;
 
   padding-top: 25px;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   color: $second-color;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -38,15 +38,16 @@
 
 .week-product__foto {
   order: 2;
-  margin-bottom: 22px;
 
-  // background-image: url("../img/triple-set-mobile@1x.jpg");
+  width: 260px;
+  height: 315px;
+  margin-bottom: 20px;
 }
 
 .week-product__price {
   order: 2;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   margin-left: -2px;
   color: $main-color;
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -58,4 +59,103 @@
 .week-product__order {
   order: 2;
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product__titel-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .week-product__subtitel {
+    margin-right: 70px;
+    margin-left: 0;
+    padding-top: 15px;
+  }
+
+  .week-product__titel {
+    width: 167px;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    padding-left: 57px;
+
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .week-product__article-wrapper {
+    position: relative;
+    width: 291px;
+    margin-bottom: 48px;
+  }
+
+  .week-product__description {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-product__foto {
+    position: absolute;
+    top: 30px;
+    right: -377px;
+
+    width: 333px;
+    height: 404px;
+  }
+
+  .week-product__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-product {
+    margin-bottom: 70px;
+  }
+
+  .week-product__titel-wrapper {
+    margin-bottom: 25px;
+    padding-top: 67px;
+  }
+
+  .week-product__subtitel {
+    order: 2;
+
+    width: 528px;
+    margin-right: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: -0.1px;
+  }
+
+  .week-product__titel {
+    order: 1;
+
+    width: 170px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .week-product__article-wrapper {
+    position: static;
+    width: 473px;
+    padding-left: 175px;
+  }
+
+  .week-product__description {
+    margin-bottom: 55px;
+  }
+
+  .week-product__foto {
+    top: 30px;
+    right: 50px;
+
+    background-size: 525px 636px;
+  }
 }

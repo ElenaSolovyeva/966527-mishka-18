@@ -75,10 +75,21 @@ img {
   text-align: center;
 }
 
-.main-block {
-  margin-bottom: 40px;
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@import "../sass/blocks/main-block";
 @import "../sass/blocks/button";
 @import "../sass/blocks/layout";
 @import "../sass/blocks/line-break";
@@ -95,6 +106,7 @@ img {
 @import "../sass/blocks/table";
 @import "../sass/blocks/about-us";
 @import "../sass/blocks/feedback";
+@import "../sass/blocks/find-us-container";
 @import "../sass/blocks/contacts";
 @import "../sass/blocks/map";
 @import "../sass/blocks/write-us";
