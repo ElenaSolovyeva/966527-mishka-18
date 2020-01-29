@@ -1,10 +1,16 @@
 .main-header {
-  width: 320px;
-  height: 355px;
+  width: 100%;
+  min-height: 355px;
+  margin: 0 auto;
   padding-top: 70px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: -127px -20px;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+  }
 
 
   @media (min-resolution: $retina-dppx) {
@@ -20,7 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    width: $tablet-width;
+    width: 100%; //$tablet-width;
     min-height: 746px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -37,7 +43,7 @@
       z-index: 3;
       top: 732px;
       left: 0;
-      width: 768px;
+      width: 100%;
       height: 24px;
 
       background-size: cover;
@@ -53,7 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: $desktop-width;
+    width: 100%; //$desktop-width;
     min-height: 746px;
 
     background-size: over;

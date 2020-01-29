@@ -1,4 +1,5 @@
 .main-block {
+  position: relative;
   margin-bottom: 40px;
 }
 
@@ -13,6 +14,7 @@
 
 @media (min-width: $desktop-width) {
   .main-block {
+    position: relative;
     margin-top: -41px;
   }
 }
