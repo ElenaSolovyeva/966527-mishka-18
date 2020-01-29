@@ -1,4 +1,4 @@
-.modal-add__wrapper {
+.modal {
   display: block;
 
   width: 320px;
@@ -15,7 +15,7 @@
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.modal-add__title {
+.modal__title {
   margin-top: 0;
   margin-bottom: 20px;
   padding-top: 32px;
@@ -26,12 +26,12 @@
   text-align: center;
 }
 
-.modal-add__choice {
+.modal__text {
   margin-bottom: 26px;
   text-align: center;
 }
 
-.modal-add__sizeList {
+.modal__sizeList {
   display: flex;
   flex-wrap: wrap;
 
@@ -58,7 +58,7 @@
   }
 }
 
-.modal-size {
+.modal__size {
   margin: 0;
   padding: 0;
   border: none;
@@ -69,27 +69,27 @@
   min-height: 52px;
 }
 
-.modal-add__add-button {
+.modal__add-button {
   color: #ffffff;
   background-color: $green-modal-active;
   border-style: none;
 }
 
 @media (min-width: $tablet-width) {
-  .modal-add__wrapper {
+  .modal {
     width: 567px;
     min-height: 337px;
     padding-right: 105px;
     padding-left: 105px;
   }
 
-  .modal-add__title {
+  .modal__title {
     padding-right: 0;padding-left: 0;
     font-size: 30px;
     line-height: 56px;
   }
 
-  .modal-size {
+  .modal__size {
     width: 109px;
     height: 52px;
   }

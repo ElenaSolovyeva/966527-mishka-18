@@ -3,13 +3,6 @@
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-
-  &--form {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
 }
 
 
@@ -17,21 +10,11 @@
   .layout {
     padding-right: 50px;
     padding-left: 50px;
-
-    &--form {
-      padding-right: 0;
-      padding-left: 0;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .layout {
-    &--form {
-      padding-right: 0;
-      padding-left: 0;
-    }
-
     &--contacts {
       padding-right: 0;
     }

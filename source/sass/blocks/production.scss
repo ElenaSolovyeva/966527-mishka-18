@@ -2,10 +2,9 @@
   position: relative;
 
   margin-bottom: 62px;
-  // padding-left: 30px;
 }
 
-.production--wrapper {
+.production-wrapper {
   position: relative;
   border: 1px solid $light-grey;
 
@@ -62,7 +61,7 @@
   }
 }
 
-.production__video--logo {
+.production__video-logo {
   position: absolute;
   top: 130px;
   left: 80px;
@@ -106,7 +105,7 @@
   line-height: 24px;
 }
 
-.production__button--wrapper { // чтобы не задавать кнопке margin-left
+.production__button-wrapper {
   display: flex;
   // margin-left: 34px;
   padding-bottom: 30px;
@@ -123,7 +122,7 @@
     margin-bottom: 63px;
   }
 
-  .production--wrapper {
+  .production-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -148,7 +147,7 @@
     }
   }
 
-  .production__video--logo {
+  .production__video-logo {
     top: 190px;
     left: 283px;
   }
@@ -178,7 +177,7 @@
     line-height: 30px;
   }
 
-  .production__button--wrapper {
+  .production__button-wrapper {
     order: 4;
 
     margin-bottom: 45px;
@@ -218,7 +217,7 @@
     }
   }
 
-  .production--wrapper {
+  .production-wrapper {
     position: relative;
     padding-left: 703px;
 
@@ -248,7 +247,7 @@
     padding-left: 57px;
   }
 
-  .production__button--wrapper {
+  .production__button-wrapper {
     margin-bottom: 0;
     padding-right: 55px;
     padding-left: 58px;

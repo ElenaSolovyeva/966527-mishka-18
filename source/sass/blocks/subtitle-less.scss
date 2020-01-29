@@ -1,18 +1,18 @@
-.subtitle {
+.subtitle-less {
   font-family: "OpenSans bold", "Arial", sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
-  .subtitle {
+  .subtitle-less {
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .subtitle {
+  .subtitle-less {
     font-size: 53px;
     line-height: 57px;
   }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Клон проекта «Мишка» https://github.com/ElenaSolovyeva/966527-mishka-18.git -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -17,7 +16,7 @@
   <div class="container">
 
     <header class="page-header">
-      <div class="page-header__logo--wrapper">
+      <div class="logo-wrapper">
         <a class="page-header__logo"></a>
       </div>
       <nav class="menu">
@@ -32,7 +31,7 @@
             </li>
             <li class="menu__item menu__item--search">
               <a class="menu__link menu__link--icon-search" href="#">
-                <span class="menu__link--text">Поиск по сайту</span>
+                <span class="link-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="menu__item menu__item--cart">
@@ -132,7 +131,7 @@
       <section class="feedback layout wave-line wave-line--feedback">
         <h2 class="feedback__titel subtitle">Отзывы</h2>
         <blockquote class="feedback__block">
-          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<span class="feedback__text--break"></span> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<span class="text-break"></span> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="feedback__author">
             <span class="feedback__author">Анастасия Красильникова</span> <!-- Error: Element p not allowed as child of element cite in this context.-->
             <span class="feedback__author-social">@misssssiskras</span>
@@ -148,7 +147,7 @@
       <!--flex-контейнер для расположения контактов, карты и кнопки "Напишите нам" в планшетной версии -->
       <div class="find-us-container">
         <section class="contacts layout layout--contacts">
-          <h2 class="contacts__title subtitle--less">Контакты</h2>
+          <h2 class="contacts__title subtitle-less">Контакты</h2>
           <div class="contacts__flex-container">
             <div class="contacts__text  contacts__text--first"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
               <span class="contacts__left-field"> e-mail:</span>
@@ -210,21 +209,21 @@
     </footer>
 
     <section>
-      <div class="modal-add__wrapper">
-        <h2 class="modal-add__title subtitle">Добавить в корзину</h2>
-        <p class="modal-add__choice">Выберите размер:</p>
-        <ul class="modal-add__sizeList reset-list">
+      <div class="modal">
+        <h2 class="modal__title subtitle">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__sizeList reset-list">
           <li class="modal__item">
-            <button class="modal-size">S</button>
+            <button class="modal__size">S</button>
           </li>
           <li class="modal__item">
-            <button class="modal-size">M</button>
+            <button class="modal__size">M</button>
           </li>
           <li class="modal__item">
-            <button class="modal-size">L</button>
+            <button class="modal__size">L</button>
           </li>
         </ul>
-        <button class="modal-add__add-button button">Добавить</button>
+        <button class="modal__add-button button">Добавить</button>
       </div>
     </section>
 
