@@ -17,13 +17,13 @@
   width: 100%; //260px;
   min-height: 35px;
   margin-bottom: 5px;
+  margin-left: -3px;
 
   border-bottom: 1px solid $light-grey;
 }
 
 .table__feature {
-  width: 90px;
-  margin-left: -2px;
+  width: 95px;
 }
 
 .table-value {
@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .table {
     margin-bottom: 48px;
-    margin-left: -3px;
+    margin-left: 0;
   }
 
   .table__feature {
@@ -42,7 +42,7 @@
 
   .table__value {
     width: 190px;
-    padding-left: 12px;
+    padding-left: 14px;
   }
 }
 

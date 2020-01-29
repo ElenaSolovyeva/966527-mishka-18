@@ -1,5 +1,21 @@
 .catalog {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 59px;
+  }
 }
 
 @media (min-width: $desktop-width) {

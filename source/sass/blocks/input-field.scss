@@ -1,6 +1,6 @@
 .input-field {
   margin-bottom: 16px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 0;
 
   &:last-child {
@@ -25,10 +25,53 @@
   border-right: none;
   border-bottom: 2px solid #000000;
   border-left: none;
+
+  &:hover {
+    border-bottom: 2px solid $green-radio-hover;
+  }
+
+  &:active {
+    color:rgba(0, 0, 0, 1.0);
+    border-bottom: 2px solid $green-radio-hover;
+  }
 }
 
 .input-field__label {
   font-family: "OpenSans bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-field {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
+  .input-field__label {
+    margin-right: 25px;
+    padding-top: 15px;
+
+    font-size: 19px;
+  }
+
+  .input-field__input {
+    flex-grow: 1;
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-field {
+    margin-bottom: 17px;
+  }
+
+  .input-field__input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

@@ -2,18 +2,15 @@
   display: flex;
   flex-wrap: wrap;
 
-  width: 100%;
+  width: $mobile-width;
   min-height: 80px;
+  margin: 0 auto;
   padding-top: 21px;
-}
-
-.page-header__logo--wrapper {
-  width: 260px;
-  margin-right: 6px;
 }
 
 .page-header__logo {
   display: block;
+  z-index: 2;
   width: 86px;
   height: 35px;
   margin-left: 115px;
@@ -22,12 +19,22 @@
   background-image: url("../img/mishka-logo-mobile.png");
   background-repeat: no-repeat;
   border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
     z-index: 2;
+
+    width: $tablet-width;
     min-height: 130px;
     padding-top: 0;
   }
@@ -48,15 +55,10 @@
   .page-header {
     position: relative;
     z-index: 2;
+
+    width: $desktop-width;
     min-height: 130px;
     padding-top: 0;
-  }
-
-  .page-header__logo--wrapper {
-    position: relative;
-    width: 149px;
-    height: 72px;
-    margin: 0 auto;
   }
 
   .page-header__logo {

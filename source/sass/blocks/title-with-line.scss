@@ -37,3 +37,9 @@
 .title-with-line--description {
   margin-bottom: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .title-with-line::after {
+    display: none;
+  }
+}

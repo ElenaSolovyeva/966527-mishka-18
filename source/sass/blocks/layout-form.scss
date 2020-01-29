@@ -1,0 +1,21 @@
+.layout-form {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .layout-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .layout-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

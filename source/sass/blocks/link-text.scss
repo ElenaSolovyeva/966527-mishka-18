@@ -1,0 +1,9 @@
+.link-text {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .link-text {
+    display: none;
+  }
+}

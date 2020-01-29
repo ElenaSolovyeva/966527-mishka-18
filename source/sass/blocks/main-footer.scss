@@ -60,6 +60,10 @@
 
     background-size: cover;
     background-image: url("../img/logo-footer.svg");
+
+    &:hover {
+      background-image: url("../img/logo-footer.svg");
+    }
   }
 
   .main-footer__social {
@@ -84,10 +88,10 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__logo {
-    margin-right: 355px;
+    margin-right: 350px;
   }
 
   .main-footer__social {
-    margin-right: 270px;
+    margin-right: 275px;
   }
 }
