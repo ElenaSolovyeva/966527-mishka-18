@@ -21,3 +21,9 @@
     margin-right: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cart-button {
+    margin-right: 5px;
+  }
+}
