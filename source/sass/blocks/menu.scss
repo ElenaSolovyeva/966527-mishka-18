@@ -30,7 +30,6 @@
     width: 100%;
     padding-top: 27px;
     padding-bottom: 28px;
-    // padding-left: 43px;
   }
 
     &:last-child {
@@ -39,6 +38,10 @@
   }
 
   .menu__item {
+    font-family: 'OpenSans bold', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+
     &--free-delivery {
       display: none;
     }
@@ -57,10 +60,6 @@
   }
 
   .menu__link {
-    font-family: 'OpenSans bold', 'Arial', sans-serif;
-    font-size: 17px;
-    line-height: 24px;
-
     &:hover {
       opacity: 0.6;
     }
@@ -158,6 +157,7 @@
 
       width: 83px;
       min-height: 89px;
+      padding: 0;
 
       border-bottom: 1px solid $light-grey;
       border-left: 1px solid $light-grey;
@@ -179,16 +179,21 @@
     &--catalog {
       order: 4;
 
-      margin-right: 37px;
+      margin-right: 0;
       padding-top: 17px;
       padding-left: 49px;
+
+      font-size: 15px;
     }
 
     &--knitting {
       order: 5;
 
-      margin-right: 133px;
+      margin-right: 100px;
       padding-top: 17px;
+      padding-left: 5px;
+
+      font-size: 15px;
     }
 
     &--free-delivery {
@@ -196,8 +201,10 @@
       order: 6;
 
       padding-top: 17px;
+      padding-left: 5px;
 
       font-family: "OpenSans", "Arial", sans-serif;
+      font-size: 15px;
       letter-spacing: 0.23px;
     }
 
@@ -291,9 +298,10 @@
       order: 1;
 
       min-height: 89px;
-      padding-right: 35px;
+      padding-right: 38px;
       padding-top: 30px;
 
+      font-size: 17px;
       border-bottom: 1px solid $light-grey;
     }
 
@@ -304,6 +312,7 @@
       padding-right: 50px;
       padding-left: 35px;
 
+      font-size: 17px;
       border-left: 1px solid $light-grey;
       border-bottom: 1px solid $light-grey;
     }
@@ -315,10 +324,18 @@
 
     &--search {
       order: 4;
+      width: 84px;
+      min-height: 89px;
+      padding: 0;
+
     }
 
     &--cart {
       order: 5;
+
+      width: 280px;
+      padding-left: 80px;
+      padding-right: 0;
     }
 
     &--new-items {
@@ -326,6 +343,7 @@
 
       width: 230px;
       padding-top: 18px;
+      padding-right: 0;
       padding-left: 50px;
 
       font-size: 15px;
@@ -347,10 +365,15 @@
 
       margin-right: 50px;
       margin-left: auto;
+      padding-right: 0;
 
       font-family: "OpenSans", "Arial", sans-serif;
       font-size: 15px;
       line-height: 24px;
     }
+  }
+
+  .menu__link {
+    height: 100%;
   }
 }

@@ -36,19 +36,7 @@
       background-size: $tablet-width auto;
     }
 
-    &::after {
-      content: " ";
-      position: absolute;
-      z-index: 3;
-      top: 732px;
-      left: 0;
-      width: 100%;
-      height: 24px;
 
-      background-size: cover;
-      background-image: url("../img/zigzag-fill-desktop.png");
-      background-position: 0 0;
-    }
   }
 
   .main-header__heading {

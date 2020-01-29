@@ -1,7 +1,75 @@
 .fill-grey {
-  position: absolute;
   width: 100%;
   height: 100%;
 
   background-color: $header-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .fill-grey--waves {
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 722px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+
+      background-size: cover;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      background-position: 0 0;
+    }
+  }
+
+    .fill-grey--waves-catalog {
+      &::after {
+        content: " ";
+        position: absolute;
+        z-index: 3;
+        top: 212px;
+        left: 0;
+        width: 100%;
+        height: 24px;
+
+        background-size: cover;
+        background-image: url("../img/zigzag-fill-desktop.png");
+        background-position: 0 0;
+      }
+    }
+}
+
+@media (min-width: $desktop-width) {
+  .fill-grey--waves {
+    &::after {
+      content: " ";
+      position: absolute;
+      z-index: 3;
+      top: 722px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+
+      background-size: cover;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      background-position: 0 0;
+    }
+  }
+
+    .fill-grey--waves-catalog {
+      &::after {
+        content: " ";
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        margin-top:35px;
+
+        background-size: cover;
+        background-image: url("../img/zigzag-fill-desktop.png");
+        background-position: 0 0;
+      }
+    }
 }

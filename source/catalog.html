@@ -13,8 +13,8 @@
   </head>
 
   <body>
-  <div class="container">
 
+  <div class="container">
     <header class="page-header">
       <div class="logo-wrapper">
         <a href="index.html" class="page-header__logo"></a>
@@ -49,14 +49,20 @@
         </div>
       </nav>
     </header>
+  </div>
 
     <main class="main-block">
-      <h1 class="grey-header heading">Каталог товаров</h1>
+      <div class="fill-grey fill-grey--waves-catalog">
+        <div class="container">
+          <h1 class="grey-header heading">Каталог товаров</h1>
+        </div>
+      </div>
 
+      <div class="container">
       <section class="catalog layout">
 
         <article class="product">
-          <a class="product__link" href="#">
+          <a class="product__link" href="form.html">
             <picture>
               <source
                 media="(min-width: 1150px)"
@@ -70,7 +76,7 @@
 
           <div class="product__description">
             <div class="product__description-wrapper">
-              <a href="#">
+              <a href="form.html">
                 <h2 class="product__name">Зайчик-попрыгайчик</h2>
               </a>
               <p class="product__size">Рост 30 см, вес 200 г</p>
@@ -83,7 +89,7 @@
         </article >
 
         <article  class="product">
-          <a class="product__link" href="#">
+          <a class="product__link" href="form.html">
             <picture>
               <source
                 media="(min-width: 1150px)"
@@ -97,7 +103,7 @@
 
           <div class="product__description">
             <div class="product__description-wrapper">
-              <a href="#">
+              <a href="form.html">
                 <h2 class="product__name">Корзинка для белья</h2>
               </a>
               <p class="product__size">Диаметр 15 см, высота 10 см</p>
@@ -110,7 +116,7 @@
         </article >
 
         <article class="product">
-          <a class="product__link" href="#">
+          <a class="product__link" href="form.html">
             <picture>
               <source
                 media="(min-width: 1150px)"
@@ -124,7 +130,7 @@
 
           <div class="product__description">
             <div class="product__description-wrapper">
-              <a href="#">
+              <a href="form.html">
                 <h2 class="product__name">Большая корзинка<span class="line-break"></span> для игрушек</h2>
               </a>
               <p class="product__size">Диаметр 30 см, высота 30 см</p>
@@ -151,24 +157,28 @@
           </div>
         </div>
       </section>
+
+    </div>
     </main>
 
-    <footer class="main-footer layout">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <div class="main-footer__flex-wrapper">
-        <a href="" class="main-footer__logo"></a>
-        <ul class="social main-footer__social reset-list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com"></a>
-          </li>
-        </ul>
-        <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    <footer class="main-footer">
+      <div class="container">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <div class="main-footer__flex-wrapper layout">
+          <a href="index.html" class="main-footer__logo"></a>
+          <ul class="social main-footer__social reset-list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com"></a>
+            </li>
+          </ul>
+          <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        </div>
       </div>
     </footer>
 
@@ -190,8 +200,6 @@
         <button class="modal__add-button button">Добавить</button>
       </div>
     </section>
-
-  </div>
   </body>
 
 </html>

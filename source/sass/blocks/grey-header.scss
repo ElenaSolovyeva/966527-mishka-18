@@ -5,7 +5,7 @@
   margin-bottom: 29px;
   margin-left: 0;
   padding-top: 70px;
-  background-color: $footer-grey;
+  background-color: $header-grey;
 
   &--form {
     margin-bottom: 21px;
@@ -24,20 +24,20 @@
       margin-bottom: 60px;
       padding-top: 93px;
     }
-
-    &::after {
-      content: " ";
-      position: absolute;
-      z-index: 3;
-      bottom: -5px;
-      left: 0;
-      width: $tablet-width;
-      height: 24px;
-
-      background-size: cover;
-      background-image: url("../img/zigzag-fill-desktop.png");
-      background-position: 0 0;
-    }
+  //
+  //   &::after {
+  //     content: " ";
+  //     position: absolute;
+  //     z-index: 3;
+  //     bottom: -5px;
+  //     left: 0;
+  //     width: $tablet-width;
+  //     height: 24px;
+  //
+  //     background-size: cover;
+  //     background-image: url("../img/zigzag-fill-desktop.png");
+  //     background-position: 0 0;
+  //   }
   }
 }
 
@@ -49,16 +49,6 @@
 
     &--form {
       margin-bottom: 100px;
-    }
-
-    &::after {
-      bottom: 0;
-
-      width: $desktop-width;
-      height: 34px;
-
-      background-size: cover;
-      background-image: url("../img/zigzag-fill-desktop_.png");
     }
   }
 }
