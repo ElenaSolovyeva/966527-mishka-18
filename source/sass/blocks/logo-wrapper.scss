@@ -1,0 +1,13 @@
+.logo-wrapper {
+  width: 260px;
+  margin-right: 6px;
+}
+
+@media (min-width: $desktop-width) {
+  .logo-wrapper {
+    position: relative;
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
+  }
+}

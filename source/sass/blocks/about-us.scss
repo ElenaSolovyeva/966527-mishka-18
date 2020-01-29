@@ -24,7 +24,7 @@
   min-height: 90px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 54px;
+  padding-top: 53px;
   padding-bottom: 0;
 
   font-family: "OpenSans bold", "Arial", sans-serif;
@@ -42,6 +42,7 @@
 
   &--icon-flower {
     margin-bottom: 30px;
+    padding-top: 56px;
 
     &::before {
       top: 0;
@@ -69,7 +70,7 @@
 
   &--icon-heart {
     margin-bottom: 30px;
-    padding-top: 50px;
+    padding-top: 49px;
 
     &::before {
       left: 8px;
@@ -85,6 +86,7 @@
 
   &--icon-handmade {
     margin-bottom: 27px;
+    padding-top: 50px;
 
     &::before {
       left: 3px;
@@ -135,7 +137,7 @@
   }
 
   .about-us__subtitel {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .about-us__flex-container {
@@ -144,35 +146,72 @@
 
   .about-us__list {
     width: 50%;
-    //можно ли так делать или слишком большая вложенность получается?
-    &:nth-child(2) {
-      .about-us__item {
-        margin-bottom: 59px;
 
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
+    &:nth-child(2):last-child {
+      margin-bottom: 0;
     }
   }
 
   .about-us__item {
     left: 3px;
-    margin-bottom: 64px;
+    margin-bottom: 55px;
 
     font-size: 20px;
     line-height: 22px;
 
     &--icon-flower {
-      margin-bottom: 60px;
+      padding-top: 60px;
+
+      &::before {
+        top: 5px;
+        left: 5px;
+      }
     }
-    //
-    // &--icon-banknote {
-    // }
+
+    &--icon-banknote {
+      padding-top: 57px;
+
+      &::before {
+        top: 3px;
+        left: 0;
+      }
+    }
 
     &--icon-heart {
-      left: 4px;
-      padding-top: 48px;
+      padding-top: 60px;
+
+      &::before {
+        top: 8px;
+        left: 5px;
+        padding-top: 48px;
+      }
+    }
+
+    &--icon-handmade {
+      padding-top: 60px;
+
+      &::before {
+        top: 8px;
+        left: 1px;
+      }
+    }
+
+    &--icon-rocket {
+      padding-top: 57px;
+
+      &::before {
+        top: 2px;
+        left: -9px;
+      }
+    }
+
+    &--icon-gift {
+      padding-top: 57px;
+
+      &::before {
+        top: 5px;
+        left: 0;
+      }
     }
 
     &:last-child {
@@ -187,7 +226,8 @@
   }
 
   .about-us__subtitel {
-    padding-left: 175px;
+    padding-top: 6px;
+    padding-left: 173px;
   }
 
   .about-us__list:first-child {

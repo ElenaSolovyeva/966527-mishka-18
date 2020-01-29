@@ -10,4 +10,31 @@
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.5px;
   border: 2px solid #444444;
+
+  &:hover {
+    border: 2px solid $green-radio-hover;
+  }
+
+  &:active {
+    color:rgba(0, 0, 0, 1.0);
+    border: 2px solid $green-radio-hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description-field {
+    width: 500px;
+    margin-top: 8px;
+    padding-top: 12px;
+
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-field {
+    width: 700px;
+  }
 }

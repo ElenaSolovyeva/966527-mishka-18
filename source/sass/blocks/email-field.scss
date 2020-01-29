@@ -31,4 +31,42 @@
   border-right: none;
   border-bottom: 2px solid #000000;
   border-left: none;
+  &:hover {
+    border-bottom: 2px solid $green-radio-hover;
+  }
+
+  &:active {
+    color:rgba(0, 0, 0, 1.0);
+    border-bottom: 2px solid $green-radio-hover;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .email-field {
+    width: 500px;
+
+    &::after {
+      top: 12px;
+      left: 448px;
+    }
+  }
+
+  .email-field__input {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 17px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email-field {
+    width: 700px;
+
+    &::after {
+      top: 12px;
+      left: 665px;
+    }
+  }
 }

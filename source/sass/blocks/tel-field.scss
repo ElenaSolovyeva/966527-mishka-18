@@ -31,4 +31,42 @@
   border-right: none;
   border-bottom: 2px solid #000000;
   border-left: none;
+
+  &:hover {
+    border-bottom: 2px solid $green-radio-hover;
+  }
+
+  &:active {
+    color:rgba(0, 0, 0, 1.0);
+    border-bottom: 2px solid $green-radio-hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tel-field {
+    width: 500px;
+
+    &::after {
+      top: 20px;
+      left: 450px;
+    }
+  }
+
+  .tel-field__input {
+    width: 100%;
+    padding-top: 21px;
+    padding-left: 17px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tel-field {
+    width: 700px;
+
+    &::after {
+      top: 20px;
+      left: 670px;
+    }
+  }
 }

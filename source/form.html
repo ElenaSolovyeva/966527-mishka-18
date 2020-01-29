@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: каталог "Мишки"</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
   <div class="container">
 
     <header class="page-header">
-      <div class="page-header__logo--wrapper">
-        <a class="page-header__logo"></a>
+      <div class="logo-wrapper">
+        <a href="index.html" class="page-header__logo"></a>
       </div>
       <nav class="menu">
         <button class="menu__button burger-button" aria-label="Меню"></button>
@@ -26,7 +31,7 @@
             </li>
             <li class="menu__item menu__item--search">
               <a class="menu__link menu__link--icon-search" href="#">
-                <span class="menu__link--text">Поиск по сайту</span>
+                <span class="link-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="menu__item menu__item--cart">
@@ -47,15 +52,15 @@
 
     <main class="main-block">
 
-      <h1 class="grey-header heading">Вязание на заказ</h1>
+      <h1 class="grey-header grey-header--form heading">Вязание на заказ</h1>
       <p class="form-text layout">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-      <form class="order-form layout">
-        <div class="order-form__fieldset">
-          <legend class="order-form__legend title-with-line">Тип</legend>
+      <form class="order-form  layout-form">
+        <section class="order-form__fieldset order-form__fieldset-layout order-form__fieldset--type">
+          <legend class="order-form__legend  title-with-line">Тип</legend>
 
-          <div class="order-form__radio-wrapper">
-            <div class="radio-field">
+          <div class="order-form__buttons-wrapper order-form__buttons-wrapper--type">
+            <div class="radio-field radio-field--accessories">
               <input class="input visually-hidden" type="radio" name="product-type" id="accessory" value="accessory">
               <label class="radio-field__label  radio-field__label--icon-circle" for="accessory">Аксессуар для интерьера</label>
             </div>
@@ -65,53 +70,51 @@
               <label class="radio-field__label  radio-field__label--icon-circle" for="toy">Детская игрушка</label>
             </div>
           </div>
+        </section>
 
-        </div>
+        <div class="order-form__background-wrapper">
+          <section class="order-form__fieldset order-form__fieldset-layout order-form__fieldset-layout-color order-form__fieldset--color">
+            <legend class="order-form__legend order-form__legend--color title-with-line">Цвет</legend>
 
-        <div class="order-form__fieldset order-form__fieldset--checkbox">
+            <div class="order-form__buttons-wrapper order-form__buttons-wrapper--color">
 
-          <legend class="order-form__legend title-with-line">Цвет</legend>
-
-          <div class="order-form__checkbox-wrapper">
-
-            <div class="order-form__checkbox-column1">
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="white">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="white">Белый</label>
               </div>
+
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="grey">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="grey">Серый</label>
               </div>
+
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="tiffany">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="tiffany">«Тиффани»</label>
               </div>
-            </div>
 
-            <div class="order-form__checkbox-column2">
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="black">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="black">Черный</label>
               </div>
+
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="pink">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="pink">Розовый</label>
               </div>
+
               <div class="checkbox-field">
                 <input class="input visually-hidden" type="checkbox" name="product-color" id="orange">
                 <label class="checkbox-field__label  checkbox-field__label--icon-square" for="orange">Оранжевый</label>
               </div>
+
             </div>
-
-          </div>
-
+          </section>
         </div>
 
-        <div class="order-form__fieldset order-form__fieldset--name">
+        <section class="order-form__fieldset order-form__fieldset-layout order-form__fieldset--name">
           <legend class="order-form__legend title-with-line">ФИО</legend>
-
-          <div class="order-form__name-wrapper">
+          <div class="order-form__buttons-wrapper">
             <div class="input-field">
               <label class="input-field__label" for="firstname">Имя:</label>
               <input class="input-field__input" type="text" name="firstname" id="firstname" value="Введите ваше имя*">
@@ -127,43 +130,42 @@
               <input class="input-field__input" type="text" name="lastname" id="lastname" value="Отчество, если желаете">
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="tel-email-wrapper">
-          <div class="order-form__fieldset ">
-            <legend class="order-form__legend title-with-line title-with-line--tel">ТЕЛ</legend>
+        <div class="order-form__background-wrapper order-form__background-wrapper--contacts ">
+          <div class="order-form__fieldset order-form__fieldset-layout order-form__fieldset--tel">
+            <legend class="order-form__legend order-form__legend--tel title-with-line title-with-line--tel">ТЕЛ</legend>
             <div class="tel-field">
               <input class="tel-field__input" type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{3} [0-9]2 [09]2" value="+7 XXX XXX XX XX*">
             </div>
           </div>
 
-          <div class="order-form__fieldset">
-            <legend class="order-form__legend title-with-line title-with-line--email">E-mail</legend>
+          <div class="order-form__fieldset order-form__fieldset-layout">
+            <legend class="order-form__legend order-form__legend--email title-with-line title-with-line--email">E-mail</legend>
             <div class="email-field">
               <input class="email-field__input" type="email" name="email" value="Ваш Email*">
             </div>
           </div>
         </div>
 
-        <div class="order-form__fieldset">
-          <legend class="order-form__legend title-with-line title-with-line--description">Доп</legend>
+        <div class="order-form__fieldset order-form__fieldset-layout order-form__fieldset--optionally">
+          <legend class="order-form__legend order-form__legend--description title-with-line title-with-line--description">Доп</legend>
           <textarea class="description-field" placeholder="Опишите все ваши пожелания к заказу" name="wishes"></textarea>
         </div>
 
-        <p class="order-form__rem">*Поля обязательны для заполнения</p>
-
-        <button class="order-form__button-send button" type="submit">Отправить заказ</button>
+        <div class="order-form__wrapper order-form__fieldset-layout">
+          <p class="order-form__rem">*Поля обязательны для заполнения</p>
+          <button class="order-form__button-send button" type="submit">Отправить заказ</button>
+        </div>
       </form>
 
     </main>
 
-    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <div class="main-footer__flex-wrapper">
         <a href="" class="main-footer__logo"></a>
-        <ul class="social main-footer__social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
-          <!-- иконки сделаю псевдоэлементами -->
-          <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
+        <ul class="social main-footer__social reset-list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
           </li>
@@ -175,7 +177,6 @@
           </li>
         </ul>
         <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        <!-- main-footer__developer для позиционирования, developer для стилизации -->
       </div>
     </footer>
 

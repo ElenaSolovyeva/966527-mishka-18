@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<!--Клон проекта «Мишка» https://github.com/ElenaSolovyeva/966527-mishka-18.git -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+    <script src="js/script.js" async></script>
   </head>
 
   <body>
-  <div class="container">
-
     <header class="page-header">
-      <div class="page-header__logo--wrapper">
+      <div class="container">
+
+      <div class="logo-wrapper">
         <a class="page-header__logo"></a>
       </div>
-      <nav class="menu"><!-- position: absolute; -->
+      <nav class="menu">
         <button class="menu__button burger-button" aria-label="Меню"></button>
         <div class="menu__wrapper">
           <ul class="menu__list reset-list">
             <li class="menu__item menu__item--catalog">
-              <a class="menu__link" href="#">Каталог товаров</a>
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="menu__item menu__item--knitting">
-              <a class="menu__link" href="#">Вязание на заказ</a>
+              <a class="menu__link" href="catalog.html">Вязание на заказ</a>
             </li>
             <li class="menu__item menu__item--search">
               <a class="menu__link menu__link--icon-search" href="#">
-                <span class="menu__link--text">Поиск по сайту</span>
+                <span class="link-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="menu__item menu__item--cart">
@@ -44,14 +48,18 @@
           </ul>
         </div>
       </nav>
+
+    </div>
     </header>
 
     <main class="main-block">
-      <section class="main-header layout">
-        <h1 class="main-header__heading heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1><!--размер шрифта больше, чем в "Вязаные корзинки", "Отзывы" и тд, те не повторяется больше на этой странице. Повторяется на странице каталога 1 раз("Каталог товаров") и на станице с формой 1 раз("Вязание на заказ")"-->
+      <section class="main-header fill-grey">
+        <div class="container layout">
+          <h1 class="main-header__heading heading">Милые штуки ручной<span class="line-break"></span> работы для дома</h1>
+        </div>
       </section>
 
-      <section class="product-groups"><!-- класс "layout-no-gutters" для исключения, когда секция располагается без отступов слева и справа -->
+      <section class="product-groups">
         <h2 class="visually-hidden">Меню с разделами каталога</h2>
         <nav class="product-groups__nav">
           <a class="green-block" href="#">
@@ -67,7 +75,6 @@
         <div class="week-product__titel-wrapper">
           <p class="week-product__titel">Товар недели</p>
           <h2 class="week-product__subtitel subtitle">Вязаные корзинки</h2>
-          <!-- класс "subtitle" чтобы все заголовки 2го уровня имели одинаковые стили.  -->
         </div>
 
         <div class="week-product__article-wrapper">
@@ -90,29 +97,26 @@
               <td class="table__value">15 см</td>
             </tr>
           </table>
-          <picture> <!--Picturefill   http://scottjehl.github.io/picturefill/ -->
-          <!-- Сделала как на 64м слайде Лекции 6 "Адаптивная графика"-->
+          <picture>
             <source
               media="(min-width: 1150px)"
               srcset="img/triple-set-desktop@1x.jpg"/>
             <source
               media="(min-width: 768px)"
               srcset="img/triple-set-tablet@1x.jpg"/>
-            <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg" alt="Фотография товара недели: вязанной корзинки"> <!-- width="260" height="315" -->
+            <img class="week-product__foto" src="img/triple-set-mobile@1x.jpg" alt="Фотография товара недели: вязанной корзинки">
           </picture>
 
           <p class="week-product__price">Цена: 990 руб.</p>
-          <!-- ТЗ п. 4.3. Кнопка заказа товара недели должна вызывать появление модального окна. -->
           <button class="button button--order week-product__order">Заказать</button>
         </div>
 
       </section>
 
-      <section class="about-us layout"><!-- "wave-line - сущность для линии внизу под кнопкой "Заказать", сделаю псевдоэлементом-->
+      <section class="about-us layout">
         <h2 class="about-us__subtitel subtitle">Коротко о нас:</h2>
-        <!-- иконки сделаю псевдоэлементами в css-->
         <div class="about-us__flex-container">
-          <ul class="about-us__list reset-list"><!-- МАРДЖИНЫ И РАЗМЕРЫ ДОЛЖНЫ БЫТЬ ПРОПИСАНЫ В ЭЛЕМЕНТАХ -->
+          <ul class="about-us__list reset-list">
             <li class="about-us__item about-us__item--icon-flower">Экологически<span class="line-break"></span> чистые материалы</li>
             <li class="about-us__item about-us__item--icon-banknote">Скандинавский стиль<span class="line-break"></span> по российской цене</li>
             <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки<span class="line-break"></span> на фотографиях</li>
@@ -128,9 +132,9 @@
       <section class="feedback layout wave-line wave-line--feedback">
         <h2 class="feedback__titel subtitle">Отзывы</h2>
         <blockquote class="feedback__block">
-          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<span class="text-break--feedback"></span> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="feedback__author">
-            <span class="feedback__author">Анастасия Красильникова</span> <!-- Error: Element p not allowed as child of element cite in this context.-->
+            <span class="feedback__author">Анастасия Красильникова</span>
             <span class="feedback__author-social">@misssssiskras</span>
           </cite>
         </blockquote>
@@ -138,19 +142,18 @@
           <button class="feedback__button feedback__button--prev" aria-label="Следующий отзыв"></button>
           <button class="feedback__button feedback__button--next" aria-label="Предыдущий отзыв"></button>
         </div>
-        <!-- ТЗ п. 4.5. Кнопка в блоке «Отзывы» должна вести на страницу добавления отзыва (страницу добавления отзыва реализовывать не нужно). -->
         <a href="#" class="button button--feedback feedback__writeUsButton">Написать</a>
       </section>
-      <!--flex-контейнер для расположения контактов, карты и кнопки "Напишите нам" в планшетной версии -->
+
       <div class="find-us-container">
         <section class="contacts layout layout--contacts">
-          <h2 class="contacts__title subtitle--less">Контакты</h2>
+          <h2 class="contacts__title subtitle-less">Контакты</h2>
           <div class="contacts__flex-container">
-            <div class="contacts__text  contacts__text--first"> <!-- Переделать <p> на <div> или добавить <div> в качестве wrapper'a-->
+            <div class="contacts__text  contacts__text--first">
               <span class="contacts__left-field"> e-mail:</span>
-              <a class="contacts__right-field contacts__right-field--line-bottom" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__right-field contacts__right-field--line-bottom contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </div>
-            <div class="contacts__text"> <!-- тег <address> не вкладыается в тег <p>-->
+            <div class="contacts__text">
               <span class="contacts__left-field">адрес:</span>
               <address class="contacts__right-field">
                 г. Санкт-Петербург,<span class="line-break"></span>
@@ -171,11 +174,11 @@
           <picture>
             <source
               media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.jpg"/>
+              srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg"/>
             <source
-              media="min-width: 768px"
-              srcset="img/map-tablet@1x.jpg"/>
-            <img class="map__img" src="img/map-mobile@1x.jpg" alt="схема проезда"/>
+              media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg"/>
+            <img class="map__img" src="img/map-mobile@1x.jpg"  srcset="img/map-mobile@2x.jpg" alt="схема проезда"/>
           </picture>
           <div class="map__pointer"></div>
         </section>
@@ -183,13 +186,11 @@
 
     </main>
 
-    <footer class="main-footer layout"><!--иконки соцсетей и "разработано" -->
+    <footer class="main-footer layout">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <div class="main-footer__flex-wrapper">
         <a href="" class="main-footer__logo"></a>
-        <ul class="social main-footer__social reset-list"><!-- main-footer__social для позиционирования (пока не испльзуется), social для стилей -->
-          <!-- иконки сделаю псевдоэлементами -->
-          <!--?? " иконки этих социальных сетей много где используются. Подумай, есть ли смысл использоватть их по отдельности, если они постоянно вместе?" а как их вместе использовать?? -->
+        <ul class="social main-footer__social reset-list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
           </li>
@@ -201,31 +202,28 @@
           </li>
         </ul>
         <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        <!-- main-footer__developer для позиционирования, developer для стилизации -->
       </div>
-
     </footer>
 
-    <section class="modal-add layout"> <!-- layout  пока оставилa -->
-      <div class="modal-add__wrapper">
-        <h2 class="modal-add__title">Добавить в корзину</h2>
-        <p class="modal-add__choice">Выберите размер:</p>
-        <ul class="modal-add__sizeList">
-          <li>
-            <button class="modal-add__S">S</button>
+    <section>
+      <div class="modal">
+        <h2 class="modal__title subtitle">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__sizeList reset-list">
+          <li class="modal__item">
+            <button class="modal__size">S</button>
           </li>
-          <li>
-            <button class="modal-add__S">M</button>
+          <li class="modal__item">
+            <button class="modal__size">M</button>
           </li>
-          <li>
-            <button class="modal-add__S">L</button>
+          <li class="modal__item">
+            <button class="modal__size">L</button>
           </li>
         </ul>
-        <button class="modal-add__add-button">Добавить</button>
+        <button class="modal__add-button button">Добавить</button>
       </div>
     </section>
 
-  </div>
   </body>
 
 </html>
