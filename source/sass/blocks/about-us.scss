@@ -102,12 +102,13 @@
 
   &--icon-rocket {
     margin-bottom: 31px;
+    padding-top: 58px;
 
     &::before {
       left: -5px;
 
       width: 55px;
-      height: 34px; // сверху и снизу - прозрачные отступы
+      height: 34px;
       margin-bottom: 10px;
 
       background-image: url("../img/icon-feature-rocket-green.svg");

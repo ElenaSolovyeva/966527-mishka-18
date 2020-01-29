@@ -1,5 +1,14 @@
 .menu {
-  width: 30px;
+  width: 100%;
+}
+
+.menu__item {
+  padding-right: 30px;
+  padding-left: 75px;
+}
+
+.menu__list:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: $tablet-width) {
@@ -16,13 +25,12 @@
 
   .menu__item {
     &:first-child {
-      margin-top: 57px;
+      margin-top: 23px;
     }
-    width: 320px;
-    margin-left: -270px;
+    width: 100%;
     padding-top: 27px;
     padding-bottom: 28px;
-    padding-left: 80px;
+    // padding-left: 43px;
   }
 
     &:last-child {
@@ -68,7 +76,7 @@
         content: "";
         position: absolute;
         top: 3px;
-        left: -48px;
+        left: -45px;
         width: 22px;
         height: 20px;
 
@@ -92,7 +100,7 @@
         content: "";
         position: absolute;
         top: 3px;
-        left: -48px;
+        left: -45px;
         width: 22px;
         height: 20px;
 
@@ -256,6 +264,8 @@
 @media (min-width: $desktop-width) {
   .menu {
     position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     margin: 0;
   }

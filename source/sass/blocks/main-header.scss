@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 355px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 67px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: -127px -20px;
@@ -22,7 +22,6 @@
 .main-header__heading {
   margin: 0;
 }
-
 
 @media (min-width: $tablet-width) {
   .main-header {
